@@ -1,7 +1,7 @@
 # SkyT 日本語化プロジェクト
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Version](https://img.shields.io/badge/ModPack-SkyT%204%20vv1.4.1-blue.svg)](https://www.curseforge.com/minecraft/modpacks/skyt)
+[![Version](https://img.shields.io/badge/ModPack-SkyT%20v1.4.1-blue.svg)](https://www.curseforge.com/minecraft/modpacks/skyt)
 
 SkyTの日本語翻訳ファイルを提供するプロジェクトです。
 
