@@ -1,0 +1,344 @@
+{
+	id: "3E9BFF98769EBD28"
+	group: "7FBA77DF66334407"
+	order_index: 2
+	filename: "veydtech"
+	title: "ヴェイドテック"
+	icon: {
+		id: "custommachinery:custom_machine_item"
+		Count: 1b
+		tag: {
+			machine: "custommachinery:components_assembler"
+		}
+	}
+	subtitle: [
+	"カスタムテクノロジー"
+]
+	default_quest_shape: "octagon"
+	default_hide_dependency_lines: false
+	images: [{
+		x: -7.5d
+		y: -3.5d
+		width: 2.0d
+		height: 2.0d
+		rotation: 0.0d
+		image: "kubejs:textures/item/quantum_processor.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			icon: {
+				id: "custommachinery:custom_machine_item"
+				Count: 1b
+				tag: {
+					machine: "custommachinery:dimensional_miner"
+				}
+			}
+			x: -7.0d
+			y: -0.5d
+			description: [
+				"次元採掘機は、世界中のどこにも見つからない原鉱石を生産することを可能にします。これらの鉱石は、プレイヤーがアクセスできない異次元から来ています。"
+				"必要な鉱石を採取するには、異なるレンズを使用する必要があります。"
+				""
+				"レンズは消費されません。"
+			]
+			dependencies: ["19961A405CF914CB"]
+			min_width: 250
+			id: "5B892068F6A630C5"
+			tasks: [{
+				id: "0AE9AE3C242D5C43"
+				type: "advancement"
+				title: "次元採掘者"
+				icon: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "custommachinery:dimensional_miner"
+					}
+				}
+				advancement: "custommachinery:dimensional_miner"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "458B0ACE9BD158CB"
+				type: "item"
+				item: "industrialforegoing:laser_lens0"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -0.5d
+			description: [
+				"この高炉は驚異的な高温を実現し、ドラコニウムやタングステンといった様々な鉱石を溶かすことが可能です。"
+				""
+				"稼働にはマルチブロックと抵抗ヒーターによる熱源が必要です。"
+			]
+			dependencies: ["29CAE037D9B73F27"]
+			dependency_requirement: "one_completed"
+			id: "128002F465A1E075"
+			tasks: [{
+				id: "70629B8CAA16EC0D"
+				type: "advancement"
+				title: "先進的な高炉"
+				icon: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "custommachinery:advanced_blast_furnace"
+					}
+				}
+				advancement: "custommachinery:advanced_blast_furnace"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "52ADE1E0A33693CF"
+				type: "item"
+				item: "mekanism:sps_casing"
+				count: 2
+			}]
+		}
+		{
+			x: -5.5d
+			y: 0.0d
+			dependencies: ["5B892068F6A630C5"]
+			id: "5BE29926BADD5FBA"
+			tasks: [{
+				id: "155565C6BF47549D"
+				type: "item"
+				item: "kubejs:wolframite_chunk"
+			}]
+			rewards: [{
+				id: "388661218EE4BD79"
+				type: "item"
+				item: "kubejs:wolframite_chunk"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 1.0d
+			dependencies: ["5B892068F6A630C5"]
+			id: "75C8E4BBB72C28FA"
+			tasks: [{
+				id: "67AA7D24E3C298BB"
+				type: "item"
+				item: "kubejs:titanite_chunk"
+			}]
+			rewards: [{
+				id: "1CD018C265E5ECD5"
+				type: "item"
+				item: "kubejs:titanite_chunk"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -1.0d
+			dependencies: ["5B892068F6A630C5"]
+			id: "55827B71CFAB874D"
+			tasks: [{
+				id: "684C1120DCA26A06"
+				type: "item"
+				item: "kubejs:cooperite_chunk"
+			}]
+			rewards: [{
+				id: "792CF929442770D7"
+				type: "item"
+				item: "kubejs:cooperite_chunk"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -2.0d
+			dependencies: ["5B892068F6A630C5"]
+			id: "5E596389EBD63467"
+			tasks: [{
+				id: "65D07250B0388C86"
+				type: "item"
+				item: "kubejs:chromite_chunk"
+			}]
+			rewards: [{
+				id: "1ECA99FB3955B7FA"
+				type: "item"
+				item: "kubejs:chromite_chunk"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -0.5d
+			description: [
+	"複合鉱石から主鉱石を抽出できます。"
+]
+			dependencies: [
+				"5E596389EBD63467"
+				"5BE29926BADD5FBA"
+				"75C8E4BBB72C28FA"
+				"55827B71CFAB874D"
+			]
+			id: "29CAE037D9B73F27"
+			tasks: [{
+				id: "61FC9AF15672EA2A"
+				type: "advancement"
+				title: "鉱石遠心分離機"
+				icon: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "custommachinery:advanced_encapsulator"
+					}
+				}
+				advancement: "custommachinery:ore_centrifuge"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "40DE3A52B52D2D54"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			description: [
+				"この合金製錬炉は驚異的な溶解温度を実現し、あらゆる合金を製造できます。"
+				""
+				"操作にはマルチブロックと抵抗ヒーターからの熱源が必要です。"
+			]
+			dependencies: ["128002F465A1E075"]
+			dependency_requirement: "one_completed"
+			id: "0BE2546E10A76982"
+			tasks: [{
+				id: "4ACCC5D86368D11F"
+				type: "advancement"
+				title: "合金製錬所"
+				icon: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "custommachinery:alloy_smelter"
+					}
+				}
+				advancement: "custommachinery:alloy_smelter"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "7B318B902603981A"
+				type: "item"
+				item: "mekanism:sps_casing"
+				count: 2
+			}]
+		}
+		{
+			x: -9.5d
+			y: 0.5d
+			subtitle: "ミキサーから"
+			description: [
+	"流体エンカプスレーターと同様に、高度なエンカプスレーターはアイテムやブロックに液体を注入します。"
+]
+			id: "5DC47165C97866DB"
+			tasks: [{
+				id: "24512BB6DB0BEC8C"
+				type: "advancement"
+				title: "高度なカプセル化装置"
+				icon: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "custommachinery:advanced_encapsulator"
+					}
+				}
+				advancement: "custommachinery:advanced_encapsulator"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "196256BC3BE9CCCB"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.0d
+			description: [
+	"アセンブラを使用すると、非常に高度で高精度な回路を作成できます。"
+]
+			dependencies: ["128002F465A1E075"]
+			id: "55B5FF2F9A23378A"
+			tasks: [{
+				id: "71B09EEA7E32C089"
+				type: "advancement"
+				title: "コンポーネントアセンブラ"
+				icon: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "custommachinery:components_assembler"
+					}
+				}
+				advancement: "custommachinery:components_assembler"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "17BE30E10D923985"
+				type: "item"
+				item: "ftbic:iridium_circuit"
+			}]
+		}
+		{
+			icon: {
+				id: "custommachinery:custom_machine_item"
+				Count: 1b
+				tag: {
+					machine: "custommachinery:mixer"
+				}
+			}
+			x: -9.5d
+			y: -1.5d
+			subtitle: "ミックス"
+			description: [
+	"ミキサーは最大 4 種類の異なる液体を混合して 1 つの液体を生成します。"
+]
+			id: "5C6079F7F2CEB0A2"
+			tasks: [{
+				id: "53C1C8F5E02C6CF7"
+				type: "advancement"
+				title: "ミキサー"
+				icon: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "custommachinery:mixer"
+					}
+				}
+				advancement: "custommachinery:mixer"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "46DE057A246EAAE8"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -8.5d
+			y: -0.5d
+			dependencies: [
+				"5DC47165C97866DB"
+				"5C6079F7F2CEB0A2"
+			]
+			id: "19961A405CF914CB"
+			tasks: [{
+				id: "0569602F6D0CBAA2"
+				type: "item"
+				item: "kubejs:ultimate_machine_block"
+			}]
+			rewards: [{
+				id: "01BB442C239AB3FA"
+				type: "item"
+				item: "kubejs:ultimate_machine_block"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

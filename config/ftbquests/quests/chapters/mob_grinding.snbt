@@ -1,0 +1,585 @@
+{
+	id: "06D9548298DE2DCD"
+	group: "3D109918D62355FC"
+	order_index: 2
+	filename: "mob_grinding"
+	title: "&fMobグラインド"
+	icon: "mob_grinding_utils:saw"
+	subtitle: [
+	"楽々と殺す"
+]
+	default_quest_shape: "square"
+	default_hide_dependency_lines: false
+	images: [{
+		x: -2.0d
+		y: 0.0d
+		width: 2.0d
+		height: 2.0d
+		rotation: -20.0d
+		image: "mob_grinding_utils:textures/items/saw_upgrade_sharpness.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			x: 5.0d
+			y: 2.0d
+			description: [
+	"鶏を右クリックすると金の卵が手に入ります。"
+]
+			dependencies: ["24CF73443031CEAE"]
+			id: "210137C6556CA68B"
+			tasks: [{
+				id: "7B53396BDF15CA59"
+				type: "item"
+				item: "mob_grinding_utils:nutritious_chicken_feed"
+			}]
+			rewards: [{
+				id: "29351891ADAEE4A1"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.0d
+			description: [
+	"鶏を右クリックすると腐った卵が手に入ります。"
+]
+			dependencies: ["24CF73443031CEAE"]
+			id: "5D61FEEE2C38D2FE"
+			tasks: [{
+				id: "2B3A051363A8DE6A"
+				type: "item"
+				item: "mob_grinding_utils:gm_chicken_feed_cursed"
+			}]
+			rewards: [{
+				id: "32ED5AE1AAEBC704"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: 6.0d
+			y: 2.0d
+			subtitle: "パッシブモブ"
+			description: [
+	"土に使用すると「Delightful Dirt（楽しい土）」が作成できます。この土の上にはパッシブモブが出現します。"
+]
+			dependencies: ["210137C6556CA68B"]
+			id: "24DB954ED93BE6EE"
+			tasks: [{
+				id: "055ED1EE7C16D6C0"
+				type: "item"
+				item: "mob_grinding_utils:golden_egg"
+			}]
+			rewards: [{
+				id: "61D2333F993BCB98"
+				type: "item"
+				item: "mob_grinding_utils:golden_egg"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 1.0d
+			subtitle: "敵対的な暴徒"
+			description: [
+	"土に使用すると恐ろしい土が作成されます。この上に敵対的なモブが出現します。"
+]
+			dependencies: ["5D61FEEE2C38D2FE"]
+			id: "384436003FDA9258"
+			tasks: [{
+				id: "1D15CBD52CDFA33B"
+				type: "item"
+				item: "mob_grinding_utils:rotten_egg"
+			}]
+			rewards: [{
+				id: "4D22B6A36FB51232"
+				type: "item"
+				item: "mob_grinding_utils:rotten_egg"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 6.5d
+			description: [
+	"エンティティを向いている方向に押し出します。レッドストーン信号を起動する必要があります。3種類のアップグレードに対応しています。"
+]
+			id: "1FE3645BC1E7689F"
+			tasks: [{
+				id: "35FAF4C9A71B2B18"
+				type: "item"
+				item: "mob_grinding_utils:fan"
+			}]
+			rewards: [{
+				id: "527A4144E2C453AB"
+				type: "item"
+				item: "mob_grinding_utils:fan"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 2.5d
+			subtitle: "コンベア"
+			description: [
+				"モブの移動に最適なコンベアです。"
+				""
+				"スニークすることで、コンベアに乗っている間は移動の影響を受けなくなります。"
+			]
+			id: "22F42406271175A4"
+			tasks: [{
+				id: "330B414C6107C73D"
+				type: "item"
+				item: "darkutils:vector_plate"
+				count: 6L
+			}]
+			rewards: [{
+				id: "6ED62BFFD6BEDCD9"
+				type: "item"
+				item: "darkutils:vector_plate"
+				count: 6
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.5d
+			description: [
+				"対象エリアから経験値とアイテムを自動的に回収します。"
+				""
+				"吸収ホッパーGUIの「エリアを表示」ボタンを押すと、対象エリアを確認できます。"
+				"また、オフセットボタンを使ってエリアを移動することも可能です。"
+				"吸収ホッパーの6つの側面すべてについて、下、上、北、南、西、東のボタンをクリックすることで、様々な出力を設定することができます。"
+			]
+			id: "7E200B1A028DF704"
+			tasks: [{
+				id: "038E21007F51AE91"
+				type: "item"
+				item: "mob_grinding_utils:absorption_hopper"
+			}]
+			rewards: [{
+				id: "30BE93721D0B75F5"
+				type: "item"
+				item: "mob_grinding_utils:absorption_hopper"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.5d
+			description: [
+	"半径吸収を増加します。"
+]
+			dependencies: ["7E200B1A028DF704"]
+			id: "4D5F9B7F5289FC5E"
+			tasks: [{
+				id: "5D853211DB384055"
+				type: "item"
+				item: "mob_grinding_utils:absorption_upgrade"
+			}]
+			rewards: [{
+				id: "332503D68A69992F"
+				type: "item"
+				item: "mob_grinding_utils:absorption_upgrade"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			description: [
+	"シンプルで流動的なストレージ。"
+]
+			id: "13297FADD13D3A84"
+			tasks: [{
+				id: "096D4E8AADFDEA41"
+				type: "item"
+				item: "mob_grinding_utils:tank"
+			}]
+			rewards: [{
+				id: "4FC3BBD1F5A534DF"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: 4.0d
+			y: 6.5d
+			description: [
+	"幅修飾子は、プッシュ領域の幅を 1 ブロック増加します。"
+]
+			dependencies: ["1FE3645BC1E7689F"]
+			id: "2304A253226E03A5"
+			tasks: [{
+				id: "7EE4204C86853192"
+				type: "item"
+				item: "mob_grinding_utils:fan_upgrade_width"
+			}]
+			rewards: [{
+				id: "4DEAD88FD9E2A577"
+				type: "item"
+				item: "mob_grinding_utils:fan_upgrade_width"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 6.5d
+			description: [
+	"距離修飾子は、Mob が押される距離を 1 ブロック増加します。"
+]
+			dependencies: ["1FE3645BC1E7689F"]
+			id: "779732C99B227912"
+			tasks: [{
+				id: "4F18AE358971652F"
+				type: "item"
+				item: "mob_grinding_utils:fan_upgrade_speed"
+			}]
+			rewards: [{
+				id: "1143437EB3CFCA40"
+				type: "item"
+				item: "mob_grinding_utils:fan_upgrade_speed"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 4.0d
+			subtitle: "全員殺す"
+			description: [
+				"アップグレード可能なMob粉砕機。レッドストーン信号を入力すると起動します。"
+				""
+				"起動中に触れた生物はダメージを受け続けます。"
+				""
+				"Mob Masherによって倒された敵はプレイヤーキルとしてカウントされ、経験値を獲得します。"
+				"アップグレードには6種類あり、それぞれ最大10個のアップグレードを適用できます。"
+			]
+			min_width: 250
+			id: "5B658B92D3E5641D"
+			tasks: [{
+				id: "4B90123C857BB6BF"
+				type: "item"
+				item: "mob_grinding_utils:saw"
+			}]
+			rewards: [{
+				id: "1AE96C840AC80F57"
+				type: "item"
+				item: "mob_grinding_utils:saw"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 3.0d
+			description: [
+	"節足動物の災厄は節足動物に与えるダメージを増加させます。"
+]
+			dependencies: ["5B658B92D3E5641D"]
+			id: "7777FF92637BFDA9"
+			tasks: [{
+				id: "48158C8362BA3D10"
+				type: "item"
+				item: "mob_grinding_utils:saw_upgrade_arthropod"
+			}]
+			rewards: [{
+				id: "4EE9E376C9875127"
+				type: "item"
+				item: "mob_grinding_utils:saw_upgrade_arthropod"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 4.0d
+			description: [
+	"斬首は、アップグレードごとに、殺害されたモブが頭を落とす確率を 10% 増加させます。"
+]
+			dependencies: ["5B658B92D3E5641D"]
+			id: "536E9964CD34B018"
+			tasks: [{
+				id: "46E948461EECE1BA"
+				type: "item"
+				item: "mob_grinding_utils:saw_upgrade_beheading"
+			}]
+			rewards: [{
+				id: "4A765D09A964EEE7"
+				type: "item"
+				item: "mob_grinding_utils:saw_upgrade_beheading"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 5.0d
+			description: [
+	"火の特性により火によるダメージと持続時間が増加します。"
+]
+			dependencies: ["5B658B92D3E5641D"]
+			id: "4BB70479F0653A76"
+			tasks: [{
+				id: "2E14022AE3CEEE3B"
+				type: "item"
+				item: "mob_grinding_utils:saw_upgrade_fire"
+			}]
+			rewards: [{
+				id: "0AA8E7E7BE608E1D"
+				type: "item"
+				item: "mob_grinding_utils:saw_upgrade_fire"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 5.0d
+			description: [
+	"略奪するとドロップの品質が向上します。"
+]
+			dependencies: ["5B658B92D3E5641D"]
+			id: "5AC73E5F5CF24D08"
+			tasks: [{
+				id: "22F8566B39322842"
+				type: "item"
+				item: "mob_grinding_utils:saw_upgrade_looting"
+			}]
+			rewards: [{
+				id: "37F27B1973864D0F"
+				type: "item"
+				item: "mob_grinding_utils:saw_upgrade_looting"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 4.0d
+			y: 4.0d
+			description: [
+	"鋭さはヒットごとのダメージを増加させます。"
+]
+			dependencies: ["5B658B92D3E5641D"]
+			id: "14984F77D74D663C"
+			tasks: [{
+				id: "0966FD3761B475F2"
+				type: "item"
+				item: "mob_grinding_utils:saw_upgrade_sharpness"
+			}]
+			rewards: [{
+				id: "5DBBBD1FC67F877B"
+				type: "item"
+				item: "mob_grinding_utils:saw_upgrade_sharpness"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 3.0d
+			description: [
+	"スマイトはアンデッドモブに与えるダメージを増加させます。"
+]
+			dependencies: ["5B658B92D3E5641D"]
+			id: "27215DB061F207FD"
+			tasks: [{
+				id: "74C644B3C88C453D"
+				type: "item"
+				item: "mob_grinding_utils:saw_upgrade_smite"
+			}]
+			rewards: [{
+				id: "6B421611D10D1D40"
+				type: "item"
+				item: "mob_grinding_utils:saw_upgrade_smite"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -1.0d
+			description: [
+	"液体経験値が入ったシンギュラリティ タンクの側面に取り付けると、右クリックして液体経験値を経験値オーブとして放出することができます。"
+]
+			dependencies: ["13297FADD13D3A84"]
+			id: "05D2473CB1BE8F74"
+			tasks: [{
+				id: "3831E7F9D2D3C328"
+				type: "item"
+				item: "mob_grinding_utils:xp_tap"
+			}]
+			rewards: [{
+				id: "5072522799648740"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			description: [
+	"あらゆる液体を 32 バケツ収容できる液体タンク。タンクの上に立つプレイヤーから XP を吸収します。"
+]
+			dependencies: ["13297FADD13D3A84"]
+			id: "2507593830977B88"
+			tasks: [{
+				id: "35FED3BBF7D97C80"
+				type: "item"
+				item: "mob_grinding_utils:tank_sink"
+			}]
+			rewards: [{
+				id: "76EE22467DB34D0A"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			dependencies: ["2507593830977B88"]
+			id: "24CF73443031CEAE"
+			tasks: [{
+				id: "662970080B4A46A6"
+				type: "item"
+				item: "mob_grinding_utils:fluid_xp_bucket"
+			}]
+			rewards: [{
+				id: "240989BBE62F28C9"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: 0.5d
+			y: 5.5d
+			description: [
+	"光を通さないガラス。"
+]
+			id: "6A752619712F23A1"
+			tasks: [{
+				id: "276FF76F3017270F"
+				type: "item"
+				item: "mob_grinding_utils:tinted_glass"
+				count: 20L
+			}]
+			rewards: [{
+				id: "424F38E2AB526A5E"
+				type: "item"
+				item: "mob_grinding_utils:tinted_glass"
+				count: 10
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			description: [
+				"液体XPを固めます。"
+				"水槽にXP脱皮装置と液体XPが必要です。"
+			]
+			dependencies: ["13297FADD13D3A84"]
+			id: "1118F827D5CCFB65"
+			tasks: [
+				{
+					id: "06790125666758B9"
+					type: "item"
+					item: "mob_grinding_utils:xpsolidifier"
+				}
+				{
+					id: "2FF0D4B2FA227DEF"
+					type: "item"
+					item: "mob_grinding_utils:solid_xp_mould_baby"
+				}
+			]
+			rewards: [{
+				id: "71AA258B42612E50"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.0d
+			description: [
+				"一番上のスロットにMobの卵を使用します。"
+				"XPが豊富。「GMチキンフィード」で卵Mobを作成します。"
+			]
+			dependencies: ["1118F827D5CCFB65"]
+			id: "2EA3E6C82DA79317"
+			tasks: [
+				{
+					id: "6B0B7F43B5D8ECDF"
+					type: "item"
+					item: "mob_grinding_utils:entity_spawner"
+				}
+				{
+					id: "7E1AD08411DF73DD"
+					type: "item"
+					item: "mob_grinding_utils:mob_swab"
+				}
+			]
+			rewards: [{
+				id: "473184C6F03250B2"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: 0.5d
+			y: 3.5d
+			dependencies: ["22F42406271175A4"]
+			id: "7F60EE6788023C3D"
+			tasks: [{
+				id: "3FF41E69B4E04458"
+				type: "item"
+				item: "darkutils:vector_plate_fast"
+				count: 6L
+			}]
+			rewards: [{
+				id: "47078A64E6C7B9D5"
+				type: "item"
+				item: "darkutils:vector_plate_fast"
+				count: 6
+			}]
+		}
+		{
+			x: 0.5d
+			y: 4.5d
+			dependencies: ["7F60EE6788023C3D"]
+			id: "491DEEB61BD41BF3"
+			tasks: [{
+				id: "5817840148D45EE7"
+				type: "item"
+				item: "darkutils:vector_plate_extreme"
+				count: 6L
+			}]
+			rewards: [{
+				id: "4312BECE03FD77B2"
+				type: "item"
+				item: "darkutils:vector_plate_extreme"
+				count: 6
+			}]
+		}
+		{
+			x: 3.0d
+			y: 7.5d
+			description: [
+	"高さ修飾子は、プッシュ領域の高さを 1 ブロック増加させます。"
+]
+			dependencies: ["1FE3645BC1E7689F"]
+			id: "3945E3B110A6F485"
+			tasks: [{
+				id: "44D95A87429C7172"
+				type: "item"
+				item: "mob_grinding_utils:fan_upgrade_height"
+			}]
+			rewards: [{
+				id: "05BC0C475407AB16"
+				type: "item"
+				item: "mob_grinding_utils:fan_upgrade_height"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 6.5d
+			description: [
+	"エンダー インヒビターの 8 ブロック以内にエンティティがテレポートするのを防ぎます。"
+]
+			id: "02555AF2E23515B4"
+			tasks: [{
+				id: "638E03EE8470B439"
+				type: "item"
+				item: "mob_grinding_utils:ender_inhibitor_on"
+			}]
+			rewards: [{
+				id: "1E8239ED90C1D589"
+				type: "item"
+				item: "minecraft:ender_eye"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

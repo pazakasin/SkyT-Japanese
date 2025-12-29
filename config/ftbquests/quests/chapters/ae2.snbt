@@ -1,0 +1,986 @@
+{
+	id: "203A38ADE388ABA4"
+	group: "343D6547966CD25B"
+	order_index: 2
+	filename: "ae2"
+	title: "応用エネルギー学"
+	icon: "ae2:charger"
+	subtitle: [
+	"物流力"
+]
+	default_quest_shape: "square"
+	default_hide_dependency_lines: false
+	images: [{
+		x: 2.0d
+		y: -4.0d
+		width: 2.0d
+		height: 2.0d
+		rotation: 0.0d
+		image: "ae2:textures/item/spatial_storage_cell_2.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			x: -0.5d
+			y: 0.5d
+			description: [
+				"エネルギーアクセプターは外部システムからのエネルギーをAEに変換し、ネットワークに蓄えます。"
+				""
+				"エネルギーはエネルギーセルに蓄えられます。"
+			]
+			id: "5F28F4276293B62A"
+			tasks: [{
+				id: "0843BF4DAD2E46CC"
+				type: "item"
+				item: "ae2:energy_acceptor"
+			}]
+			rewards: [{
+				id: "1CB96D842D276831"
+				type: "item"
+				item: "ae2:sky_dust"
+				count: 8
+			}]
+		}
+		{
+			title: "MEターミナル"
+			x: -3.0d
+			y: -4.0d
+			description: [
+				"&6MEクラフトターミナル&fは、MEネットワークのネットワークストレージにアクセスできる統合クラフトグリッドを備えたMEターミナルのアップグレード版です。"
+				""
+				"&6アクセスターミナル&fを使用すると、プロバイダーにリモートアクセスできます。"
+				""
+				"&6パターンエンコーディングターミナル&fは、ブランクパターンをクラフトパターンまたは処理パターンにエンコードするために設計されたMEクラフトターミナルの特殊バージョンです。"
+			]
+			dependencies: ["6CA7490FD1CF4B9F"]
+			dependency_requirement: "one_started"
+			min_width: 300
+			id: "35D0F14A0009BD3D"
+			tasks: [
+				{
+					id: "06EE1E42BB775E68"
+					type: "item"
+					item: "ae2:crafting_terminal"
+				}
+				{
+					id: "18CE83EF5C673629"
+					type: "item"
+					item: "ae2:pattern_access_terminal"
+				}
+				{
+					id: "019110B51EDA8E33"
+					type: "item"
+					item: "ae2:pattern_encoding_terminal"
+				}
+			]
+			rewards: [{
+				id: "640264CEAE2C5DB9"
+				type: "item"
+				item: "ae2:crafting_terminal"
+			}]
+		}
+		{
+			title: "MEケーブル"
+			x: -4.0d
+			y: -4.0d
+			subtitle: "AE2ケーブル"
+			description: [
+	"ME ネットワークは隣接する ME 対応マシンによっても作成されますが、より広いエリアに ME ネットワークを拡張する主な方法はケーブルです。"
+]
+			dependencies: ["49B1C106C66A433B"]
+			id: "6CA7490FD1CF4B9F"
+			tasks: [{
+				id: "7892D24681BEDE38"
+				type: "item"
+				item: "ae2:fluix_glass_cable"
+				count: 4L
+			}]
+			rewards: [{
+				id: "6F039177B1235919"
+				type: "item"
+				item: "ae2:fluix_glass_cable"
+				count: 4
+			}]
+		}
+		{
+			icon: "ae2:inscriber"
+			x: -2.0d
+			y: -1.0d
+			subtitle: "最初のプロセッサ"
+			description: [
+				"インスクライバーは、様々なインスクライバープレートを使ってアイテムを刻印するために使用されます。"
+				""
+				"各操作には1k AEのチャージが必要です。"
+			]
+			dependencies: ["230A70729FC59E38"]
+			id: "6738E828DF19DB9A"
+			tasks: [
+				{
+					id: "5BB13A5E83413DE4"
+					type: "item"
+					item: "ae2:inscriber"
+				}
+				{
+					id: "654A9D2E843DB0D2"
+					type: "item"
+					item: "ae2:calculation_processor_press"
+				}
+				{
+					id: "3F86D47FB7525BBD"
+					type: "item"
+					item: "ae2:engineering_processor_press"
+				}
+				{
+					id: "277EA69913C57D11"
+					type: "item"
+					item: "ae2:logic_processor_press"
+				}
+				{
+					id: "4893B84E45C9FDC0"
+					type: "item"
+					item: "ae2:silicon_press"
+				}
+			]
+			rewards: [{
+				id: "1C8C5F4A1874A0FA"
+				type: "item"
+				item: "ae2:silicon"
+				count: 12
+			}]
+		}
+		{
+			x: 5.5d
+			y: -1.0d
+			subtitle: "特異点"
+			description: [
+	"いくつかの特異点と物質球を作成します。"
+]
+			dependencies: ["55698FC85740A683"]
+			id: "6836ADA29FFB9D84"
+			tasks: [{
+				id: "5928C651E3D2BFEE"
+				type: "item"
+				item: "ae2:condenser"
+			}]
+			rewards: [{
+				id: "3D01C7F529EBD56A"
+				type: "item"
+				item: "compressium:cobblestone_4"
+				count: 64
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.0d
+			subtitle: "安全でワイヤレス"
+			description: [
+	"MEシステムにおいて、どのユーザーがどのような権限を持つかを設定できます。この設定により、システムの使用に関する権限が強制されます。"
+]
+			dependencies: ["55698FC85740A683"]
+			id: "156877F37656FAFE"
+			tasks: [{
+				id: "58AE828A0DE58D46"
+				type: "item"
+				item: "ae2:security_station"
+			}]
+			rewards: [{
+				id: "3D3DAA6FBC61C14B"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.0d
+			description: [
+	"「6ワイヤレスターミナル」を介したワイヤレスアクセスを可能にします。範囲と消費電力は、「6MEワイヤレスアクセスポイント」にインストールされているワイヤレスブースターの数によって決まります。"
+]
+			dependencies: ["156877F37656FAFE"]
+			id: "32AE59E8B7ECBEFE"
+			tasks: [
+				{
+					id: "4191C080658E4BBA"
+					type: "item"
+					item: "ae2:wireless_access_point"
+				}
+				{
+					id: "00B7542BA6F4A76E"
+					type: "item"
+					item: "ae2:wireless_booster"
+				}
+			]
+			rewards: [{
+				id: "14EDC8BA0EA544C8"
+				type: "item"
+				item: "ae2:wireless_booster"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.0d
+			subtitle: "Bluetoothクラフト"
+			dependencies: ["32AE59E8B7ECBEFE"]
+			id: "1B9BE928AEC4A99F"
+			tasks: [{
+				id: "5160B9D9CB4A12D9"
+				type: "item"
+				item: "ae2:wireless_crafting_terminal"
+			}]
+			rewards: [{
+				id: "07BC961C3210CD1C"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.0d
+			subtitle: "3 in 1端末"
+			dependencies: ["1B9BE928AEC4A99F"]
+			id: "3DA03BC8BE46B8A8"
+			tasks: [{
+				id: "7A2763DF349919C5"
+				type: "item"
+				item: "ae2wtlib:wireless_universal_terminal"
+			}]
+			rewards: [{
+				id: "4E6DE34B61DF5A11"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -6.0d
+			y: 0.5d
+			description: [
+	"これは、ME ネットワークに接続されているすべてのブロックと、システムの電力使用量を表示するために使用されます。"
+]
+			id: "0D2C658BF3205296"
+			tasks: [{
+				id: "72BCB302DF5CC06B"
+				type: "item"
+				item: "ae2:network_tool"
+			}]
+			rewards: [{
+				id: "74163E033429627A"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.5d
+			subtitle: "高度なアップグレード"
+			dependencies: ["6738E828DF19DB9A"]
+			id: "4D271A4F64ADFC0E"
+			tasks: [{
+				id: "5D30FA7D7B9540BE"
+				type: "item"
+				item: "ae2:advanced_card"
+				count: 2L
+			}]
+			rewards: [{
+				id: "25B147C8F4C0E3AB"
+				type: "item"
+				item: "ae2:advanced_card"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.5d
+			subtitle: "基本的なアップグレード"
+			dependencies: ["6738E828DF19DB9A"]
+			id: "7235A52CC8228B53"
+			tasks: [{
+				id: "364A051626AC7770"
+				type: "item"
+				item: "ae2:basic_card"
+				count: 2L
+			}]
+			rewards: [{
+				id: "374A23111F9260E1"
+				type: "item"
+				item: "ae2:basic_card"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -1.0d
+			subtitle: "AE2のI/O"
+			description: [
+	"これにより、ME ネットワークは機械、輸送パイプ、チューブと対話できるようになります。"
+]
+			dependencies: ["55698FC85740A683"]
+			id: "07EAF9696728AB33"
+			tasks: [{
+				id: "226D4F4D98A03A66"
+				type: "item"
+				item: "ae2:interface"
+			}]
+			rewards: [{
+				id: "0AB0828732C43C80"
+				type: "item"
+				item: "ae2:interface"
+			}]
+		}
+		{
+			title: "オートクラフト"
+			x: 3.0d
+			y: 1.0d
+			description: [
+				"パターンプロバイダーは、分子アセンブラーと組み合わせて使用することで、3x3の自動クラフトシステムを構築できます。"
+				"また、マシンと組み合わせて自動処理システムを構築することもできます。"
+			]
+			dependencies: ["07EAF9696728AB33"]
+			id: "65B227C01B0242F6"
+			tasks: [
+				{
+					id: "23092C30A5ABD2D0"
+					type: "item"
+					item: "ae2:molecular_assembler"
+				}
+				{
+					id: "4B4751A060DA771B"
+					type: "item"
+					item: "ae2:pattern_provider"
+				}
+				{
+					id: "66D3AC8846443899"
+					type: "item"
+					item: "ae2:blank_pattern"
+				}
+			]
+			rewards: [{
+				id: "2E6D394AA1A176CA"
+				type: "item"
+				item: "ae2:blank_pattern"
+			}]
+		}
+		{
+			title: "バス"
+			x: -2.0d
+			y: -3.0d
+			description: [
+				"&6エクスポートバスは、MEネットワークから接続されたインベントリにアイテムをエクスポートします。"
+				""
+				"&6インポートバスは、接続されたインベントリからMEネットワークにアイテムをインポートします。"
+				""
+				"&6MEストレージバスは、MEネットワークからApplied Energistics以外のインベントリにアクセスできるようにします。"
+			]
+			dependencies: ["6738E828DF19DB9A"]
+			min_width: 250
+			id: "24D9F7BD53735A9D"
+			tasks: [
+				{
+					id: "79D61048C44A2B57"
+					type: "item"
+					item: "ae2:export_bus"
+				}
+				{
+					id: "65D3CA09ECA80043"
+					type: "item"
+					item: "ae2:import_bus"
+				}
+				{
+					id: "47B05B44FD7CE9C1"
+					type: "item"
+					item: "ae2:storage_bus"
+				}
+			]
+			rewards: [
+				{
+					id: "117F6650E5A5472B"
+					type: "item"
+					item: "ae2:export_bus"
+				}
+				{
+					id: "22BD04B6D9B4EC00"
+					type: "item"
+					item: "ae2:import_bus"
+				}
+				{
+					id: "0D3E8B72ADA285BD"
+					type: "item"
+					item: "ae2:storage_bus"
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			subtitle: "1k"
+			dependencies: ["658608ECDD116644"]
+			id: "07000CB779D00E46"
+			tasks: [{
+				id: "34EB595BF3F85E2B"
+				type: "item"
+				item: "ae2:cell_component_1k"
+			}]
+			rewards: [{
+				id: "737D3EB9C5BEF26C"
+				type: "item"
+				item: "ae2:cell_component_1k"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.0d
+			subtitle: "256k"
+			dependencies: ["07000CB779D00E46"]
+			id: "6096643AEA4C22EC"
+			tasks: [{
+				id: "41F0C99954471AA2"
+				type: "item"
+				item: "ae2:cell_component_256k"
+			}]
+			rewards: [{
+				id: "511AE3409F2CA8E3"
+				type: "item"
+				item: "ae2:cell_component_256k"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			subtitle: "256M"
+			dependencies: ["6096643AEA4C22EC"]
+			id: "10E1BB3A6449A23E"
+			tasks: [{
+				id: "091ABB113B32D74B"
+				type: "item"
+				item: "megacells:cell_component_256m"
+			}]
+			rewards: [{
+				id: "392747FAF4492559"
+				type: "item"
+				item: "megacells:cell_component_256m"
+			}]
+		}
+		{
+			title: "クラフトCPU"
+			x: 3.0d
+			y: 0.0d
+			description: [
+				"マルチブロック構成のクラフトCPUは、構造全体に必要なチャネルは1つだけです。クラフトコプロセッサは、クラフトCPUが一度に実行できるタスク数を増加させます。コプロセッサがない場合、クラフトCPUは一度に1つのタスクしか実行できません。ストレージ要件はやや複雑で、通常のMEストレージの計算には従いませんが、概算として、入力項目、出力項目、または操作ごとに1バイト強が必要になります。"
+				""
+				"有効なクラフトCPUとなるには、以下の2つのルールを満たす必要があります。"
+				"&l1&r CPUは直方体で、上記のパーツのみで構成されている必要があります。空気やその他のブロックは無効です。"
+				"&l2&r CPUには少なくとも1つのクラフトストレージが必要です。"
+			]
+			dependencies: ["07EAF9696728AB33"]
+			min_width: 300
+			id: "2D07FDBA78A3FCDB"
+			tasks: [
+				{
+					id: "4A8DF954F23C63C9"
+					type: "item"
+					item: "ae2:crafting_accelerator"
+				}
+				{
+					id: "320ED5DE7884C935"
+					type: "item"
+					item: "ae2:1k_crafting_storage"
+				}
+			]
+			rewards: [
+				{
+					id: "6DF0D96D503ED05E"
+					type: "item"
+					item: "ae2:crafting_accelerator"
+				}
+				{
+					id: "0C3E5378E3A8FA5A"
+					type: "item"
+					item: "ae2:4k_crafting_storage"
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: -1.0d
+			description: [
+				"&6MEドライブ&fは、ストレージセルの保存のみを目的として設計されたブロックです。このブロックは10個のストレージセルを収容できるため、非常に小さなスペースにストレージをぎっしり詰め込むことができます。"
+				""
+				"MEドライブは、ドライブ前面にストレージセルの内容と状態を表示します。"
+				"&4赤&f - ストレージセルが満杯であることを示します。"
+				"&6オレンジ&f - ストレージセルはこれ以上の種類を収容できませんが、アイテムは収容できます。"
+				"&2緑&f - セルはさらに多くの種類またはアイテムを収容できます。"
+				"黒 - チャンネルがないか、電源がオフラインであることを示します。"
+				""
+				"&oMEネットワークがない場合、このブロックは何も機能しないことに注意してください。アイテムの入出力手段と組み合わせた場合にのみ有効であり、機能するには2 AE/tの電力と、内部に収容されているストレージセルごとに追加の電力が必要です。"
+			]
+			dependencies: ["55698FC85740A683"]
+			min_width: 300
+			id: "658608ECDD116644"
+			tasks: [{
+				id: "050E626BBB3848F4"
+				type: "item"
+				item: "ae2:drive"
+			}]
+			rewards: [{
+				id: "4A4EA28A03312D42"
+				type: "item"
+				item: "ae2:drive"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -5.0d
+			description: [
+	"Certus Quartz Seeds、Nether Quartz Seeds、Fluix Seeds を水に落とさずに成長させるために使用されます。"
+]
+			dependencies: ["6CA7490FD1CF4B9F"]
+			dependency_requirement: "one_started"
+			id: "5EAED3B5D5AB242A"
+			tasks: [{
+				id: "3E5E190CB27469EF"
+				type: "item"
+				item: "ae2things:crystal_growth"
+			}]
+			rewards: [{
+				id: "4F15426BC566FB12"
+				type: "item"
+				item: "ae2:fluix_block"
+				count: 4
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.0d
+			subtitle: "20万"
+			description: [
+				"AEエネルギーを蓄えます。"
+				""
+				"直接電力を受け取るのではなく、既存のMEネットワークに追加の電力貯蔵機能を追加するために使用されます。"
+			]
+			dependencies: [
+				"6738E828DF19DB9A"
+				"5F28F4276293B62A"
+			]
+			id: "55698FC85740A683"
+			tasks: [{
+				id: "1C58E6FA1D8B53FA"
+				type: "item"
+				item: {
+					id: "ae2:energy_cell"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "17D96F95CB316A29"
+				type: "item"
+				item: "ae2:fluix_dust"
+				count: 4
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.0d
+			subtitle: "160万"
+			dependencies: ["55698FC85740A683"]
+			id: "75FBE8CD8DFE86C4"
+			tasks: [{
+				id: "415546D93504E9D8"
+				type: "item"
+				item: {
+					id: "ae2:dense_energy_cell"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "4EAEA6DF7DE78437"
+				type: "item"
+				item: "ae2:fluix_dust"
+				count: 16
+			}]
+		}
+		{
+			x: -0.5d
+			y: -3.0d
+			subtitle: "1280万"
+			dependencies: ["75FBE8CD8DFE86C4"]
+			id: "133050F8B4ACE9EB"
+			tasks: [{
+				id: "5801B3C797E046A1"
+				type: "item"
+				item: {
+					id: "megacells:mega_energy_cell"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "1A1660CEDB724CDD"
+				type: "item"
+				item: "ae2:fluix_dust"
+				count: 32
+			}]
+		}
+		{
+			title: "量子転送"
+			x: 5.5d
+			y: -2.0d
+			description: [
+				"&6量子リング"
+				"これらのブロックをME量子リンクチャンバーの周囲に8つ配置すると、&o量子ネットワークブリッジ&rが作成されます。ME量子リンクチャンバーに隣接する4つのME量子リングブロックのみがネットワーク接続を受け入れ、4つの角のブロックはケーブルに接続できません。"
+				""
+				"&6量子リンクチャンバー"
+				"ME量子リングに囲まれたこれらのブロックの1つが&o量子ネットワークブリッジ&rを作成します。このブロックはケーブルに接続せず、完全なブリッジが構築された場合にのみネットワークの一部として登録されます。"
+				""
+				"&6量子もつれ特異点"
+				"&o量子ネットワークブリッジ&r間の接続を作成するために必要なもので、常に一致するペアで生成されます。接続を作成するには、量子もつれ特異点のペアの1つをブリッジの両側のME量子リンクチャンバーに配置します。"
+			]
+			dependencies: [
+				"75FBE8CD8DFE86C4"
+				"6836ADA29FFB9D84"
+			]
+			min_width: 300
+			id: "52C487856A791420"
+			tasks: [
+				{
+					id: "0DFA52CE9E907C52"
+					type: "item"
+					item: "ae2:quantum_ring"
+					count: 8L
+				}
+				{
+					id: "4D0566079E2BAEE5"
+					type: "item"
+					item: "ae2:quantum_link"
+				}
+				{
+					id: "6FD1BCFA761446D3"
+					type: "item"
+					item: "ae2:quantum_entangled_singularity"
+				}
+			]
+			rewards: [{
+				id: "48E9A8A417BBBAEE"
+				type: "item"
+				item: "ae2:quantum_ring"
+				count: 4
+			}]
+		}
+		{
+			x: 7.0d
+			y: -1.0d
+			dependencies: ["6836ADA29FFB9D84"]
+			id: "146C1DF09C248574"
+			tasks: [{
+				id: "4C711CC6D7695C32"
+				type: "item"
+				item: "lazierae2:infuser"
+			}]
+			rewards: [{
+				id: "039048377D69ECDB"
+				type: "item"
+				item: "ae2:singularity"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -1.0d
+			description: [
+	"Lazier AE2 のベースインゴット。"
+]
+			dependencies: ["146C1DF09C248574"]
+			id: "0C6424E57F1DF62E"
+			tasks: [{
+				id: "464F00B1762DBBC2"
+				type: "item"
+				item: "lazierae2:fluix_steel_ingot"
+			}]
+			rewards: [{
+				id: "0165B746018CC96A"
+				type: "item"
+				item: "lazierae2:fluix_steel_ingot"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 0.5d
+			description: [
+	"より優れた結晶成長チャンバー。"
+]
+			dependencies: ["0C6424E57F1DF62E"]
+			id: "423D5CA09773230F"
+			tasks: [{
+				id: "5EAD3985644316C0"
+				type: "item"
+				item: "lazierae2:aggregator"
+			}]
+			rewards: [{
+				id: "4478139C95FF7CD9"
+				type: "item"
+				item: "lazierae2:logic_unit"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -2.5d
+			subtitle: "AE2クラッシャー"
+			dependencies: ["0C6424E57F1DF62E"]
+			id: "2D4709004BDB1279"
+			tasks: [{
+				id: "3C014853F1E6D148"
+				type: "item"
+				item: "lazierae2:grinder"
+			}]
+			rewards: [{
+				id: "5DE55772742798CE"
+				type: "item"
+				item: "minecraft:wheat"
+				count: 32
+			}]
+		}
+		{
+			x: 8.5d
+			y: 0.5d
+			description: [
+				"MEリクエスターは、動作するためにMEネットワークに接続する必要があるブロックです。"
+				"最大6種類のアイテムを在庫として保持することを目的としています。"
+				""
+				"右クリックすると設定GUIが開きます。必要な情報はすべてGUIで説明されています。"
+				""
+				"&oA ヒント: 現在所持していない特定のアイテムを設定したい場合は、JEIページから該当するアイテムをドラッグ＆ドロップすることもできます。"
+			]
+			dependencies: ["0C6424E57F1DF62E"]
+			min_width: 300
+			id: "63CCDFD54138A913"
+			tasks: [{
+				id: "72CCD4826F80AD75"
+				type: "item"
+				item: "lazierae2:requester"
+			}]
+			rewards: [{
+				id: "6C59CDB685C94B05"
+				type: "item"
+				item: "lazierae2:parallel_processor"
+				count: 2
+			}]
+		}
+		{
+			x: -4.0d
+			y: 0.5d
+			description: [
+	"テスラコイルの下に&6Depot&fを設置してアイテムを充電しましょう！"
+]
+			id: "25BF2F9A4BFF3B20"
+			tasks: [{
+				id: "2720B5BD7DDC3D68"
+				type: "item"
+				item: "createaddition:tesla_coil"
+			}]
+			rewards: [{
+				id: "3052E636150297C0"
+				type: "item"
+				item: "create:electron_tube"
+				count: 2
+			}]
+		}
+		{
+			x: -4.0d
+			y: -1.0d
+			description: [
+	"&6Tesla Coil&f または &6Charger&f を使用して Certus Quartz を充電します。"
+]
+			dependencies: [
+				"25BF2F9A4BFF3B20"
+				"08F57D79408399F0"
+			]
+			dependency_requirement: "one_completed"
+			id: "230A70729FC59E38"
+			tasks: [{
+				id: "23510B9A3E21A0C7"
+				type: "item"
+				item: "ae2:charged_certus_quartz_crystal"
+			}]
+			rewards: [{
+				id: "650CDA1BA12271AF"
+				type: "item"
+				item: "ae2:charged_certus_quartz_crystal"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.0d
+			subtitle: "システムの心臓部"
+			description: [
+				"デフォルトでは、&6ae2 チャンネルは無効になっています。つまり、理論上はコントローラーは必要なく、ケーブル1本あたり無制限の数のチャンネルを伝送できます。"
+				""
+				"ケーブル1本あたりのチャンネル数を変更したい場合は、以下のコマンドを使用してください。"
+				"&o/ae2 channelmode *yourChannelMode*"
+			]
+			dependencies: ["6738E828DF19DB9A"]
+			optional: true
+			min_width: 250
+			id: "006C386AB1E79234"
+			tasks: [{
+				id: "2F07D64AD1D58020"
+				type: "item"
+				item: "ae2:controller"
+			}]
+			rewards: [{
+				id: "51D71AC4F75C6482"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -6.0d
+			y: -0.5d
+			description: [
+	"Certus Quartz Wrench は、ME ケーブル、ターミナル、ME ネットワークで使用されるその他のデバイスなどのアイテムを Applied Energistics 2 から適切に回復できる数少ないツールの 1 つです。これらを壊すと、アイテムが返されません。"
+]
+			id: "72F43DC4861096F9"
+			tasks: [{
+				id: "1CFA9B88A8FC70A4"
+				type: "item"
+				item: "ae2:certus_quartz_wrench"
+			}]
+			rewards: [{
+				id: "6E2F401C511C3DBF"
+				type: "item"
+				item: "ae2:nether_quartz_wrench"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -2.5d
+			subtitle: "人生を変える"
+			description: [
+	"すべて1を押します。"
+]
+			dependencies: ["0C6424E57F1DF62E"]
+			id: "078D14067C9BDC7A"
+			tasks: [{
+				id: "58E5FA3CD6B2779F"
+				type: "item"
+				item: "lazierae2:universal_press"
+			}]
+			rewards: [{
+				id: "30822DA1C49597FD"
+				type: "item"
+				item: "lazierae2:universal_press"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -3.5d
+			description: [
+	"プロセッサを作成するためのより良い方法。"
+]
+			dependencies: ["078D14067C9BDC7A"]
+			id: "5E9400CD48DA1221"
+			tasks: [{
+				id: "737F850D5AC41135"
+				type: "item"
+				item: "lazierae2:etcher"
+			}]
+			rewards: [{
+				id: "44DEF83052FFCA61"
+				type: "item"
+				item: "lazierae2:logic_unit"
+			}]
+		}
+		{
+			x: -6.25d
+			y: -2.5d
+			shape: "octagon"
+			subtitle: "基本要素を備えたAE2システムの例"
+			description: ["{image:ftbquests:textures/3d-ae2.png width:200 height:135 align:1}"]
+			size: 1.25d
+			id: "65EEF2C6EBE8B2B2"
+			tasks: [{
+				id: "511F8ECB7647D70D"
+				type: "checkmark"
+				title: "例"
+			}]
+			rewards: [{
+				id: "21E9B934C563F105"
+				type: "item"
+				item: "ae2:certus_quartz_dust"
+				count: 16
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			subtitle: "次元を超えて"
+			description: [
+	"ワイヤレス ターミナルにインストールすると、アクセス距離とクロス サイズが無制限になります。"
+]
+			dependencies: ["32AE59E8B7ECBEFE"]
+			id: "43CE151A478A393C"
+			tasks: [{
+				id: "385B4D5A43D43DA5"
+				type: "item"
+				item: "ae2wtlib:infinity_booster_card"
+			}]
+			rewards: [{
+				id: "1F795EA91F60C18B"
+				type: "item"
+				item: "ae2wtlib:infinity_booster_card"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -2.5d
+			description: [
+	"アイテムを充電します。"
+]
+			id: "08F57D79408399F0"
+			tasks: [{
+				id: "7500D23970156457"
+				type: "item"
+				item: "ae2:charger"
+			}]
+			rewards: [{
+				id: "5E0B278E9B932B69"
+				type: "item"
+				item: "ae2:fluix_crystal"
+				count: 2
+			}]
+		}
+		{
+			x: -5.0d
+			y: -4.0d
+			description: [
+	"この機械はあらゆる種類の流体ケーブルを製造するために使用されます。"
+]
+			id: "49B1C106C66A433B"
+			tasks: [
+				{
+					id: "263605E02BEF64F9"
+					type: "advancement"
+					title: "パイプアセンブラー"
+					icon: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "custommachinery:pipe_assembler"
+						}
+					}
+					advancement: "custommachinery:pipe_assembler"
+					criterion: ""
+				}
+				{
+					id: "5E4288270B3B0291"
+					type: "item"
+					item: "kubejs:applied_pattern"
+				}
+			]
+			rewards: [{
+				id: "0F2F8A8A316F7BB5"
+				type: "item"
+				item: "minecraft:quartz_block"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

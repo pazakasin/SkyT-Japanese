@@ -1,0 +1,1128 @@
+{
+	id: "65ECBDBE09AEF0EF"
+	group: "3D109918D62355FC"
+	order_index: 0
+	filename: "revive"
+	title: "復活"
+	icon: "ore_tree:diamond_tree_sapling"
+	subtitle: [
+	"どこかから始めなければならない"
+]
+	default_quest_shape: "rsquare"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "&2エメラルド&f木の苗木"
+			x: 6.0d
+			y: -1.0d
+			subtitle: "&2エメラルドを生産する"
+			dependencies: ["235117F21EC8C7C5"]
+			id: "2F4A32E40566DBE0"
+			tasks: [{
+				id: "51270791BB205093"
+				type: "item"
+				item: "ore_tree:emerald_tree_sapling"
+			}]
+			rewards: [{
+				id: "2C7A855AC872BDB5"
+				type: "item"
+				item: "ore_tree:emerald_tree_sapling"
+			}]
+		}
+		{
+			title: "&6銅&f木の苗木"
+			x: 0.5d
+			y: 1.0d
+			subtitle: "&6Copperを生産する"
+			dependencies: [
+				"29CC62F9C09ED204"
+				"197619BD134C6EA3"
+			]
+			id: "43CF7230647E9405"
+			tasks: [{
+				id: "0E8A29EEADA43A10"
+				type: "item"
+				item: "ore_tree:copper_tree_sapling"
+			}]
+			rewards: [
+				{
+					id: "4352F1163D16ABDD"
+					type: "item"
+					item: "ore_tree:copper_tree_sapling"
+				}
+				{
+					id: "108742682368C37D"
+					type: "item"
+					item: "createcafe:blood_orange_milk_tea"
+				}
+			]
+		}
+		{
+			title: "&7鉄&f木の苗木"
+			x: 0.5d
+			y: 0.0d
+			subtitle: "&7Ironを生産する"
+			dependencies: [
+				"29CC62F9C09ED204"
+				"1B868498E6D757CD"
+			]
+			id: "3466E13BC2D79F37"
+			tasks: [{
+				id: "1FE51F7A5DF70A55"
+				type: "item"
+				item: "ore_tree:iron_tree_sapling"
+			}]
+			rewards: [{
+				id: "6C575C9B660BBA95"
+				type: "item"
+				item: "ore_tree:iron_tree_sapling"
+			}]
+		}
+		{
+			title: "&6ゴールド&f木の苗木"
+			x: 2.5d
+			y: 0.0d
+			subtitle: "&6ゴールドを生産する"
+			dependencies: [
+				"3466E13BC2D79F37"
+				"5AC16CB2BB39888F"
+			]
+			id: "48E35D4BFD8C70A3"
+			tasks: [{
+				id: "3D932C90338B1A63"
+				type: "item"
+				item: "ore_tree:gold_tree_sapling"
+			}]
+			rewards: [{
+				id: "6F22DA7961C21060"
+				type: "item"
+				item: "ore_tree:gold_tree_sapling"
+			}]
+		}
+		{
+			title: "&4レッドストーン &f木の苗木"
+			x: 3.0d
+			y: 1.0d
+			subtitle: "&4Redstoneを生産する"
+			dependencies: [
+				"48E35D4BFD8C70A3"
+				"0D0280C359CEDC1A"
+			]
+			id: "0AD8C2711CB001E2"
+			tasks: [{
+				id: "07930DADC348CBCE"
+				type: "item"
+				item: "ore_tree:redstone_tree_sapling"
+			}]
+			rewards: [{
+				id: "2DF05ADF78C8FE0F"
+				type: "item"
+				item: "ore_tree:redstone_tree_sapling"
+			}]
+		}
+		{
+			title: "&9ラピスラズリの苗木"
+			x: 2.0d
+			y: 1.0d
+			subtitle: "&9Lapisを制作する"
+			dependencies: [
+				"48E35D4BFD8C70A3"
+				"77659DACC53F7828"
+			]
+			id: "0F3400AE7D501158"
+			tasks: [{
+				id: "2BD6E65191C9935C"
+				type: "item"
+				item: "ore_tree:lapis_tree_sapling"
+			}]
+			rewards: [{
+				id: "754D94F6C579FF0D"
+				type: "item"
+				item: "ore_tree:lapis_tree_sapling"
+			}]
+		}
+		{
+			title: "&3ダイヤモンド&f木の苗木"
+			x: 4.5d
+			y: -1.0d
+			subtitle: "&3Diamondsを生産する"
+			dependencies: ["193F6D18024838BB"]
+			id: "235117F21EC8C7C5"
+			tasks: [{
+				id: "4AC4E479612F47F7"
+				type: "item"
+				item: "ore_tree:diamond_tree_sapling"
+			}]
+			rewards: [{
+				id: "1AA7B648351D36BF"
+				type: "item"
+				item: "ore_tree:diamond_tree_sapling"
+			}]
+		}
+		{
+			title: "&8石炭 &f木の苗木"
+			x: -1.0d
+			y: 0.5d
+			subtitle: "&8Coalを生産する"
+			description: [
+				"鉱石の木の特徴は、丸太を調理することで資源を採取できることです。"
+				""
+				"生産を自動化するには、&6盆栽ポット&fを使用する必要があります。"
+				"&o盆栽ポット&rで鉱石の木を育てるには、&6粗い土&fまたは鉱石を使用してください。"
+				""
+				"&o成長速度を上げるために、連続スニークを使用することはできません。"
+			]
+			dependencies: [
+				"1C73CD07FDFD56F9"
+				"4387137EAD8DDCDB"
+			]
+			min_width: 250
+			id: "29CC62F9C09ED204"
+			tasks: [{
+				id: "6AB2FCD70E17B2CB"
+				type: "item"
+				item: "ore_tree:coal_tree_sapling"
+			}]
+			rewards: [{
+				id: "6870594ADB537C71"
+				type: "item"
+				item: "ore_tree:coal_tree_sapling"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 1.0d
+			subtitle: "クォーツを生産する"
+			dependencies: ["13C5D074F363BA15"]
+			id: "30286193AE197009"
+			tasks: [{
+				id: "37706975C94E29C7"
+				type: "item"
+				item: "ore_tree:quartz_tree_sapling"
+			}]
+			rewards: [{
+				id: "7857370036481A4F"
+				type: "item"
+				item: "ore_tree:quartz_tree_sapling"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -0.75d
+			description: [
+	"スカイストーン ブロックを Shift キーを押しながら右クリックして、小石を回収します。"
+]
+			id: "4027596757201F43"
+			tasks: [{
+				id: "74A704A024ECF7CF"
+				type: "item"
+				item: "exnihilosequentia:stone_pebble"
+				count: 32L
+			}]
+			rewards: [{
+				id: "2A6AA6A1DE9FCF46"
+				type: "item"
+				item: "exnihilosequentia:stone_pebble"
+				count: 16
+			}]
+		}
+		{
+			x: -5.0d
+			y: 4.0d
+			description: [
+	"木を切って丸太を回収します。"
+]
+			id: "0689F6F9361F7DF4"
+			tasks: [{
+				id: "123FA117EC3F4373"
+				type: "item"
+				item: "minecraft:oak_log"
+				count: 5L
+			}]
+			rewards: [{
+				id: "2053F7F28E45CED3"
+				type: "item"
+				item: "minecraft:oak_sapling"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 0.5d
+			dependencies: [
+				"193915C20D0435A3"
+				"4027596757201F43"
+			]
+			id: "5223C4DABD7D88DE"
+			tasks: [{
+				id: "3D5541F8AD627FC5"
+				type: "item"
+				item: "minecraft:furnace"
+			}]
+			rewards: [{
+				id: "08E5E80D6B251637"
+				type: "item"
+				item: "minecraft:furnace"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.5d
+			dependencies: ["5223C4DABD7D88DE"]
+			id: "1C73CD07FDFD56F9"
+			tasks: [{
+				id: "23D06CA62302F3CC"
+				type: "item"
+				item: "minecraft:charcoal"
+				count: 3L
+			}]
+			rewards: [{
+				id: "2E4BC43A0E574126"
+				type: "item"
+				item: "minecraft:charcoal"
+				count: 3
+			}]
+		}
+		{
+			x: -3.5d
+			y: 4.0d
+			dependencies: ["0689F6F9361F7DF4"]
+			id: "193915C20D0435A3"
+			tasks: [{
+				id: "7D275AE6C4ACDCCE"
+				type: "item"
+				item: "minecraft:crafting_table"
+			}]
+			rewards: [{
+				id: "13ED2F3FDD97CDBD"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: -1.0d
+			y: -0.5d
+			description: [
+				"苗木の近くでスニークを繰り返すと、苗木の成長が早くなります。バニラの作物にも効果があります。"
+				""
+				"鉱石の木には効果がありません。"
+			]
+			id: "4387137EAD8DDCDB"
+			tasks: [{
+				id: "2D04E923981A5015"
+				type: "item"
+				item: "minecraft:oak_sapling"
+			}]
+			rewards: [{
+				id: "6BD7DFFA8100551A"
+				type: "item"
+				item: {
+					id: "minecraft:leather_boots"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: 2.0d
+			description: [
+	"土の上に植えます。"
+]
+			dependencies: [
+				"012B5CD071DFE2C8"
+				"05D3E57EC27AA085"
+				"488140868C963498"
+			]
+			id: "197619BD134C6EA3"
+			tasks: [{
+				id: "427092CFF96948D1"
+				type: "item"
+				item: "exnihilosequentia:acacia_seeds"
+			}]
+			rewards: [{
+				id: "170D07DBBFA8C728"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: -1.0d
+			y: 4.0d
+			description: [
+				"塵、砂、その他様々なブロックをふるいにかけて、様々な戦利品を手に入れましょう。"
+				""
+				"動作させるにはメッシュが必要です。"
+				""
+				"&o複数のふるいを隣り合わせに設置すれば、同時に使用できます。最大5x5のタイルまで使用できます。"
+			]
+			dependencies: ["193915C20D0435A3"]
+			id: "488140868C963498"
+			tasks: [{
+				id: "483EC4E95A7D36B9"
+				type: "item"
+				item: "exnihilosequentia:oak_sieve"
+			}]
+			rewards: [{
+				id: "4A678ED3B1AF665E"
+				type: "item"
+				item: "exnihilosequentia:oak_sieve"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 3.0d
+			id: "012B5CD071DFE2C8"
+			tasks: [{
+				id: "29123D98C85A6F99"
+				type: "item"
+				item: "minecraft:dirt"
+				count: 4L
+			}]
+			rewards: [{
+				id: "4B9A2A704C19349F"
+				type: "item"
+				item: "minecraft:dirt"
+				count: 8
+			}]
+		}
+		{
+			x: -3.5d
+			y: 2.0d
+			description: [
+	"詐欺師は葉を破壊することで苗木、リンゴ、カイコを手に入れることができます。"
+]
+			dependencies: ["193915C20D0435A3"]
+			id: "100C024318E54D48"
+			tasks: [{
+				id: "106166076700477A"
+				type: "item"
+				item: {
+					id: "exnihilosequentia:wooden_crook"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "46B3E73FAD38F888"
+				type: "item"
+				item: {
+					id: "exnihilosequentia:wooden_crook"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.0d
+			description: [
+				"ふるい分けに必須のアイテムです。"
+				"改良することでドロップ率を上げることができます。"
+			]
+			dependencies: ["43A67D205011B452"]
+			id: "05D3E57EC27AA085"
+			tasks: [{
+				id: "406F364C724B94D5"
+				type: "item"
+				item: "exnihilosequentia:string_mesh"
+			}]
+			rewards: [{
+				id: "425FE2799FDDB79B"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			description: [
+	"この次元では、あなたの進歩に必要なすべての鉱物とブロックが見つかります。"
+]
+			dependencies: ["48E35D4BFD8C70A3"]
+			id: "193F6D18024838BB"
+			tasks: [{
+				id: "4D4B510D077E4D01"
+				type: "item"
+				item: "mining_dimension:teleporter"
+			}]
+			rewards: [{
+				id: "3951348CF9CEED38"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 1s
+							id: "minecraft:silk_touch"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: -3.0d
+			description: [
+	"水と塵から粘土を生成します。"
+]
+			dependencies: [
+				"03B24D92F0686107"
+				"1B0A364BF80B7662"
+				"4165E7E27DEFD854"
+			]
+			id: "1B868498E6D757CD"
+			tasks: [{
+				id: "334B138D6264D6EC"
+				type: "item"
+				item: "minecraft:clay"
+				count: 4L
+			}]
+			rewards: [{
+				id: "4348572EDB686831"
+				type: "item"
+				item: "minecraft:clay"
+				count: 2
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.0d
+			dependencies: ["0E77C1B61F109AC8"]
+			id: "03B24D92F0686107"
+			tasks: [{
+				id: "0658008995DDE81F"
+				type: "item"
+				item: "exnihilosequentia:dust"
+				count: 8L
+			}]
+			rewards: [{
+				id: "30B11B7B073E291C"
+				type: "item"
+				item: "exnihilosequentia:dust"
+				count: 16
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.0d
+			description: [
+	"ほこりをふるいにかけて取り出します。"
+]
+			dependencies: ["03B24D92F0686107"]
+			id: "5AC16CB2BB39888F"
+			tasks: [{
+				id: "3ED69D009A72EBA6"
+				type: "item"
+				item: "minecraft:blaze_powder"
+				count: 2L
+			}]
+			rewards: [{
+				id: "5A19E7AED28A4C6B"
+				type: "item"
+				item: "minecraft:blaze_powder"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -4.0d
+			description: [
+	"この樽は土を分解するのにも使えますが、主な用途は液体をブロックと混ぜることです。"
+]
+			hide_dependency_lines: true
+			dependencies: ["193915C20D0435A3"]
+			id: "4165E7E27DEFD854"
+			tasks: [{
+				id: "03EB572CDBA7A74C"
+				type: "item"
+				item: "exnihilosequentia:oak_barrel"
+			}]
+			rewards: [{
+				id: "5A59F4B458043DB0"
+				type: "item"
+				item: "exnihilosequentia:oak_barrel"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -3.0d
+			description: [
+				"苗木や葉から「水」を生成します。"
+				""
+				"たいまつやキャンプファイヤーなどの熱源を下に用意する必要があります。"
+			]
+			dependencies: ["193915C20D0435A3"]
+			id: "39C9EBAD077A2832"
+			tasks: [{
+				id: "21438331B65B510B"
+				type: "item"
+				item: "exnihilosequentia:oak_crucible"
+			}]
+			rewards: [{
+				id: "2D7F74B9E76CC9A5"
+				type: "item"
+				item: "ceramics:unfired_clay_bucket"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -3.0d
+			dependencies: ["39C9EBAD077A2832"]
+			id: "1B0A364BF80B7662"
+			tasks: [{
+				id: "2502A07224556BC1"
+				type: "item"
+				item: {
+					id: "ceramics:fluid_clay_bucket"
+					Count: 1b
+					tag: {
+						fluid: "minecraft:water"
+					}
+				}
+			}]
+			rewards: [{
+				id: "5169476EA35C2F80"
+				type: "item"
+				item: "ceramics:empty_clay_bucket"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.0d
+			dependencies: ["713C47278997BF8D"]
+			id: "0E77C1B61F109AC8"
+			tasks: [{
+				id: "2E178054BD2B54D1"
+				type: "item"
+				item: "minecraft:sand"
+				count: 8L
+			}]
+			rewards: [{
+				id: "103665654F198924"
+				type: "item"
+				item: "minecraft:sand"
+				count: 16
+			}]
+		}
+		{
+			x: -2.5d
+			y: -2.0d
+			dependencies: ["74A87FE0A8D12E22"]
+			id: "713C47278997BF8D"
+			tasks: [{
+				id: "3AA43328AE17443E"
+				type: "item"
+				item: "minecraft:gravel"
+				count: 8L
+			}]
+			rewards: [{
+				id: "71DDDF461DE9690F"
+				type: "item"
+				item: "minecraft:gravel"
+				count: 16
+			}]
+		}
+		{
+			x: -3.5d
+			y: -2.0d
+			description: [
+	"ハンマーはブロックを壊して変形させます。"
+]
+			dependencies: [
+				"4027596757201F43"
+				"193915C20D0435A3"
+			]
+			id: "74A87FE0A8D12E22"
+			tasks: [{
+				id: "674EC772A8CD33D6"
+				type: "item"
+				item: {
+					id: "exnihilosequentia:stone_hammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "0768DC3465ECC005"
+				type: "item"
+				item: {
+					id: "exnihilosequentia:stone_hammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 3.5d
+			y: -3.0d
+			description: [
+				"溶岩も生成できることを除けば、木製のるつぼと同じ役割を果たします。"
+				""
+				"下にたいまつやキャンプファイヤーなどの熱源を設置する必要があります。"
+			]
+			dependencies: ["1B868498E6D757CD"]
+			id: "541FAC78ED2BA431"
+			tasks: [{
+				id: "24F20AE2DB1DDEEB"
+				type: "item"
+				item: "exnihilosequentia:fired_crucible"
+			}]
+			rewards: [{
+				id: "4F019E6D39626B0A"
+				type: "item"
+				item: "minecraft:clay_ball"
+				count: 5
+			}]
+		}
+		{
+			x: 3.5d
+			y: 2.0d
+			subtitle: "ホット・フーッ！"
+			dependencies: ["541FAC78ED2BA431"]
+			id: "0D0280C359CEDC1A"
+			tasks: [{
+				id: "2C58EB3D91637D6E"
+				type: "item"
+				item: "minecraft:lava_bucket"
+			}]
+			rewards: [{
+				id: "2CC581FEF55923F2"
+				type: "item"
+				item: "minecraft:lava_bucket"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -3.0d
+			subtitle: "敵対的だ！"
+			description: [
+	"人形は敵対的なモブを出現させるのに非常に役立ちます。"
+]
+			dependencies: [
+				"235117F21EC8C7C5"
+				"541FAC78ED2BA431"
+			]
+			id: "3B2CB397A0A88DF3"
+			tasks: [{
+				id: "7B6699F56A7F0959"
+				type: "item"
+				item: "exnihilosequentia:crafting_doll"
+				count: 4L
+			}]
+			rewards: [{
+				id: "45F9E22CF4259494"
+				type: "item"
+				item: "exnihilosequentia:crafting_doll"
+				count: 2
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.5d
+			dependencies: ["4BD8AD0B369C9259"]
+			id: "77659DACC53F7828"
+			tasks: [{
+				id: "493C9AB54213AE30"
+				type: "item"
+				item: "minecraft:blue_dye"
+			}]
+			rewards: [{
+				id: "436A8AD9CD36A35C"
+				type: "item"
+				item: "minecraft:blue_dye"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 4.0d
+			dependencies: ["488140868C963498"]
+			id: "4BD8AD0B369C9259"
+			tasks: [{
+				id: "12FCF0C572F68AA9"
+				type: "item"
+				item: "exnihilosequentia:blue_coral_larvae"
+			}]
+			rewards: [{
+				id: "0646D6CCE2B6158C"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 3.5d
+			y: 3.0d
+			description: [
+				"丸石を生産します。"
+				"Tier が高いほど生産速度が速くなります。"
+			]
+			dependencies: ["0D0280C359CEDC1A"]
+			id: "78A848024C5B9D23"
+			tasks: [{
+				id: "29574036AC49E7AA"
+				type: "item"
+				item: "cobblefordays:tier_1"
+			}]
+			rewards: [{
+				id: "6EA492A197B62528"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 3.5d
+			y: 4.0d
+			dependencies: ["78A848024C5B9D23"]
+			id: "0F3528F67E3E7BF0"
+			tasks: [{
+				id: "2D7895214ECBB12D"
+				type: "item"
+				item: "cobblefordays:tier_3"
+			}]
+			rewards: [
+				{
+					id: "5EB23A1BDD8E10AA"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "62619F83DF8C8C3B"
+					type: "item"
+					item: "minecraft:iron_ingot"
+					count: 3
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: 4.0d
+			dependencies: ["0F3528F67E3E7BF0"]
+			id: "3031C7465EFA30E3"
+			tasks: [{
+				id: "18C3F2C42162729F"
+				type: "item"
+				item: "cobblefordays:tier_5"
+			}]
+			rewards: [
+				{
+					id: "46AD2C3F677841F6"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "235BF4BC14AEAB16"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 3
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: -1.0d
+			description: [
+	"家にある食材を使って、特製のサンドイッチやボウル/シチューを作ります。"
+]
+			dependencies: ["2F4A32E40566DBE0"]
+			id: "6916FBC1F9FAFD37"
+			tasks: [{
+				id: "22C6572B9804A659"
+				type: "item"
+				item: "culinaryconstruct:culinary_station"
+			}]
+			rewards: [{
+				id: "54DBDE05E534AA0A"
+				type: "item"
+				item: "farmersdelight:chicken_sandwich"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 2.0d
+			description: [
+				"葉を感染した葉に変えることができます。"
+				""
+				"感染した葉を破壊することで、糸を回収できます。"
+			]
+			dependencies: ["100C024318E54D48"]
+			id: "43A67D205011B452"
+			tasks: [{
+				id: "191986924D54E265"
+				type: "item"
+				item: "exnihilosequentia:silkworm"
+				count: 32L
+			}]
+			rewards: [{
+				id: "56124923941CB9A2"
+				type: "item"
+				item: "exnihilosequentia:cooked_silkworm"
+				count: 16
+			}]
+		}
+		{
+			x: 4.5d
+			y: 2.0d
+			dependencies: ["0D0280C359CEDC1A"]
+			id: "1D48921A34DAE286"
+			tasks: [{
+				id: "326D8068A95D20D5"
+				type: "item"
+				item: "minecraft:obsidian"
+				count: 8L
+			}]
+			rewards: [{
+				id: "1485813127731B43"
+				type: "item"
+				item: "minecraft:obsidian"
+				count: 8
+			}]
+		}
+		{
+			x: 1.5d
+			y: -4.0d
+			subtitle: "木々"
+			description: [
+				"1ブロックのスペースに小さな木を育てられます。生産を最適化するために、アップグレードを追加できます。"
+				""
+				"&6ホッパー&f: アップグレードスロットの1つにホッパーを挿入すると、盆栽鉢は収穫したアイテムをすべて自動的に下のインベントリにエクスポートします。"
+				""
+				"&6斧&f: アップグレードスロットに任意の斧を挿入すると、盆栽ボットは完全に成長した木を自動的に切り倒します。"
+				""
+				"&6蜂の巣&f: リンゴなどの果物を生産できます。"
+				""
+				"染料を使って鉢の外観をカスタマイズできます。"
+				"&6粗い土&fまたは鉱石を使用して、鉱石の木を育てます。"
+			]
+			dependencies: ["1B868498E6D757CD"]
+			min_width: 300
+			id: "5F0D4DE8A9FE6E06"
+			tasks: [{
+				id: "36012841ECB0819A"
+				type: "item"
+				item: "bonsaitrees3:bonsaipot"
+			}]
+			rewards: [{
+				id: "395946F50892D932"
+				type: "item"
+				item: "bonsaitrees3:bonsaipot"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -4.0d
+			subtitle: "作物"
+			description: [
+	"&6Botany Pot&fはあらゆる種類の作物を栽培できるブロックです。"
+]
+			dependencies: ["1B868498E6D757CD"]
+			id: "069F0BC1849F0C28"
+			tasks: [{
+				id: "4F9815A47CB2C6A0"
+				type: "item"
+				item: "botanypots:terracotta_hopper_botany_pot"
+			}]
+			rewards: [{
+				id: "4CBBD8DD31D250E9"
+				type: "item"
+				item: "botanypots:terracotta_hopper_botany_pot"
+			}]
+		}
+		{
+			title: "アッパー、ホッパー、フロッパー"
+			x: 1.5d
+			y: -1.0d
+			description: [
+				"&6Uppers&f は、下のチェストから上のインベントリへアイテムを輸送します。"
+				""
+				"&6Flopper&f は、液体を移動させるためのブロックです。"
+				"上から液体を取り込み、目的の側へ押し出すことができます。"
+			]
+			dependencies: ["3466E13BC2D79F37"]
+			id: "194441D21B27957C"
+			tasks: [
+				{
+					id: "19E9BAC7F29D81A5"
+					type: "item"
+					item: "uppers:upper"
+				}
+				{
+					id: "3EA055F683A6F5E8"
+					type: "item"
+					item: "minecraft:hopper"
+				}
+				{
+					id: "34259BE2E4635A29"
+					type: "item"
+					item: "flopper:flopper"
+				}
+			]
+			rewards: [{
+				id: "54B19F316A985716"
+				type: "item"
+				item: "minecraft:hopper"
+			}]
+		}
+		{
+			title: "種子"
+			x: -5.0d
+			y: 2.0d
+			subtitle: "フレンドリー！"
+			description: [
+				"受動的なモブを出現させる種はたくさんあります。"
+				""
+				"地面に置いて待つだけです。"
+				"骨粉を使うと発生が早まります。"
+			]
+			id: "574B42FA6B266CD8"
+			tasks: [{
+				id: "2A863BA5B581ACA3"
+				type: "item"
+				item: {
+					id: "animalcrops:seeds"
+					Count: 1b
+					tag: {
+						entity: "minecraft:chicken"
+					}
+				}
+			}]
+			rewards: [{
+				id: "52F13D9C64E367B1"
+				type: "item"
+				item: {
+					id: "animalcrops:seeds"
+					Count: 1b
+					tag: {
+						entity: "minecraft:cow"
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.0d
+			dependencies: ["193915C20D0435A3"]
+			id: "08CDA874499F7596"
+			tasks: [{
+				id: "2AB40D0AF1A80BB6"
+				type: "item"
+				item: "farmersdelight:cutting_board"
+			}]
+			rewards: [{
+				id: "10059DA8E4A804A2"
+				type: "item"
+				item: "minecraft:salmon"
+			}]
+		}
+		{
+			title: "&4ネザーケーキ"
+			x: 6.0d
+			y: 0.0d
+			subtitle: "&4地獄へ！"
+			description: [
+				"さあ、食べて、また会おうね！"
+				""
+				"どのケーキも卵を追加できますよ。"
+			]
+			dependencies: ["193F6D18024838BB"]
+			id: "13C5D074F363BA15"
+			tasks: [{
+				id: "6C85158BA7E55522"
+				type: "item"
+				item: "telepastries:nether_cake"
+			}]
+			rewards: [
+				{
+					id: "019BED28D1927746"
+					type: "item"
+					item: "minecraft:obsidian"
+					count: 4
+				}
+				{
+					id: "4AECCC9D75E58A96"
+					type: "item"
+					item: "telepastries:overworld_cake"
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: 0.0d
+			description: [
+	"どのケーキにも卵をおかわりできます。"
+]
+			dependencies: ["13C5D074F363BA15"]
+			id: "72C168929A566B46"
+			tasks: [{
+				id: "6D74E39109C57B5B"
+				type: "item"
+				item: "telepastries:end_cake"
+			}]
+			rewards: [{
+				id: "540FEE8C8E150868"
+				type: "item"
+				item: "minecraft:ender_pearl"
+				count: 16
+			}]
+		}
+		{
+			x: 6.0d
+			y: 2.0d
+			description: [
+				"このツールを使うと、周囲の元素をスキャンできます。"
+				""
+				"スキャンしたいモジュールを作成し、Shift+右クリックでスキャナーに挿入します。"
+				"スキャナーを手に持ち、右クリックで周囲をスキャンします。"
+				""
+				"FEエネルギーを消費します。"
+			]
+			dependencies: ["13C5D074F363BA15"]
+			id: "6912B07CA01D1150"
+			tasks: [
+				{
+					id: "74D66655BF5F82F8"
+					type: "item"
+					item: "scannable:scanner"
+				}
+				{
+					id: "53DBE0D9CB54B7B6"
+					type: "item"
+					item: "scannable:rare_ores_module"
+				}
+			]
+			rewards: [{
+				id: "35C9E4140ADBBACC"
+				type: "item"
+				item: "scannable:common_ores_module"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -5.0d
+			description: [
+	"鉢の3分の1を上級グレードにすると、鉱石系の樹木を植えるための盆栽鉢として使用できます。ただし、これは土壌などの鉱石系でのみ機能します。"
+]
+			dependencies: ["069F0BC1849F0C28"]
+			id: "698F6B50A140EA54"
+			tasks: [{
+				id: "7FA26FD61F0F2AD4"
+				type: "item"
+				item: "botanypotstiers:elite_terracotta_hopper_botany_pot"
+			}]
+			rewards: [{
+				id: "5DEBC86BA638E9B0"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+	]
+	quest_links: [ ]
+}

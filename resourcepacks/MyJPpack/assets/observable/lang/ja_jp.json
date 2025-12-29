@@ -1,0 +1,23 @@
+{
+  "screen.observable.profile": "プロフィール",
+  "screen.observable.results": "結果",
+  "key.observable.profile": "プロファイラー画面を表示",
+  "category.observable.keybinds": "観測可能",
+  "text.observable.profile_tps": "プロフィールTPS",
+  "text.observable.profile_fps": "プロファイルFPS",
+  "text.observable.sampler": "サンプラー付きプロファイル（オーバーヘッドを追加）",
+  "text.observable.unimplemented": "未実装です！",
+  "text.observable.unavailable": "Observable がサーバーにインストールされていません",
+  "text.observable.no_permissions": "プロファイラーを起動する権限がありません",
+  "text.observable.error": "アクション実行中にエラーが発生しました: %s",
+  "text.observable.report": "github.com/tasgon/observable/issues に報告してください。",
+  "text.observable.entity_not_found": "%s にエンティティが見つかりません。おそらく、エンティティは消滅したか、何らかの理由で削除された可能性があります。",
+  "text.observable.results": "結果",
+  "text.observable.overlay": "かぶせる",
+  "text.observable.docs": "ウィキ",
+  "text.observable.discord": "不和",
+  "text.observable.donate": "寄付する",
+  "text.observable.profile_saved": "プロフィールを%sに保存しました",
+  "text.observable.suggest": "サーバーの実行速度が少し遅いようです (%s tps)。遅延の原因を見つけるには %s を参照してください。",
+  "text.observable.suggest_action": "Observableの使用を検討する"
+}

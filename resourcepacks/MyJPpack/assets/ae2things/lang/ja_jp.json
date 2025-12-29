@@ -1,0 +1,19 @@
+{
+  "item.ae2things.disk_drive_1k": "1k ME ディスクドライブ",
+  "item.ae2things.disk_drive_4k": "4k ME ディスクドライブ",
+  "item.ae2things.disk_drive_16k": "16k ME ディスクドライブ",
+  "item.ae2things.disk_drive_64k": "64k ME ディスクドライブ",
+  "item.ae2things.disk_drive_256k": "256k ME ディスクドライブ",
+  "item.ae2things.disk_housing": "ME DISKハウジング",
+  "text.ae2things.disk_drives": "ME ディスクドライブ",
+  "block.ae2things.advanced_inscriber": "上級刻印者",
+  "block.ae2things.crystal_growth": "結晶成長チャンバー",
+  "itemGroup.ae2things.item_group": "AE2シングス",
+  "gui.ae2things.advanced_inscriber": "上級刻印者",
+  "gui.ae2things.crystal_growth": "結晶成長チャンバー",
+  "command.ae2things.recover_success": "%s は UUID [%s] の DISK ドライブを回復しました。",
+  "command.ae2things.recover_fail": "ディスクドライブの回復に失敗しました: UUID [%s] が存在しません。",
+  "command.ae2things.getuuid_success": "指定されたディスクのUUIDは[%s]です",
+  "command.ae2things.getuuid_fail_nouuid": "エラー。指定されたディスクが空であるか、UUID が見つかりません。",
+  "command.ae2things.getuuid_fail_notdisk": "エラー、指定された項目はディスクではありません。"
+}

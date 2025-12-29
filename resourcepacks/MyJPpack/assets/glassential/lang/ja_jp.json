@@ -1,0 +1,16 @@
+{
+  "block.glassential.glass_dark_ethereal": "着色されたエーテルガラス",
+  "block.glassential.glass_dark_ethereal_reverse": "着色リバースエーテルガラス",
+  "block.glassential.glass_ethereal": "エーテルガラス",
+  "block.glassential.glass_ethereal_reverse": "リバース・エーテル・グラス",
+  "block.glassential.glass_ghostly": "幽霊ガラス",
+  "block.glassential.glass_light": "光るガラス",
+  "block.glassential.glass_redstone": "レッドストーンガラス",
+  "tooltip.glassential.dark": "光を遮断する",
+  "tooltip.glassential.ethereal": "プレイヤーにとって堅実ではない",
+  "tooltip.glassential.ethereal_reverse": "プレイヤーにとってのみ堅実",
+  "tooltip.glassential.ghostly": "実体に対して固くない",
+  "tooltip.glassential.light": "光を発する",
+  "tooltip.glassential.redstone": "レッドストーン信号を発する",
+  "itemGroup.glassential.items": "グラスエンシャル"
+}

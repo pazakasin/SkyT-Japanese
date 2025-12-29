@@ -1,0 +1,19 @@
+{
+  "betterstats": "統計画面の改善",
+  "betterstats.hud": "統計HUD（ベータ版）",
+  "betterstats.hud.entity.kills": "キル",
+  "betterstats.hud.entity.deaths": "死亡者（数",
+  "betterstats.hud.hint.add_widget": "統計を右クリック ([Shift]+RMB) してここに追加します。",
+  "betterstats.hud.hint.del_widget": "マウスを置いたエントリを削除するには、Backspace (\u003c-) キーを押します。",
+  "betterstats.hud.hint.esc_close": "この画面を閉じるには、Escape (ESC) キーを押します。",
+  "betterstats.gui.filters": "フィルター",
+  "betterstats.gui.show_empty_stats": "空の統計を表示",
+  "betterstats.gui.no_stats_yet": "表示する統計はまだありません...",
+  "betterstats.gui.ctx_menu.pin_to_hud": "HUD にピン留めする (ベータ版)",
+  "betterstats.gui.ctx_menu.close": "近い",
+  "betterstats.gui.menu_bar.view": "ビュー",
+  "betterstats.gui.menu_bar.view.vanilla_stats": "バニラの統計を表示",
+  "betterstats.gui.menu_bar.about": "について",
+  "betterstats.gui.menu_bar.about.source": "ソースコード",
+  "betterstats.gui.menu_bar.mods_other": "その他（改造）"
+}

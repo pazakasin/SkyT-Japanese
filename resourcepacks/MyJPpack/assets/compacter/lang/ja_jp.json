@@ -1,0 +1,13 @@
+{
+  "block.compacter.compacter": "圧縮機",
+  "block.compacter.cobbler": "靴屋",
+  "itemGroup.compacter": "圧縮機",
+  "compacter.recurse.enabled": "再帰圧縮が有効",
+  "compacter.recurse.disabled": "再帰圧縮が無効",
+  "compacter.craftmode.two_three": "まずは2x2レシピを試してみましょう",
+  "compacter.craftmode.three_two": "まずは3x3レシピを試してみましょう",
+  "compacter.craftmode.three_only": "3x3レシピのみ",
+  "compacter.craftmode.two_only": "2x2レシピのみ",
+  "compacter.craftmode.one_only": "シングルアイテムモード（1x1）",
+  "compacter.craftmode.hollow": "ホローモード（3x3、中心なし）"
+}

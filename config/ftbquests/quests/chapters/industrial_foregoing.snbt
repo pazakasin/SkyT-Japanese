@@ -1,0 +1,427 @@
+{
+	id: "6B6BC37FB7E109AB"
+	group: "3D109918D62355FC"
+	order_index: 5
+	filename: "industrial_foregoing"
+	title: "産業上の前述の"
+	icon: "industrialforegoing:mycelial_reactor"
+	subtitle: [
+	"というか、"
+]
+	default_quest_shape: "hexagon"
+	default_hide_dependency_lines: false
+	images: [{
+		x: 1.5d
+		y: -2.5d
+		width: 2.0d
+		height: 2.0d
+		rotation: 0.0d
+		image: "industrialforegoing:textures/items/plastic.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			x: -2.5d
+			y: 0.0d
+			subtitle: "ファーストティアフレーム"
+			description: [
+				"マシンフレームは、上記の工業用機械を作成するための基本部品です。"
+				""
+				"これらのフレームから作成できる機械は数十種類あります。用途は多岐にわたります。"
+				"モブや動物の飼育、植物の栽培、インフィニティツール一式、大型アイテム/液体の保管と輸送、発電、エンチャントアイテムの仕分けと作成など。"
+			]
+			size: 1.25d
+			min_width: 300
+			id: "6115C21CE0A14F1D"
+			tasks: [{
+				id: "37F5363EED52A67A"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
+			}]
+			rewards: [{
+				id: "14C4798EE2EC6536"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			subtitle: "2段目フレーム"
+			dependencies: ["19EA90532EE354C8"]
+			size: 1.25d
+			id: "5336E2968E42F59A"
+			tasks: [{
+				id: "1A535DE67874A8CA"
+				type: "item"
+				item: "industrialforegoing:machine_frame_simple"
+			}]
+			rewards: [{
+				id: "7B9AE49B0DE166BE"
+				type: "item"
+				item: "industrialforegoing:machine_frame_simple"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			subtitle: "3層フレーム"
+			dependencies: ["412D5F839D2F920B"]
+			size: 1.25d
+			id: "0441CB9FD3524FA1"
+			tasks: [{
+				id: "1659E16C693ED234"
+				type: "item"
+				item: "industrialforegoing:machine_frame_advanced"
+			}]
+			rewards: [{
+				id: "549D664335B30614"
+				type: "item"
+				item: "industrialforegoing:machine_frame_advanced"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 0.0d
+			subtitle: "最終ティアフレーム"
+			dependencies: ["0C166EFC9329A747"]
+			size: 1.25d
+			id: "1DF51EB61DCD1F6A"
+			tasks: [{
+				id: "6A9A1ACF0C6BD0E9"
+				type: "item"
+				item: "industrialforegoing:machine_frame_supreme"
+			}]
+			rewards: [{
+				id: "74FEBF996CE8F1DF"
+				type: "item"
+				item: "industrialforegoing:machine_frame_supreme"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.0d
+			subtitle: "ラテックス"
+			description: [
+				"丸太からラテックス液を抽出します。"
+				"アカシアの丸太は最も高い抽出率を誇ります。"
+			]
+			dependencies: ["6115C21CE0A14F1D"]
+			id: "1E706E6140E09C30"
+			tasks: [{
+				id: "2FE874036BEA511D"
+				type: "item"
+				item: "industrialforegoing:fluid_extractor"
+			}]
+			rewards: [{
+				id: "73F8C964889237AD"
+				type: "item"
+				item: "minecraft:acacia_log"
+				count: 16
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			subtitle: "ゴム"
+			description: [
+	"水でラテックスを乾燥したゴムに変えます。"
+]
+			dependencies: ["1E706E6140E09C30"]
+			id: "19EA90532EE354C8"
+			tasks: [{
+				id: "017D0B813E4B114C"
+				type: "item"
+				item: "industrialforegoing:latex_processing_unit"
+			}]
+			rewards: [{
+				id: "625BE1697F097533"
+				type: "item"
+				item: "minecraft:water_bucket"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			description: [
+	"モブから液体肉とピンクスライム液を生成します。"
+]
+			dependencies: ["19EA90532EE354C8"]
+			id: "412D5F839D2F920B"
+			tasks: [{
+				id: "13C5B41CB18A49F1"
+				type: "item"
+				item: "industrialforegoing:mob_slaughter_factory"
+			}]
+			rewards: [{
+				id: "7F23C97AAE59BF1C"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "流体レーザー"
+			x: 6.0d
+			y: 0.0d
+			subtitle: "シーッ…大丈夫だよ"
+			description: [
+				"流体レーザーでエーテルガスを得るためにウィザーを静止させます。"
+				"{image:ftbquests:textures/3d-ether.png width:50 height:100 align:1}"
+			]
+			dependencies: ["0441CB9FD3524FA1"]
+			id: "0C166EFC9329A747"
+			tasks: [
+				{
+					id: "56180AB2F8CD4956"
+					type: "item"
+					item: "industrialforegoing:fluid_laser_base"
+				}
+				{
+					id: "484CC1FF1978DEA2"
+					type: "item"
+					item: "industrialforegoing:laser_drill"
+				}
+				{
+					id: "712925EF8B600815"
+					type: "item"
+					item: "industrialforegoing:stasis_chamber"
+				}
+			]
+			rewards: [{
+				id: "6C4DDBBAE197BF90"
+				type: "item"
+				item: "minecraft:nether_star"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.5d
+			description: [
+				"ブロックをその前に配置します。"
+				"これを使用して LaTeX の生成を自動化します。"
+				""
+				"&o 要求されたチャンクでは動作しない可能性があります。"
+			]
+			dependencies: ["1E706E6140E09C30"]
+			id: "0945F4A6BD7217CF"
+			tasks: [{
+				id: "54474D8677DDD6F1"
+				type: "item"
+				item: "industrialforegoing:block_placer"
+			}]
+			rewards: [{
+				id: "4E3DA4D05D458743"
+				type: "item"
+				item: "industrialforegoing:block_placer"
+			}]
+		}
+		{
+			title: "アドオン"
+			x: 2.5d
+			y: 2.0d
+			subtitle: "より速く、より良く、より安く"
+			description: [
+	"これらは、MOD 内のすべてのマシンで使用できるアップグレードです。"
+]
+			id: "5E4076CA4BBDACDC"
+			tasks: [
+				{
+					id: "0A130AA266C40BFF"
+					type: "item"
+					item: {
+						id: "industrialforegoing:processing_addon_2"
+						Count: 1b
+						tag: {
+							TitaniumAugment: {
+								Processing: 3.0f
+							}
+						}
+					}
+				}
+				{
+					id: "384DA684BDE01DBC"
+					type: "item"
+					item: {
+						id: "industrialforegoing:efficiency_addon_2"
+						Count: 1b
+						tag: {
+							TitaniumAugment: {
+								Efficiency: 0.8f
+							}
+						}
+					}
+				}
+				{
+					id: "2697796341B5245F"
+					type: "item"
+					item: {
+						id: "industrialforegoing:speed_addon_2"
+						Count: 1b
+						tag: {
+							TitaniumAugment: {
+								Speed: 3.0f
+							}
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "0866AAC6AFD4E61E"
+					type: "item"
+					item: {
+						id: "industrialforegoing:speed_addon_2"
+						Count: 1b
+						tag: {
+							TitaniumAugment: {
+								Speed: 3.0f
+							}
+						}
+					}
+				}
+				{
+					id: "23D113250B4383A5"
+					type: "item"
+					item: {
+						id: "industrialforegoing:efficiency_addon_2"
+						Count: 1b
+						tag: {
+							TitaniumAugment: {
+								Efficiency: 0.8f
+							}
+						}
+					}
+				}
+				{
+					id: "169CDF1C863A55E4"
+					type: "item"
+					item: {
+						id: "industrialforegoing:processing_addon_2"
+						Count: 1b
+						tag: {
+							TitaniumAugment: {
+								Processing: 3.0f
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: 2.0d
+			description: [
+	"マシンの到達範囲を拡大します。"
+]
+			id: "31932455923E0C05"
+			tasks: [{
+				id: "4C56DC9CF2D9595C"
+				type: "item"
+				item: {
+					id: "industrialforegoing:range_addon11"
+					Count: 1b
+					tag: {
+						TitaniumAugment: {
+							Range: 11.0f
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "150C022DD2C30261"
+				type: "item"
+				item: {
+					id: "industrialforegoing:range_addon11"
+					Count: 1b
+					tag: {
+						TitaniumAugment: {
+							Range: 11.0f
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			description: [
+	"溶解室では、アイテムと液体からアイテムを作成できます。"
+]
+			dependencies: ["19EA90532EE354C8"]
+			id: "45671D3D53DB4996"
+			tasks: [{
+				id: "7DDE1E86515F8B19"
+				type: "item"
+				item: "industrialforegoing:dissolution_chamber"
+			}]
+			rewards: [{
+				id: "0F72FC6F5C731AF9"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.5d
+			subtitle: "スポーンキル"
+			description: [
+				"Mob Duplicatorは、Mob Imprisonment Toolに捕らえられたMobの種類に基づいてMobをスポーンさせるために使用されます。"
+				""
+				"Mob Crusherは、プレイヤーのようにMobを倒し、エッセンスとMobドロップを生成するために使用されます。"
+			]
+			dependencies: ["0441CB9FD3524FA1"]
+			id: "26A7F662FF71985E"
+			tasks: [
+				{
+					id: "3CBB30ED9B760B7F"
+					type: "item"
+					item: "industrialforegoing:mob_duplicator"
+				}
+				{
+					id: "26A606ABF2446050"
+					type: "item"
+					item: "industrialforegoing:mob_crusher"
+				}
+			]
+			rewards: [{
+				id: "13593FE7B7D2A52F"
+				type: "item"
+				item: "industrialforegoing:mob_imprisonment_tool"
+			}]
+		}
+		{
+			title: "植物"
+			x: -2.5d
+			y: 1.5d
+			description: [
+				"植物を蒔く人は種と苗を植えます。"
+				""
+				"植物を集める人は、成長が終わったものをすべて刈り取り、再び収穫します。"
+			]
+			dependencies: ["6115C21CE0A14F1D"]
+			id: "74402412CCD51939"
+			tasks: [
+				{
+					id: "62EFADD4FEDAD38F"
+					type: "item"
+					item: "industrialforegoing:plant_gatherer"
+				}
+				{
+					id: "6B533B275A15EC75"
+					type: "item"
+					item: "industrialforegoing:plant_sower"
+				}
+			]
+			rewards: [{
+				id: "06E758994B26CE19"
+				type: "item"
+				item: "minecraft:wheat_seeds"
+				count: 16
+			}]
+		}
+	]
+	quest_links: [ ]
+}

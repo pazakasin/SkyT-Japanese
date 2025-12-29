@@ -1,0 +1,5 @@
+{
+  "badwithernocookiereloaded.general.tooltip": "キャンセルできるグローバル基本サウンドとイベント",
+  "badwithernocookiereloaded.xtra.tooltip": "キャンセルできる追加のローカライズされたサウンド",
+  "badwithernocookiereloaded.localized settings.silenceus": "例: entity.sheep.step - 他のサウンドには /listen を使用します"
+}

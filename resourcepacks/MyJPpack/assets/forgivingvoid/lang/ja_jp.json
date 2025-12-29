@@ -1,0 +1,13 @@
+{
+  "text.autoconfig.forgivingvoid.title": "許しの空虚",
+  "text.autoconfig.forgivingvoid.option.triggerAtY": "Yでトリガー",
+  "text.autoconfig.forgivingvoid.option.damageOnFall": "落下時のダメージ",
+  "text.autoconfig.forgivingvoid.option.fallingHeight": "落下高さ",
+  "text.autoconfig.forgivingvoid.option.preventDeath": "死を防ぐ",
+  "text.autoconfig.forgivingvoid.option.triggerInOverworld": "オーバーワールドでトリガー",
+  "text.autoconfig.forgivingvoid.option.triggerInNether": "ネザーでトリガー",
+  "text.autoconfig.forgivingvoid.option.triggerInEnd": "トリガーインエンド",
+  "text.autoconfig.forgivingvoid.option.disableVanillaAntiCheatWhileFalling": "落下中にバニラアンチチートを無効にする",
+  "text.autoconfig.forgivingvoid.option.dimensionAllowList": "ディメンション許可リスト",
+  "text.autoconfig.forgivingvoid.option.dimensionDenyList": "ディメンション拒否リスト"
+}

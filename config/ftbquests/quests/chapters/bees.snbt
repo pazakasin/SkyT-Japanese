@@ -1,0 +1,519 @@
+{
+	id: "35CFB07FCA4520A4"
+	group: "3D109918D62355FC"
+	order_index: 6
+	filename: "bees"
+	title: "ミツバチ"
+	icon: "minecraft:bee_nest"
+	subtitle: [
+	"すべてを生産する"
+]
+	default_quest_shape: "hexagon"
+	default_hide_dependency_lines: false
+	images: [{
+		x: -3.5d
+		y: -5.0d
+		width: 2.0d
+		height: 2.0d
+		rotation: 0.0d
+		image: "productivebees:textures/item/sugarbag_honeycomb.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			title: "&6Bumble Zoneを訪れる"
+			icon: {
+				id: "the_bumblezone:honey_compass"
+				Count: 1b
+				tag: { }
+			}
+			x: -3.5d
+			y: -3.0d
+			subtitle: "ハイブで！"
+			description: [
+				"&oバンブルゾーン&rにアクセスするには、バニラビーハイブに&6エンダーパール&fを投げ入れます。"
+				""
+				"ミツバチが攻撃してくる可能性があるので、生息地を傷つけすぎないように注意してください。"
+				"&oバンブルゾーン&rから出るには、上か下まで登るだけです。"
+			]
+			dependencies: ["6294582C1C9BC9DD"]
+			min_width: 250
+			id: "64C16151A20B7034"
+			tasks: [{
+				id: "27F748E087AA6F1F"
+				type: "dimension"
+				title: "&6Bumble Zoneを訪れる"
+				dimension: "the_bumblezone:the_bumblezone"
+			}]
+			rewards: [{
+				id: "501E7524DDDFC3A2"
+				type: "item"
+				item: "minecraft:honeycomb_block"
+				count: 4
+			}]
+		}
+		{
+			x: -5.0d
+			y: -3.0d
+			subtitle: "バニラビーハイブ"
+			description: [
+				"通常の蜂の巣では、蜂は蜂蜜以外の資源を生産できません。"
+				""
+				"蜂の巣を作るには、「バンブルディメンション」を探索し、「高度な蜂の巣」の作成に必要な材料を集める必要があります。"
+			]
+			size: 1.25d
+			id: "6294582C1C9BC9DD"
+			tasks: [{
+				id: "7EDD74B5A356D66A"
+				type: "item"
+				item: "minecraft:beehive"
+			}]
+			rewards: [{
+				id: "5CFD91B42BF254C6"
+				type: "item"
+				item: "minecraft:beehive"
+			}]
+		}
+		{
+			title: "高度なビーハイブ"
+			x: -2.0d
+			y: -3.0d
+			description: [
+	"ミツバチはここから出入りし、ハニカムをインベントリに落とします。ガラス瓶を挿入するとハニーボトルが手に入ります。"
+]
+			dependencies: ["64C16151A20B7034"]
+			id: "628214F3F3017912"
+			tasks: [{
+				id: "7B75958663CB245F"
+				type: "item"
+				title: "#productivebees:advanced_beehives のいずれか"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "productivebees:advanced_beehives"
+					}
+				}
+			}]
+			rewards: [{
+				id: "4A611C9D1B38A914"
+				type: "item"
+				item: "productivebees:advanced_oak_beehive"
+			}]
+		}
+		{
+			title: "拡大"
+			x: -2.0d
+			y: -1.5d
+			description: [
+				"拡張ボックスは「6 高度な蜂の巣」の上に配置され、巣箱に入れる蜂の数を合計 5 スロットに増やします。"
+				"また、アップグレードを追加して運用を改善することもできます。"
+			]
+			dependencies: ["628214F3F3017912"]
+			min_width: 250
+			id: "010D463A959CE241"
+			tasks: [{
+				id: "380393EB30D85C24"
+				type: "item"
+				title: "#productivebees:expansion_boxes のいずれか"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "productivebees:expansion_boxes"
+					}
+				}
+			}]
+			rewards: [{
+				id: "51C5F593990B1352"
+				type: "item"
+				item: "productivebees:expansion_box_oak"
+			}]
+		}
+		{
+			title: "巣"
+			x: -5.0d
+			y: 0.0d
+			description: [
+				"最初のミツバチは巣で誘引しましょう。巣は1つにつき、異なる種類のミツバチを1匹以上産みます。"
+				"ミツバチを1匹産むには、少なくとも「ハニートリート」を1個使用する必要があります。"
+				""
+				"巣は特定のバイオームに設置する必要があります。バイオームは対応するJEIで確認できます。"
+				""
+				"適切なバイオームに巣を設置するには、エンジェルリング、ネイチャーコンパス、エンジェルブロックの使用をお勧めします。"
+			]
+			dependencies: ["12512E0FC5121680"]
+			min_width: 250
+			id: "119A045ADA9E361D"
+			tasks: [{
+				id: "3F73D008A5E4016E"
+				type: "item"
+				title: "#productivebees:solitary_overworld_nests のいずれか"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "productivebees:solitary_overworld_nests"
+					}
+				}
+			}]
+			rewards: [{
+				id: "419106BBFA4A9AA6"
+				type: "item"
+				item: "productivebees:bumble_bee_nest"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 0.0d
+			description: [
+				"ミツバチを捕獲して移動、保管、繁殖させることができます。"
+				""
+				"ミツバチを放すと、ビーケージは消費されます。"
+			]
+			dependencies: ["119A045ADA9E361D"]
+			id: "39C438BB371D7439"
+			tasks: [{
+				id: "616DAE8B4844CE9C"
+				type: "item"
+				item: "productivebees:bee_cage"
+				count: 4L
+			}]
+			rewards: [{
+				id: "64D17AD93EF99747"
+				type: "item"
+				item: "productivebees:bee_cage"
+				count: 4
+			}]
+		}
+		{
+			x: -3.5d
+			y: -1.5d
+			description: [
+	"&6Productive Bees&f modのマシンには、様々なアップグレードが用意されています。アップグレードにカーソルを合わせると、その使い方が分かります。"
+]
+			dependencies: [
+				"010D463A959CE241"
+				"12512E0FC5121680"
+			]
+			dependency_requirement: "one_completed"
+			id: "171EC13FFF0E6138"
+			tasks: [{
+				id: "15068740F63DCE0C"
+				type: "item"
+				item: "productivebees:upgrade_base"
+			}]
+			rewards: [{
+				id: "3D40A5D5373C550D"
+				type: "item"
+				item: "productivebees:upgrade_base"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -1.5d
+			description: [
+	"Honey Treat は多くのレシピで使用されるほか、&6Nests&f 内のミツバチの産卵時間を早めます。"
+]
+			size: 1.25d
+			id: "12512E0FC5121680"
+			tasks: [{
+				id: "52FE9945F56E3936"
+				type: "item"
+				item: "productivebees:honey_treat"
+				count: 4L
+			}]
+			rewards: [{
+				id: "0A70BB0A9B2F5761"
+				type: "item"
+				item: "productivebees:honey_treat"
+				count: 4
+			}]
+		}
+		{
+			x: -0.5d
+			y: -4.0d
+			subtitle: "ティア1"
+			description: [
+	"遠心分離機はハニカムを有用なアイテム、蜂蜜、ワックスに加工するために使用されます。"
+]
+			size: 1.25d
+			id: "7B11A1E30EFF0262"
+			tasks: [{
+				id: "270BECA7A27EFFE1"
+				type: "item"
+				item: "productivebees:centrifuge"
+			}]
+			rewards: [{
+				id: "15119982C1AE982E"
+				type: "item"
+				item: {
+					id: "productivebees:configurable_honeycomb"
+					Count: 1b
+					tag: {
+						EntityTag: {
+							type: "productivebees:iron"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.5d
+			subtitle: "ティア2"
+			description: [
+				"遠心分離機はハニカムを便利なアイテム、蜂蜜、ワックスに加工するために使用します。"
+				""
+				"エネルギーが必要です。"
+			]
+			dependencies: ["7B11A1E30EFF0262"]
+			id: "0CBCC43761E4307B"
+			tasks: [{
+				id: "42219D2CC23A6826"
+				type: "item"
+				item: "productivebees:powered_centrifuge"
+			}]
+			rewards: [{
+				id: "56CE6C681D054CEE"
+				type: "item"
+				item: "productivebees:centrifuge"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.0d
+			subtitle: "ティア3"
+			description: [
+	"この遠心分離機は、一度エネルギーが供給されると、エネルギーを消費しません。"
+]
+			dependencies: ["0CBCC43761E4307B"]
+			id: "4922EEE3864F590A"
+			tasks: [{
+				id: "0A7EAE553306F79D"
+				type: "item"
+				item: "productivebees:heated_centrifuge"
+			}]
+			rewards: [{
+				id: "5C70EAE62A71269C"
+				type: "item"
+				item: "productivebees:powered_centrifuge"
+			}]
+		}
+		{
+			title: "ガイド"
+			x: -7.0d
+			y: -1.5d
+			description: [
+	"「Big Book of Bees」は、ミツバチに関するあらゆることを学ぶのに役立ちます。"
+]
+			id: "5FCA793BF3E30CE4"
+			tasks: [{
+				id: "153E12A7AA7C43FE"
+				type: "checkmark"
+				title: "ガイド"
+			}]
+			rewards: [{
+				id: "343784603F477746"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "productivebees:guide"
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -0.5d
+			description: [
+				"ミツバチを交配させて新しいミツバチを入手できるようになります。"
+				""
+				"&o交配には、ミツバチ1匹につき少なくとも花が1つ必要となることに注意してください。"
+			]
+			id: "5868C5DAB5BDF694"
+			tasks: [{
+				id: "13A135E32BEF3951"
+				type: "item"
+				item: "productivebees:breeding_chamber"
+			}]
+			rewards: [{
+				id: "1B54DC4561D43315"
+				type: "item"
+				item: "minecraft:sunflower"
+				count: 8
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.0d
+			description: [
+				"ミツバチから遺伝子を得るには、ピストンを&6Bottler&fの上に置き、間にブロックを1つ空けます。"
+				"ミツバチを&6Bottler&fの上に置き、ピストンを作動させてミツバチを遺伝子に押しつぶします。押しつぶされたボトルは&6Centrifuge&fに入れることができます。"
+			]
+			min_width: 250
+			id: "487E8914D654F3B9"
+			tasks: [{
+				id: "42A09F8B7362E837"
+				type: "item"
+				item: "productivebees:bottler"
+			}]
+			rewards: [{
+				id: "0AEC69C3222A0F19"
+				type: "item"
+				item: "productivebees:bottler"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.0d
+			subtitle: "FEエネルギー"
+			description: [
+	"蜂蜜液からFEエネルギーを生成します。"
+]
+			id: "3DCE4489A4CB6EC5"
+			tasks: [{
+				id: "7594FD9A0E2BFADF"
+				type: "item"
+				item: "productivebees:honey_generator"
+			}]
+			rewards: [{
+				id: "12EC0937547B2C27"
+				type: "item"
+				item: "productivebees:honey_bucket"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -3.0d
+			description: [
+	"キャッチャーは周囲を飛んでいる蜂を捕まえるために使用されます。"
+]
+			id: "64B603E593536582"
+			tasks: [{
+				id: "002B44FEF7B3EF0C"
+				type: "item"
+				item: "productivebees:catcher"
+			}]
+			rewards: [{
+				id: "76B80ACC522B8E8B"
+				type: "item"
+				item: "productivebees:upgrade_range"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.5d
+			description: [
+				"遺伝子からミツバチの卵を作ることができます。"
+				"BaBeeインキュベーターは、赤ちゃんミツバチに「ハニートリート」を与えることで、赤ちゃんミツバチを育てます。"
+			]
+			dependencies: ["584B85E3FF7C3B28"]
+			id: "20E89FD67A8883BD"
+			tasks: [{
+				id: "22B06A016CD96B16"
+				type: "item"
+				item: "productivebees:incubator"
+			}]
+			rewards: [{
+				id: "1689DDCA8CF3A3F0"
+				type: "item"
+				item: "minecraft:egg"
+				count: 4
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.5d
+			description: [
+	"遺伝子を集めると、特性の一定割合が得られます。クラフトテーブルで合成したり、遺伝子インデクサーに入れて自動合成したりできます。"
+]
+			id: "584B85E3FF7C3B28"
+			tasks: [{
+				id: "0B6C34C55288D2F8"
+				type: "item"
+				item: "productivebees:gene_indexer"
+			}]
+			rewards: [{
+				id: "47C39ADEA296818E"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.0d
+			id: "0F46DB70C748160E"
+			tasks: [{
+				id: "28A541A4C97E522C"
+				type: "item"
+				item: "productivebees:jar_oak"
+			}]
+			rewards: [{
+				id: "75E61B8523CFEF5C"
+				type: "item"
+				item: "productivebees:jar_oak"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			description: [
+				"これは「ビーケージ」の改良版です。"
+				"使用中に消費されることはありません。"
+			]
+			dependencies: ["39C438BB371D7439"]
+			id: "3D421065DDC7473E"
+			tasks: [{
+				id: "5507AF4AF2BBF7C2"
+				type: "item"
+				item: "productivebees:sturdy_bee_cage"
+			}]
+			rewards: [{
+				id: "75323FD98161D88C"
+				type: "item"
+				item: "productivebees:sturdy_bee_cage"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.5d
+			subtitle: "最後の層"
+			description: [
+				"この遠心分離機はまさに技術の結晶です。"
+				"高速であることに加え、4～5倍の出力が得られます。"
+				"一方で、蜂蜜も必要です。"
+				""
+				"この遠心分離機の稼働には多大なエネルギーが必要です。"
+			]
+			dependencies: ["4922EEE3864F590A"]
+			min_width: 250
+			id: "6192AF20E64A0698"
+			tasks: [{
+				id: "56B89A28C15BA886"
+				type: "advancement"
+				title: "究極の遠心分離機"
+				icon: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "custommachinery:ultimate_centrifuge"
+					}
+				}
+				advancement: "custommachinery:ultimate_centrifuge"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "1767F091026BF0C8"
+				type: "item"
+				item: "productivebees:honey_bucket"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

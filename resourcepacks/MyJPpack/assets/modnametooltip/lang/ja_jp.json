@@ -1,0 +1,4 @@
+{
+  "config.modnametooltip.formatting.modNameFormat": "Mod名の形式",
+  "config.modnametooltip.formatting.modNameFormat.comment": "ツールチップに表示されるMOD名のフォーマット。無効にするには空白のままにしてください。"
+}

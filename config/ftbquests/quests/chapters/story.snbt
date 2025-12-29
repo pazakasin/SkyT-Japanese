@@ -1,0 +1,194 @@
+{
+	id: "785899AC4314CDC2"
+	group: ""
+	order_index: 0
+	filename: "story"
+	title: "ようこそ"
+	icon: "minecraft:writable_book"
+	default_quest_shape: "octagon"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "kubejs:infinite_cube"
+			x: 0.625d
+			y: 0.0d
+			subtitle: "テクノロジーModパック"
+			description: [
+				"&6SkyT&f へようこそ！"
+				""
+				"私の modpack、スカイブロック 1.18.2 をご紹介します。主にテクノロジー中心ですが、探索要素や魔法要素も少し含まれています。"
+				""
+				"ここでは誰もが自分の居場所を持てます！この modpack は、徐々に難易度が上がっていく「冒険」を提供します。レベルに関係なく、自分のペースで進めることができます。"
+				"&o800以上のクエスト&rが、&o260種類の mod&r を発見する手助けをしてくれます。"
+				""
+				"&oでも、飛行機の中でビールを一杯飲んでから、愛犬と一緒にハンモックで昼寝をするなど、息抜きも忘れずに。&r"
+				""
+				"とにかく、この modpack を楽しんでいただければ幸いです。フィードバックがあれば、私の &6Discord&f にぜひお越しください！"
+			]
+			size: 1.25d
+			min_width: 300
+			id: "5BDFEC713A406541"
+			tasks: [{
+				id: "485091EA1940C7EA"
+				type: "checkmark"
+				title: "プレゼンテーション"
+			}]
+			rewards: [{
+				id: "65D01A0899298CCD"
+				type: "item"
+				item: "farmersdelight:noodle_soup"
+			}]
+		}
+		{
+			icon: "supplementaries:hanging_sign_oak"
+			x: 1.875d
+			y: 1.25d
+			subtitle: "謝辞"
+			description: [
+				"SkyTは私、&6Veydizが制作しました。"
+				""
+				"Discordのモデレーターを務めてくださったMinou74さんに感謝します。"
+				""
+				"そして、寄付してくださった&3Arch&fさん、Ocsisorさん、Zeonさん、JinKhyaさん、ravensrequestさんにも心から感謝します！"
+				""
+				"スカイボックスはFireEagleさんの「Realistic Sky」から拝借しました。"
+			]
+			dependencies: ["5BDFEC713A406541"]
+			size: 1.25d
+			min_width: 250
+			id: "3D2A5085320DB8D0"
+			tasks: [{
+				id: "757D7D749042BE90"
+				type: "checkmark"
+				title: "クレジット"
+			}]
+			rewards: [{
+				id: "51A4F1283B6DBA77"
+				type: "item"
+				item: "bhc:red_heart"
+			}]
+		}
+		{
+			title: "便利なリンク"
+			icon: {
+				id: "rftoolsutility:screen_link"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 0.625d
+			y: 1.875d
+			subtitle: "Discord、サーバー、サポート。"
+			description: [
+				"Discord:"
+				"&6https://discord.com/invite/N2VCk7rYTG"
+				""
+				"このModパック用のサーバーが必要ですか？"
+				"&6https://www.bisecthosting.com/veydiz"
+				""
+				"このModパックの開発には250時間以上かかりました。もしよろしければ、新しいModパックの開発と既存のModパックのメンテナンスを続けられるよう、サポートをお願いします。ありがとうございます！ :D"
+				"&6https://paypal.me/veydiztech"
+				"&6https://patreon.com/veydiz"
+			]
+			dependencies: ["5BDFEC713A406541"]
+			size: 1.25d
+			min_width: 300
+			id: "2E0EB7DDF2ACAB09"
+			tasks: [{
+				id: "6A6537AD008CC63F"
+				type: "checkmark"
+				title: "便利なリンク"
+			}]
+			rewards: [{
+				id: "723FD79DBB385C7D"
+				type: "item"
+				item: "bhc:yellow_heart"
+			}]
+		}
+		{
+			icon: "beyond_earth:earth_globe"
+			x: -0.625d
+			y: 1.25d
+			subtitle: "あなたの愛する地球"
+			description: [
+	"この小さな小惑星に閉じ込められたあなたの目的は、地球へ帰還するためのポータルを構築することです。冒険のあらゆる側面をマスターしなければならないため、決して簡単な道のりではありません。"
+]
+			dependencies: ["5BDFEC713A406541"]
+			size: 1.25d
+			id: "38EC6101DC8CDD04"
+			tasks: [{
+				id: "1BF343C8575404B4"
+				type: "checkmark"
+				title: "目標"
+			}]
+			rewards: [{
+				id: "5E11FA6653C4633A"
+				type: "item"
+				item: "minecraft:dirt"
+				count: 8
+			}]
+		}
+		{
+			title: "日周期"
+			icon: "minecraft:sunflower"
+			x: 0.625d
+			y: -3.125d
+			subtitle: "無限の日"
+			description: [
+	"あなたは宇宙の真ん中、星雲の中にいるので、昼夜サイクルはありません。太陽はあなたから遠く離れていますが、幸運なことに、まだ少しだけ光を与えてくれます。"
+]
+			dependencies: ["6A9F9C0DC2800D14"]
+			id: "045AD0A992B5EBF9"
+			tasks: [{
+				id: "74E8ECF6D4724B0F"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "66B27925FC10F362"
+				type: "item"
+				item: "minecraft:sunflower"
+			}]
+		}
+		{
+			icon: {
+				id: "beyond_earth:rocket_t3"
+				Count: 1b
+				tag: { }
+			}
+			x: 0.625d
+			y: -1.875d
+			subtitle: "星雲の中で"
+			description: [
+				"あなたは宇宙飛行士です。生命の兆候が疑われたため、この小惑星を分析する任務に派遣されました。"
+				"確かに、この小惑星は無菌状態ですが、生命が存在するようです。この木がその証拠です。"
+				"到着以来、あなたはこの小惑星で呼吸できることにも気づいています。"
+				""
+				"残念ながら、あなたの乗組員に恐ろしい出来事が起こりました。"
+				"サンプル採取後、彼らはあなたを救出に来ましたが、ブラックホールの重力に巻き込まれてしまいました。"
+				"彼らは破滅の運命にあり、生き残るためにあらゆる手段を講じなければ、あなたも破滅するでしょう。"
+			]
+			dependencies: ["5BDFEC713A406541"]
+			size: 1.25d
+			min_width: 300
+			id: "6A9F9C0DC2800D14"
+			tasks: [{
+				id: "3B88872D9D4B3BEB"
+				type: "checkmark"
+				title: "なぜここにいるのですか?"
+			}]
+			rewards: [{
+				id: "01814897AF6451E7"
+				type: "item"
+				item: {
+					id: "minecraft:stone_axe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,0 +1,9 @@
+{
+  "_comment": "クリエイティブタブ",
+  "item.uppers.upper_item": "アッパー",
+  "block.uppers.upper": "アッパー",
+  "tooltip.upper_1": "逆さまのホッパーのように動作します。",
+  "tooltip.upper_2": "下のブロックからアイテムを吸い上げます。",
+  "container.upper": "アイテム上部",
+  "itemGroup.uppers": "アッパー"
+}

@@ -1,0 +1,1438 @@
+{
+	id: "1EF8F0F9C770473D"
+	group: "3D109918D62355FC"
+	order_index: 1
+	filename: "better_chest"
+	title: "より良いストレージ"
+	icon: {
+		id: "sophisticatedstorage:diamond_chest"
+		Count: 1b
+		tag: {
+			woodType: "spruce"
+		}
+	}
+	subtitle: [
+	"生活を楽にする"
+]
+	default_quest_shape: "rsquare"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -4.0d
+			y: -4.0d
+			description: [
+	"見た目とは裏腹に、このバレルはバニラのバレルではありません。アップグレードに対応し、ティアをアップグレードし、ストレージコントローラーに接続することができます。"
+]
+			dependencies: ["07E8D382ABA24E9E"]
+			size: 1.25d
+			id: "318FEE2B5E9F39F9"
+			tasks: [{
+				id: "20B1DE9DFBD38175"
+				type: "observation"
+				title: "オーク樽"
+				icon: {
+					id: "sophisticatedstorage:barrel"
+					Count: 1b
+					tag: {
+						woodType: "oak"
+					}
+				}
+				timer: 0L
+				observe_type: 0
+				to_observe: "sophisticatedstorage:barrel"
+			}]
+			rewards: [{
+				id: "0CA67D29CACD1D23"
+				type: "item"
+				item: {
+					id: "sophisticatedstorage:barrel"
+					Count: 1b
+					tag: {
+						woodType: "oak"
+					}
+				}
+			}]
+		}
+		{
+			title: "バニラストレージよりも優れている"
+			x: -5.5d
+			y: -5.5d
+			description: [
+				"Sophisticated Storageは、樽、チェスト、シュルカーボックスを複数階層に追加するMODです。"
+				""
+				"このMODの大きな強みは、これらのストレージが様々なアップグレードによって改良・カスタマイズできることです。"
+			]
+			id: "07E8D382ABA24E9E"
+			tasks: [{
+				id: "5122ACD1FF246A9F"
+				type: "checkmark"
+				title: "強力なストレージシステム"
+			}]
+			rewards: [{
+				id: "77F9004B9BC35D6C"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: -4.0d
+			y: -7.0d
+			description: [
+	"見た目とは裏腹に、このチェストはバニラのチェストとは異なります。アップグレードを収納したり、ティアをアップグレードしたり、ストレージコントローラーに接続したりできます。"
+]
+			dependencies: ["07E8D382ABA24E9E"]
+			size: 1.25d
+			id: "78A7A6600811B47D"
+			tasks: [{
+				id: "455AC1CA7420CB75"
+				type: "observation"
+				title: "オーク材のチェスト"
+				icon: {
+					id: "sophisticatedstorage:chest"
+					Count: 1b
+					tag: {
+						woodType: "oak"
+					}
+				}
+				timer: 0L
+				observe_type: 0
+				to_observe: "sophisticatedstorage:chest"
+			}]
+			rewards: [{
+				id: "60F533DA1C5B381E"
+				type: "item"
+				item: {
+					id: "sophisticatedstorage:chest"
+					Count: 1b
+					tag: {
+						woodType: "oak"
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: -7.0d
+			dependencies: ["78A7A6600811B47D"]
+			id: "697D16C942C07CE6"
+			tasks: [{
+				id: "61F27A53EC4A23B0"
+				type: "observation"
+				title: "鉄の箱"
+				icon: {
+					id: "sophisticatedstorage:iron_chest"
+					Count: 1b
+					tag: {
+						woodType: "oak"
+					}
+				}
+				timer: 0L
+				observe_type: 0
+				to_observe: "sophisticatedstorage:iron_chest"
+			}]
+			rewards: [{
+				id: "2B2FBC952A4340A7"
+				type: "item"
+				item: "minecraft:iron_ingot"
+				count: 8
+			}]
+		}
+		{
+			x: -1.5d
+			y: -7.0d
+			dependencies: ["697D16C942C07CE6"]
+			id: "1F3A3B01FE0E8541"
+			tasks: [{
+				id: "1BE234D598025CFD"
+				type: "observation"
+				title: "ゴールドチェスト"
+				icon: {
+					id: "sophisticatedstorage:gold_chest"
+					Count: 1b
+					tag: {
+						woodType: "oak"
+					}
+				}
+				timer: 0L
+				observe_type: 0
+				to_observe: "sophisticatedstorage:gold_chest"
+			}]
+			rewards: [{
+				id: "404B4A326A353690"
+				type: "item"
+				item: "minecraft:gold_ingot"
+				count: 8
+			}]
+		}
+		{
+			x: -0.5d
+			y: -7.0d
+			dependencies: ["1F3A3B01FE0E8541"]
+			id: "3089ADB02E75EFD0"
+			tasks: [{
+				id: "671A016E863C2EB7"
+				type: "observation"
+				title: "ダイヤモンドチェスト"
+				icon: {
+					id: "sophisticatedstorage:diamond_chest"
+					Count: 1b
+					tag: {
+						woodType: "oak"
+					}
+				}
+				timer: 0L
+				observe_type: 0
+				to_observe: "sophisticatedstorage:diamond_chest"
+			}]
+			rewards: [{
+				id: "3BF310791E67F7C0"
+				type: "item"
+				item: "minecraft:diamond"
+				count: 8
+			}]
+		}
+		{
+			x: 0.5d
+			y: -7.0d
+			dependencies: ["3089ADB02E75EFD0"]
+			id: "410D6ABE5326BA8F"
+			tasks: [{
+				id: "50EC44317CFDA386"
+				type: "observation"
+				title: "ネザーライトチェスト"
+				icon: {
+					id: "sophisticatedstorage:netherite_chest"
+					Count: 1b
+					tag: {
+						woodType: "oak"
+					}
+				}
+				timer: 0L
+				observe_type: 0
+				to_observe: "sophisticatedstorage:netherite_chest"
+			}]
+			rewards: [{
+				id: "6530590F98A33DF1"
+				type: "item"
+				item: "minecraft:netherite_scrap"
+				count: 4
+			}]
+		}
+		{
+			x: -2.5d
+			y: -4.0d
+			dependencies: ["318FEE2B5E9F39F9"]
+			id: "313862441E33C018"
+			tasks: [{
+				id: "5EFE24A93FD43F28"
+				type: "observation"
+				title: "鉄樽"
+				icon: {
+					id: "sophisticatedstorage:iron_barrel"
+					Count: 1b
+					tag: {
+						woodType: "oak"
+					}
+				}
+				timer: 0L
+				observe_type: 0
+				to_observe: "sophisticatedstorage:iron_barrel"
+			}]
+			rewards: [{
+				id: "59505F66F4F1AD20"
+				type: "item"
+				item: "minecraft:iron_ingot"
+				count: 8
+			}]
+		}
+		{
+			x: -1.5d
+			y: -4.0d
+			dependencies: ["313862441E33C018"]
+			id: "10F67C69112A58AB"
+			tasks: [{
+				id: "0BE004537CD6AA41"
+				type: "observation"
+				title: "ゴールドバレル"
+				icon: {
+					id: "sophisticatedstorage:gold_barrel"
+					Count: 1b
+					tag: {
+						woodType: "oak"
+					}
+				}
+				timer: 0L
+				observe_type: 0
+				to_observe: "sophisticatedstorage:gold_barrel"
+			}]
+			rewards: [{
+				id: "2731BE5654B4B031"
+				type: "item"
+				item: "minecraft:gold_ingot"
+				count: 8
+			}]
+		}
+		{
+			title: "ダイヤモンドバレル"
+			x: -0.5d
+			y: -4.0d
+			dependencies: ["10F67C69112A58AB"]
+			id: "139960B21E60A17A"
+			tasks: [{
+				id: "7C9FB3A1486BBD98"
+				type: "observation"
+				icon: {
+					id: "sophisticatedstorage:diamond_barrel"
+					Count: 1b
+					tag: {
+						woodType: "oak"
+					}
+				}
+				timer: 0L
+				observe_type: 0
+				to_observe: "sophisticatedstorage:diamond_barrel"
+			}]
+			rewards: [{
+				id: "120CC31247472B47"
+				type: "item"
+				item: "minecraft:diamond"
+				count: 8
+			}]
+		}
+		{
+			title: "ネザーライトバレル"
+			x: 0.5d
+			y: -4.0d
+			dependencies: ["139960B21E60A17A"]
+			id: "15336316726051B5"
+			tasks: [{
+				id: "4CF2829AEB5DB9F3"
+				type: "observation"
+				icon: {
+					id: "sophisticatedstorage:netherite_barrel"
+					Count: 1b
+					tag: {
+						woodType: "oak"
+					}
+				}
+				timer: 0L
+				observe_type: 0
+				to_observe: "sophisticatedstorage:netherite_barrel"
+			}]
+			rewards: [{
+				id: "613B208BAD4DD1A6"
+				type: "item"
+				item: "minecraft:netherite_scrap"
+				count: 4
+			}]
+		}
+		{
+			x: -4.0d
+			y: -5.5d
+			subtitle: "簡単なアップグレード"
+			description: [
+				"これらのアップグレードは、インベントリからチェストや樽を回収することなく、強化するのに役立ちます。"
+				"右クリックするだけでアップグレードできます。"
+				""
+				"バニラのチェストからTier 1のチェストに切り替えることができます。"
+			]
+			dependencies: ["07E8D382ABA24E9E"]
+			size: 1.25d
+			id: "49E5B42DE076F694"
+			tasks: [{
+				id: "3EE13EDFF041CA4F"
+				type: "item"
+				item: "sophisticatedstorage:basic_tier_upgrade"
+			}]
+			rewards: [{
+				id: "254C867452250A20"
+				type: "item"
+				item: "sophisticatedstorage:basic_tier_upgrade"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -5.5d
+			description: [
+	"ティア 1 チェストからティア 2 チェストにアップグレードできます。"
+]
+			dependencies: ["49E5B42DE076F694"]
+			id: "557562C9EADD2587"
+			tasks: [{
+				id: "6470D2DAE895A7CA"
+				type: "item"
+				item: "sophisticatedstorage:basic_to_iron_tier_upgrade"
+			}]
+			rewards: [{
+				id: "5FCB0E6BD53A1888"
+				type: "item"
+				item: "minecraft:iron_ingot"
+				count: 8
+			}]
+		}
+		{
+			x: -1.5d
+			y: -5.5d
+			description: [
+	"ティア 2 チェストからティア 3 チェストにアップグレードできます。"
+]
+			dependencies: ["557562C9EADD2587"]
+			id: "786696937A2B722A"
+			tasks: [{
+				id: "61A134E9509D0DC8"
+				type: "item"
+				item: "sophisticatedstorage:iron_to_gold_tier_upgrade"
+			}]
+			rewards: [{
+				id: "5B96548F81E06ECF"
+				type: "item"
+				item: "minecraft:gold_ingot"
+				count: 8
+			}]
+		}
+		{
+			x: -0.5d
+			y: -5.5d
+			description: [
+	"ティア 3 チェストからティア 4 チェストにアップグレードできます。"
+]
+			dependencies: ["786696937A2B722A"]
+			id: "4B16AB3C2770892C"
+			tasks: [{
+				id: "3731B8F82E521623"
+				type: "item"
+				item: "sophisticatedstorage:gold_to_diamond_tier_upgrade"
+			}]
+			rewards: [{
+				id: "652119C90F9A98DC"
+				type: "item"
+				item: "minecraft:diamond"
+				count: 8
+			}]
+		}
+		{
+			x: 0.5d
+			y: -5.5d
+			description: [
+	"Tier 4 チェストから Tier 5 チェストにアップグレードできます。"
+]
+			dependencies: ["4B16AB3C2770892C"]
+			id: "29314E72D1556D55"
+			tasks: [{
+				id: "7D7F69ADCB48719C"
+				type: "item"
+				item: "sophisticatedstorage:diamond_to_netherite_tier_upgrade"
+			}]
+			rewards: [{
+				id: "6BB2CB0B72E63522"
+				type: "item"
+				item: "minecraft:netherite_scrap"
+				count: 4
+			}]
+		}
+		{
+			x: -5.5d
+			y: -7.0d
+			subtitle: "胸部/バレルをアップグレードする"
+			description: [
+				"基本アップグレードは、その名の通り、チェストやバレルで使用できる様々なアップグレードを作成するための基本アイテムです。"
+				""
+				"アップグレードの種類は豊富で、用途も様々です。JEI検索で「@storage upgrade」と入力すると見つかります。マウスオーバーでアップグレードの仕組みを確認できます。"
+				""
+				"必要なアップグレードを入手したら、チェストまたはバレルを開けて入れてください。"
+				"チェストまたはバレルのティアが高いほど、収容できるアップグレードの数も多くなります。"
+			]
+			dependencies: ["07E8D382ABA24E9E"]
+			min_width: 300
+			id: "1B4A6FE8ABBF2BA4"
+			tasks: [{
+				id: "13D89C49FDF7B15B"
+				type: "item"
+				item: "sophisticatedstorage:upgrade_base"
+			}]
+			rewards: [{
+				id: "701E1F8E22802D82"
+				type: "item"
+				item: "sophisticatedstorage:upgrade_base"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -7.0d
+			description: [
+				"ストレージリンクを使用すると、コントローラーやコントローラーに接続されているブロックに接続されていない複数のストレージを接続できます。"
+				""
+				"- いずれかのストレージの任意の面に配置し、ストレージツールを使用してリンクします。"
+				"- 配置後、ストレージツールを使用してコントローラーにリンクできます。"
+			]
+			dependencies: ["48DEDAB5AD7F619E"]
+			min_width: 300
+			id: "560B828839784D18"
+			tasks: [{
+				id: "027C41C3BF5E2401"
+				type: "item"
+				item: "sophisticatedstorage:storage_link"
+			}]
+			rewards: [{
+				id: "6AC570062FCC249F"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: -7.0d
+			y: -4.0d
+			description: [
+				"リンク、ロック、ロックとカウントの表示/非表示の切り替えができます。"
+				""
+				"- Shiftキーを押しながらスクロールするとモードを変更できます。"
+				"- リンクするには、コントローラーを右クリックしてリンクを開始し、次にストレージまたはストレージリンクを右クリックしてリンクを設定します。"
+				"- ロックは、右クリックしたストレージ1つ、または右クリックしたコントローラーに接続されているすべてのストレージをロック/ロック解除します。"
+				"- ロック/カウントの表示/非表示の切り替えはロックと同様に機能するため、ストレージまたはコントローラーを右クリックするだけです。"
+			]
+			dependencies: ["48DEDAB5AD7F619E"]
+			min_width: 300
+			id: "3FCF0D5DC6822A11"
+			tasks: [{
+				id: "417E9121085545CB"
+				type: "item"
+				item: "sophisticatedstorage:storage_tool"
+			}]
+			rewards: [{
+				id: "5EEE85DE29BEFB63"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: -7.0d
+			y: -5.5d
+			description: [
+				"コントローラーを使用すると、複数のストレージを1つの大きなストレージマルチブロックのように操作できます。"
+				""
+				"- コントローラーの隣、またはコントローラーに既に接続されているストレージの隣にストレージを配置するだけで接続できます（コントローラーから全方向に最大12ブロック離れた場所でも動作します）。"
+				""
+				"- その他の接続方法としては、ストレージツールを使用することで、個々のストレージをリンクすることも、複数のストレージをリンクするためのストレージリンクブロックをリンクすることもできます。"
+			]
+			dependencies: [
+				"07E8D382ABA24E9E"
+				"5E40A0E27F34172C"
+			]
+			min_width: 300
+			id: "48DEDAB5AD7F619E"
+			tasks: [{
+				id: "009BEC59256DBF9A"
+				type: "item"
+				item: "sophisticatedstorage:controller"
+			}]
+			rewards: [{
+				id: "2E87B133ED34AD3E"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: -5.5d
+			y: -4.0d
+			subtitle: "胸を動かすには"
+			description: [
+				"トランクや樽の中身を全部運ばずに移動させたいですか？"
+				""
+				"梱包テープを使えば、箱を右クリックすることで箱を破ることができ、中身は新しい箱に移すまでそのまま残ります。"
+			]
+			dependencies: ["07E8D382ABA24E9E"]
+			id: "79990D40C2B5412F"
+			tasks: [{
+				id: "16313F3E9FC8857A"
+				type: "item"
+				item: {
+					id: "sophisticatedstorage:packing_tape"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "15BD3E65DF03F3D7"
+				type: "item"
+				item: {
+					id: "sophisticatedstorage:packing_tape"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -5.5d
+			y: -2.5d
+			subtitle: "液体タンク"
+			description: [
+				"この液体タンクは液体を保管するために使用されます。"
+				"それだけでなく、ジャンプポイントとしても使用できます。"
+				""
+				"Shiftキーを押しながらマウスホイールを押すと、タンクモードとバケツモードを切り替えることができます。"
+				"バケツモードでは、Shiftキーを押しながら右クリックすると液体ソースを配置できます。"
+				"右クリックするだけで液体ソースを回収できます。"
+			]
+			id: "5689CE0C33E25A27"
+			tasks: [{
+				id: "6F25A7385727EF09"
+				type: "item"
+				item: "mekanism:basic_fluid_tank"
+			}]
+			rewards: [{
+				id: "53227CF3C3F09FAC"
+				type: "item"
+				item: "mekanism:basic_fluid_tank"
+			}]
+		}
+		{
+			x: -13.0d
+			y: 1.5d
+			description: [
+				"Dankはバックパックとしても使えますが、その真価は、開けることなく直接ブロックを配置できることにあります。"
+				""
+				"Dankには2つのモードがあります。1つは開いて中身にアクセスするモード、もう1つはブロックを配置するモードです。デフォルトでは、モード切り替えは「i」キーに割り当てられています。"
+				""
+				"「建設」モードを選択したら、Shiftキーを押しながらマウスホイールを回して、配置するブロックのスタックを選択します。"
+			]
+			size: 1.25d
+			min_width: 300
+			id: "4DA42B649B264B33"
+			tasks: [{
+				id: "1C892F5F2FC05923"
+				type: "item"
+				item: "dankstorage:dank_1"
+			}]
+			rewards: [{
+				id: "4A4BCC7A9631EE7D"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: -11.5d
+			y: 0.0d
+			subtitle: "探検家向け"
+			description: [
+				"バックパックは常に持ち歩くアイテムです。アイテムを収納したり、持ち運べるアイテム数を増やすことができます。"
+				""
+				"装備したら、右クリック、または専用のキーで開けます。"
+				"Shiftキーを押しながら右クリックで地面に設置すれば、宝箱として使えます。"
+				""
+				"バックパックの高さが高ければ高いほど、収納スペースも増えます。"
+				"バックパックは骨董品インベントリに入れて、防具を保管できます。"
+			]
+			size: 1.25d
+			min_width: 300
+			id: "12DD8D9596D1B4E4"
+			tasks: [{
+				id: "2B263944F663B650"
+				type: "item"
+				item: {
+					id: "sophisticatedbackpacks:backpack"
+					Count: 1b
+					tag: {
+						inventorySlots: 27
+						upgradeSlots: 1
+						contentsUuid: [I;
+							-429252144
+							14172510
+							-1291829733
+							2018292610
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "3163DB072189B772"
+				type: "item"
+				item: "minecraft:leather"
+				count: 3
+			}]
+		}
+		{
+			x: -10.0d
+			y: 0.0d
+			dependencies: ["12DD8D9596D1B4E4"]
+			id: "61A0D6BE3834AA62"
+			tasks: [{
+				id: "2BCB8BB661BECC15"
+				type: "item"
+				item: {
+					id: "sophisticatedbackpacks:iron_backpack"
+					Count: 1b
+					tag: {
+						inventorySlots: 54
+						upgradeSlots: 2
+						contentsUuid: [I;
+							-511188260
+							-1885845838
+							-1085075277
+							-403092393
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "5EFD48276A41560B"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: -9.0d
+			y: 0.0d
+			dependencies: ["61A0D6BE3834AA62"]
+			id: "12EFF376A3BF5079"
+			tasks: [{
+				id: "027E4105C6EA2931"
+				type: "item"
+				item: {
+					id: "sophisticatedbackpacks:gold_backpack"
+					Count: 1b
+					tag: {
+						inventorySlots: 81
+						upgradeSlots: 3
+						contentsUuid: [I;
+							2054001263
+							1137983906
+							-2131148739
+							-327834236
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "5BF06109DB4C3EF9"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: -8.0d
+			y: 0.0d
+			dependencies: ["12EFF376A3BF5079"]
+			id: "2B2C303D26EDDADB"
+			tasks: [{
+				id: "294EFC50F4446DC1"
+				type: "item"
+				item: {
+					id: "sophisticatedbackpacks:diamond_backpack"
+					Count: 1b
+					tag: {
+						inventorySlots: 108
+						upgradeSlots: 5
+						contentsUuid: [I;
+							1908395100
+							1487487124
+							-1416698719
+							1047344500
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "7F1E504066B8D160"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: -7.0d
+			y: 0.0d
+			dependencies: ["2B2C303D26EDDADB"]
+			id: "518DDAC8E6995319"
+			tasks: [{
+				id: "5C0908B4C1C7BAF6"
+				type: "item"
+				item: {
+					id: "sophisticatedbackpacks:netherite_backpack"
+					Count: 1b
+					tag: {
+						inventorySlots: 120
+						upgradeSlots: 7
+						contentsUuid: [I;
+							-1623109129
+							-1685240770
+							-2046440351
+							-50195366
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "34F11887F1BB0CFB"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: -11.5d
+			y: 1.5d
+			dependencies: ["4DA42B649B264B33"]
+			id: "211E69031743F229"
+			tasks: [{
+				id: "26F89B4A559F4CFC"
+				type: "item"
+				item: "dankstorage:dank_2"
+			}]
+			rewards: [{
+				id: "074B27CA7ECAAE3F"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: -10.5d
+			y: 1.5d
+			dependencies: ["211E69031743F229"]
+			id: "1B51B7063F95F9EE"
+			tasks: [{
+				id: "3891BB96BD78F6E0"
+				type: "item"
+				item: "dankstorage:dank_3"
+			}]
+			rewards: [{
+				id: "14C9D3D4020E390C"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: -13.0d
+			y: 0.0d
+			subtitle: "バックパックをアップグレードする"
+			description: [
+				"アップグレードベースは、その名の通り、バックパックで使用する様々なアップグレードを作成するための基本アイテムです。"
+				""
+				"アップグレードベースは数多く存在し、用途も様々です。JEI検索で「@backpack upgrade」と入力すると見つかります。マウスオーバーでアップグレードの仕組みを確認できます。"
+				""
+				"必要なアップグレードを入手したら、バックパックを開いて収納します。"
+				"バックパックのティアが高いほど、収納できるアップグレードの数も多くなります。"
+			]
+			dependencies: ["12DD8D9596D1B4E4"]
+			min_width: 300
+			id: "3F5038B963F8D033"
+			tasks: [{
+				id: "15C49D68DCE359EA"
+				type: "item"
+				item: "sophisticatedbackpacks:upgrade_base"
+			}]
+			rewards: [{
+				id: "4D99C803FBEAA056"
+				type: "item"
+				item: "sophisticatedbackpacks:upgrade_base"
+			}]
+		}
+		{
+			x: -9.5d
+			y: 1.5d
+			dependencies: ["1B51B7063F95F9EE"]
+			id: "2F96B9198A915392"
+			tasks: [{
+				id: "693F603C36D38F80"
+				type: "item"
+				item: "dankstorage:dank_4"
+			}]
+			rewards: [{
+				id: "6938D74A9FA92D43"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: -8.5d
+			y: 1.5d
+			dependencies: ["2F96B9198A915392"]
+			id: "68BF8346105963C4"
+			tasks: [{
+				id: "7F8C3441F6D954DF"
+				type: "item"
+				item: "dankstorage:dank_5"
+			}]
+			rewards: [{
+				id: "0E04F3D861D2455F"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -7.5d
+			y: 1.5d
+			dependencies: ["68BF8346105963C4"]
+			id: "3C825B21150D56B5"
+			tasks: [{
+				id: "3E3F937512186400"
+				type: "item"
+				item: "dankstorage:dank_6"
+			}]
+			rewards: [{
+				id: "420CBE625D3394E7"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -6.5d
+			y: 1.5d
+			dependencies: ["3C825B21150D56B5"]
+			id: "5F4A43527A3A3490"
+			tasks: [{
+				id: "3FDD3E7BB505B252"
+				type: "item"
+				item: "dankstorage:dank_7"
+			}]
+			rewards: [{
+				id: "24C20194C25BBF86"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "液体引き出し"
+			x: -15.0d
+			y: -7.0d
+			description: [
+				"液体ドロワーは液体を保管するために使用します。"
+				"右クリックでバケツを入れたり、液体パイプで液体を補充したりできます。"
+				""
+				"液体を取り出すには、バケツを手に取り、前面を左クリックします。"
+			]
+			size: 1.25d
+			id: "45AEA35F9C7AD826"
+			tasks: [{
+				id: "3F1027CE84AAB40E"
+				type: "item"
+				item: "functionalstorage:fluid_1"
+			}]
+			rewards: [{
+				id: "0F3D8B485CA9AD5E"
+				type: "item"
+				item: "functionalstorage:fluid_1"
+			}]
+		}
+		{
+			title: "アイテムドロワー"
+			x: -15.0d
+			y: -3.875d
+			description: [
+				"引き出しは、丸石、土、木材、鉄などの大量のアイテムを保管するのに非常に便利です。"
+				"1～4種類のアイテムを保管できます。"
+				"引き出しは、壊れても中身が保持されるという利点があります。そのため、移動が非常に簡単です。"
+				""
+				"前面を右クリックすると、アイテムを手に挿入できます。"
+				"左クリックすると、アイテムを取り出しできます。"
+				"Shiftキーを押しながら左クリックすると、スタック全体を取り出します。"
+			]
+			size: 1.25d
+			min_width: 300
+			id: "125A541EA3D83E45"
+			tasks: [{
+				id: "547DC3A295624659"
+				type: "item"
+				title: "任意の#functionalstorage:drawer"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "functionalstorage:drawer"
+					}
+				}
+			}]
+			rewards: [{
+				id: "159A5BA413B3D06E"
+				type: "item"
+				item: "functionalstorage:oak_1"
+			}]
+		}
+		{
+			title: "フレーム付き引き出し"
+			x: -16.0d
+			y: -2.5d
+			subtitle: "私の引き出しを改造する"
+			description: [
+				"フレーム付きの引き出しで引き出しをカスタマイズしましょう。"
+				"フレーム付きの引き出しをクラフトテーブルに置き、ブロックを3つ追加します。"
+			]
+			dependencies: ["125A541EA3D83E45"]
+			id: "603C4CBA5568701A"
+			tasks: [{
+				id: "32392F9C56FB7DC8"
+				type: "item"
+				item: "functionalstorage:framed_1"
+			}]
+			rewards: [{
+				id: "201CA0A16C147FD4"
+				type: "item"
+				item: "functionalstorage:framed_1"
+			}]
+		}
+		{
+			x: -13.5d
+			y: -4.5d
+			description: [
+				"リンクツールは、引き出しを引き出しコントローラーにリンクします。"
+				""
+				"ツールを握った状態で右クリックすると、引き出しの追加と削除を切り替えることができます。"
+				"ツールを握った状態でShiftキーを押しながら右クリックすると、単一選択と複数選択を切り替えることができます。"
+			]
+			dependencies: ["1FB8AB0BB727BAA3"]
+			id: "04EC92FF50FB2BB9"
+			tasks: [{
+				id: "218C0F2327270D3E"
+				type: "item"
+				item: {
+					id: "functionalstorage:linking_tool"
+					Count: 1b
+					tag: {
+						Action: "ADD"
+						Mode: "SINGLE"
+					}
+				}
+			}]
+			rewards: [{
+				id: "0155868E8135AA45"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: -14.0d
+			y: -2.5d
+			description: [
+				"設定ツールを使用すると、ドロワーの操作を管理できます。"
+				"例えば、ドロワーに収納できるアイテムの種類をロックできます。"
+				""
+				"Shiftキーを押しながら右クリックすると、モードを変更できます。"
+			]
+			dependencies: ["125A541EA3D83E45"]
+			id: "7B63A0E74AA3931F"
+			tasks: [{
+				id: "5AE4693F1C6C3A87"
+				type: "item"
+				item: {
+					id: "functionalstorage:configuration_tool"
+					Count: 1b
+					tag: {
+						Mode: "LOCKING"
+					}
+				}
+			}]
+			rewards: [{
+				id: "57CA9AAFE291027A"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: -13.5d
+			y: -5.5d
+			description: [
+				"ストレージコントローラーを使用すると、すべての引き出しを1か所にリンクできます。"
+				""
+				"接続したら、コントローラーを右クリックすると、アイテムが適切な引き出しに自動的に収納されます。"
+			]
+			dependencies: [
+				"45AEA35F9C7AD826"
+				"125A541EA3D83E45"
+				"5E40A0E27F34172C"
+			]
+			dependency_requirement: "one_completed"
+			id: "1FB8AB0BB727BAA3"
+			tasks: [{
+				id: "1475DB82DB90E3BE"
+				type: "item"
+				item: "functionalstorage:storage_controller"
+			}]
+			rewards: [{
+				id: "59F475E4F98AF99D"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			title: "&5ボイドアップグレード"
+			x: -15.5d
+			y: -5.5d
+			subtitle: "過剰ではない"
+			description: [
+	"引き出しには定められた収納容量があり、それ以上の物を入れると破壊されます。"
+]
+			dependencies: [
+				"125A541EA3D83E45"
+				"45AEA35F9C7AD826"
+			]
+			dependency_requirement: "one_completed"
+			id: "6E8A1C3A525D5F5A"
+			tasks: [{
+				id: "578C81F880A77A5C"
+				type: "item"
+				item: "functionalstorage:void_upgrade"
+			}]
+			rewards: [{
+				id: "7BA868F66A3A2339"
+				type: "item"
+				item: "functionalstorage:void_upgrade"
+			}]
+		}
+		{
+			x: -16.5d
+			y: -5.5d
+			description: [
+				"ストレージアップグレードは、引き出しに保管できるアイテムや液体の数を増やします。"
+				"引き出しごとに最大4つのアップグレードを配置できます。"
+				"アップグレードを使用するには、アップグレードを手に持った状態で引き出しを右クリックします。"
+				""
+				"ブロックアイテムのストレージ容量が8倍になります。"
+				"ブロック液体のストレージ容量が4倍になります。"
+			]
+			dependencies: [
+				"45AEA35F9C7AD826"
+				"125A541EA3D83E45"
+			]
+			dependency_requirement: "one_completed"
+			id: "7F10CB891F2BA552"
+			tasks: [{
+				id: "325453B5363203D6"
+				type: "item"
+				item: "functionalstorage:copper_upgrade"
+			}]
+			rewards: [{
+				id: "2A0EE5D41BDC9BB9"
+				type: "item"
+				item: "functionalstorage:copper_upgrade"
+			}]
+		}
+		{
+			x: -17.5d
+			y: -5.5d
+			description: [
+				"ブロックアイテムのストレージ容量を 16 倍にします。"
+				"ブロック流体のストレージ容量を 8 倍にします。"
+			]
+			dependencies: ["7F10CB891F2BA552"]
+			id: "3A6D3F3577645CFB"
+			tasks: [{
+				id: "651DBD9BDE24111E"
+				type: "item"
+				item: "functionalstorage:gold_upgrade"
+			}]
+			rewards: [{
+				id: "40B59AA7A1800C69"
+				type: "item"
+				item: "functionalstorage:gold_upgrade"
+			}]
+		}
+		{
+			x: -17.5d
+			y: -4.5d
+			description: [
+				"ブロックアイテムのストレージ容量を 24 倍にします。"
+				"ブロック流体のストレージ容量を 12 倍にします。"
+			]
+			dependencies: ["3A6D3F3577645CFB"]
+			id: "42AC0F8A2C5675C8"
+			tasks: [{
+				id: "4FAE5483443C25E6"
+				type: "item"
+				item: "functionalstorage:diamond_upgrade"
+			}]
+			rewards: [{
+				id: "68CEC91311E9C496"
+				type: "item"
+				item: "functionalstorage:diamond_upgrade"
+			}]
+		}
+		{
+			x: -17.5d
+			y: -3.5d
+			description: [
+				"ブロックアイテムのストレージ容量を 32 倍にします。"
+				"ブロック流体のストレージ容量を 16 倍にします。"
+			]
+			dependencies: ["42AC0F8A2C5675C8"]
+			id: "566A5832D3D0398A"
+			tasks: [{
+				id: "0658951ED35B4554"
+				type: "item"
+				item: "functionalstorage:netherite_upgrade"
+			}]
+			rewards: [{
+				id: "3582B946326631A4"
+				type: "item"
+				item: "functionalstorage:netherite_upgrade"
+			}]
+		}
+		{
+			x: -15.0d
+			y: -2.5d
+			description: [
+	"圧縮引き出しは、3x3 クラフトのアイテムを自動的に圧縮することを除いて、基本引き出しと同じ機能を持ちます。"
+]
+			dependencies: ["125A541EA3D83E45"]
+			id: "7D4F9A3F0616872B"
+			tasks: [{
+				id: "6545600986C3A3EF"
+				type: "item"
+				item: "functionalstorage:simple_compacting_drawer"
+			}]
+			rewards: [{
+				id: "2802FAAAADFFFC17"
+				type: "item"
+				item: "functionalstorage:compacting_drawer"
+			}]
+		}
+		{
+			title: "ユーティリティのアップグレード"
+			x: -14.5d
+			y: -5.5d
+			description: [
+				"プッシャーとプーラーのアップグレードはユーティリティです。ケーブルやホッパーを経由することなく、引き出しからアイテムや液体を自動的に抽出できるようになります。"
+				""
+				"アップグレードを右クリックして、希望する引き出し面を選択してください。"
+			]
+			dependencies: [
+				"45AEA35F9C7AD826"
+				"125A541EA3D83E45"
+			]
+			dependency_requirement: "one_completed"
+			id: "29B272EAECC68636"
+			tasks: [
+				{
+					id: "68BF25D375C2B475"
+					type: "item"
+					item: {
+						id: "functionalstorage:puller_upgrade"
+						Count: 1b
+						tag: {
+							Direction: "down"
+						}
+					}
+				}
+				{
+					id: "5945027B3C61D289"
+					type: "item"
+					item: {
+						id: "functionalstorage:pusher_upgrade"
+						Count: 1b
+						tag: {
+							Direction: "down"
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "5536B3B9889A6C68"
+					type: "item"
+					item: {
+						id: "functionalstorage:puller_upgrade"
+						Count: 1b
+						tag: {
+							Direction: "down"
+						}
+					}
+				}
+				{
+					id: "2E93DF84AC237686"
+					type: "item"
+					item: {
+						id: "functionalstorage:pusher_upgrade"
+						Count: 1b
+						tag: {
+							Direction: "down"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "&5フィルター付きリンクケーブル"
+			x: -10.0d
+			y: -5.5d
+			description: [
+	"ストレージ インベントリ (チェストなど) をネットワークに接続し、ストレージ リクエスト テーブルまたはストレージ リモートを介してチェストへの格納とチェストからの取得を可能にします。"
+]
+			dependencies: ["52506D2D04463C00"]
+			id: "5E40A0E27F34172C"
+			tasks: [{
+				id: "2DA96D98DE2A06CF"
+				type: "item"
+				item: "storagenetwork:filter_kabel"
+				count: 4L
+			}]
+			rewards: [{
+				id: "19C3C1A2DB40109C"
+				type: "item"
+				item: "storagenetwork:filter_kabel"
+				count: 4
+			}]
+		}
+		{
+			x: -9.0d
+			y: -1.5d
+			description: [
+	"ストレージリンクケーブルでSSNにリンクされたインベントリ内のアイテムにアクセスできるインターフェース。3x3のクラフトインターフェースも内蔵されています。"
+]
+			dependencies: ["23352A6D3B25AF69"]
+			id: "7FCFFA627E454407"
+			tasks: [{
+				id: "318FCAC6216C8F15"
+				type: "item"
+				item: "storagenetwork:request"
+			}]
+			rewards: [{
+				id: "1025552F67BCF4A5"
+				type: "item"
+				item: "storagenetwork:request"
+			}]
+		}
+		{
+			x: -11.0d
+			y: -1.5d
+			dependencies: ["23352A6D3B25AF69"]
+			id: "6FC756484F12562D"
+			tasks: [{
+				id: "763898022D892CFF"
+				type: "item"
+				item: "storagenetwork:crafting_remote"
+			}]
+			rewards: [{
+				id: "1FCAEF4714D42ACF"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -10.0d
+			y: -4.5d
+			description: [
+				"基本ケーブル。すべてのシステムを接続できます。"
+				"{image:ftbquests:textures/3d-storage_network.png width:230 height:100 align:1}"
+			]
+			id: "52506D2D04463C00"
+			tasks: [{
+				id: "0307E8738862C722"
+				type: "item"
+				item: "storagenetwork:kabel"
+				count: 8L
+			}]
+			rewards: [{
+				id: "5D6E71205F70D105"
+				type: "item"
+				item: "storagenetwork:kabel"
+				count: 8
+			}]
+		}
+		{
+			x: -10.0d
+			y: -2.5d
+			description: [
+				"必須コンポーネントであり、各SSNに1つだけ存在します。それ自体には機能はありませんが、ストレージリモートを特定のSSNに接続するために使用されます。"
+				""
+				"{image:ftbquests:textures/3d-storage_network.png width:230 height:100 align:1}"
+			]
+			dependencies: ["52506D2D04463C00"]
+			id: "23352A6D3B25AF69"
+			tasks: [{
+				id: "34A8BCC0A1587C95"
+				type: "item"
+				item: "storagenetwork:master"
+			}]
+			rewards: [{
+				id: "7885180990AB2081"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			title: "&4フィルタリングされたインポートケーブル"
+			x: -11.0d
+			y: -4.5d
+			description: [
+	"ブラックリストとホワイトリストの両方のフィルタリング モードを使用して、外部の在庫から SSN にアイテムをインポートします。"
+]
+			dependencies: ["52506D2D04463C00"]
+			id: "21A18471039CFE1C"
+			tasks: [{
+				id: "1E262F331B4A12E1"
+				type: "item"
+				item: "storagenetwork:import_filter_kabel"
+				count: 4L
+			}]
+			rewards: [{
+				id: "0BE24576002BE7FA"
+				type: "item"
+				item: "storagenetwork:import_filter_kabel"
+				count: 4
+			}]
+		}
+		{
+			title: "ケーブルのエクスポート(&a)"
+			x: -9.0d
+			y: -4.5d
+			description: [
+	"フィルタリング オプションを使用して、SSN から外部の在庫にアイテムをエクスポートします。"
+]
+			dependencies: ["52506D2D04463C00"]
+			id: "39FEAC71FB8542BD"
+			tasks: [{
+				id: "52592B82AC30E3A4"
+				type: "item"
+				item: "storagenetwork:export_kabel"
+				count: 4L
+			}]
+			rewards: [{
+				id: "2660B172D063F288"
+				type: "item"
+				item: "storagenetwork:export_kabel"
+				count: 4
+			}]
+		}
+		{
+			title: "&4スピードアップグレード"
+			x: -11.0d
+			y: -3.5d
+			description: [
+	"インポート ケーブルとエクスポート ケーブルに追加して速度を上げることができます。"
+]
+			dependencies: ["52506D2D04463C00"]
+			id: "6FE14B7B31D9014A"
+			tasks: [{
+				id: "2B9FE963D17E69BF"
+				type: "item"
+				item: "storagenetwork:speed_upgrade"
+			}]
+			rewards: [{
+				id: "0A119962B6167516"
+				type: "item"
+				item: "storagenetwork:speed_upgrade"
+			}]
+		}
+		{
+			title: "&6スタックアップグレード"
+			x: -9.0d
+			y: -3.5d
+			description: [
+	"操作のスタック サイズを増やします。"
+]
+			dependencies: ["52506D2D04463C00"]
+			id: "70FD8D31A3E24B86"
+			tasks: [{
+				id: "7E2E23BF5FCD3677"
+				type: "item"
+				item: "storagenetwork:stack_upgrade"
+			}]
+			rewards: [{
+				id: "0DFB3D0ADB356752"
+				type: "item"
+				item: "storagenetwork:stack_upgrade"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

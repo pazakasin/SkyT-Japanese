@@ -1,0 +1,743 @@
+{
+	id: "000000000000044D"
+	group: "3D109918D62355FC"
+	order_index: 3
+	filename: "create"
+	title: "作成する"
+	icon: "create:mechanical_arm"
+	subtitle: [
+	"それはぐるぐる回り続ける"
+]
+	default_quest_shape: "rsquare"
+	default_hide_dependency_lines: false
+	images: [{
+		x: -1.0d
+		y: -6.0d
+		width: 2.0d
+		height: 2.0d
+		rotation: 0.0d
+		image: "create_sa:textures/items/heat_engine.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			x: 2.5d
+			y: -5.5d
+			description: [
+	"メカニカルベルトは、回転を伝え、アイテムやエンティティを移動する機械コンポーネントです。"
+]
+			id: "0000000000000450"
+			tasks: [{
+				id: "0000000000000451"
+				type: "item"
+				item: "create:belt_connector"
+			}]
+			rewards: [{
+				id: "7A8DDF64FC9608AA"
+				type: "item"
+				item: "create:belt_connector"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -1.5d
+			description: [
+	"研磨されたローズクォーツは、電子管やクロマティックコンパウンドを作成するために使用される材料です。"
+]
+			dependencies: [
+				"0000000000000490"
+				"0000000000000487"
+			]
+			id: "0000000000000452"
+			tasks: [{
+				id: "0000000000000453"
+				type: "item"
+				item: "create:polished_rose_quartz"
+				count: 4L
+			}]
+			rewards: [{
+				id: "544DEF8A7CFD91DA"
+				type: "item"
+				item: "create:polished_rose_quartz"
+				count: 4
+			}]
+		}
+		{
+			x: 3.5d
+			y: -3.5d
+			description: [
+	"クラッチは、レッドストーン信号が適用されると、出力回転を停止します。"
+]
+			dependencies: ["0000000000000458"]
+			id: "0000000000000454"
+			tasks: [{
+				id: "0000000000000455"
+				type: "item"
+				item: "create:clutch"
+			}]
+			rewards: [{
+				id: "790CEBCD09694347"
+				type: "item"
+				item: "minecraft:redstone"
+				count: 8
+			}]
+		}
+		{
+			x: 0.5d
+			y: -3.5d
+			description: [
+	"ギアシフトは、レッドストーン信号が適用されると、出力される回転力を反転します。"
+]
+			dependencies: ["0000000000000458"]
+			id: "0000000000000456"
+			tasks: [{
+				id: "0000000000000457"
+				type: "item"
+				item: "create:gearshift"
+			}]
+			rewards: [{
+				id: "51F768748A8D5B7A"
+				type: "item"
+				item: "create:adjustable_chain_gearshift"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -3.5d
+			description: [
+	"&6ケース&fは、Create の多くのクラフトレシピで使用されるブロックであり、装飾や美的目的にも使用されます。"
+]
+			size: 1.25d
+			id: "0000000000000458"
+			tasks: [{
+				id: "0000000000000459"
+				type: "item"
+				item: "create:andesite_casing"
+			}]
+			rewards: [{
+				id: "34F1FB62506A3E16"
+				type: "item"
+				item: "create:andesite_casing"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -6.5d
+			description: [
+	"メカニカル プレスは、その下にあるアイテムにプレス、パッキング、および圧縮のレシピを適用する機械コンポーネントです。"
+]
+			dependencies: ["0000000000000496"]
+			dependency_requirement: "all_started"
+			id: "000000000000045A"
+			tasks: [
+				{
+					id: "000000000000045B"
+					type: "item"
+					item: "create:mechanical_press"
+				}
+				{
+					id: "0B61A6013B655FEB"
+					type: "item"
+					item: "create:depot"
+				}
+			]
+			rewards: [{
+				id: "28E1664028765CBB"
+				type: "item"
+				item: "create:depot"
+			}]
+		}
+		{
+			title: "運動力"
+			x: -0.5d
+			y: -3.5d
+			description: [
+				"スピードメーターは回転力の速度を測定します。"
+				"ストレスメーターはシャフトにかかる応力の量を測定するために使用されます。"
+			]
+			dependencies: ["0000000000000458"]
+			id: "000000000000045F"
+			tasks: [{
+				id: "0000000000000460"
+				type: "item"
+				item: "create:speedometer"
+			}]
+			rewards: [{
+				id: "5273BB3784EE612B"
+				type: "item"
+				item: "create:stressometer"
+			}]
+		}
+		{
+			title: "エンジニア向け"
+			x: 7.0d
+			y: -3.5d
+			subtitle: "回転しているOO"
+			description: [
+				"&6エンジニアゴーグル&fは、設置された機械の詳細情報を確認できる装着型アイテムです。"
+				""
+				"&6レンチ&fは、部品の回転、分解、設定に使用するツールです。"
+				""
+				"&6ツールボックス&fは、スロットごとに最大256個のアイテムと、最大8種類のアイテムを収納できます。"
+			]
+			id: "0000000000000462"
+			tasks: [
+				{
+					id: "0000000000000463"
+					type: "item"
+					item: "create:goggles"
+				}
+				{
+					id: "0000000000000464"
+					type: "item"
+					item: "create:wrench"
+				}
+				{
+					id: "2940D0C619B7BB3D"
+					type: "item"
+					item: "create:brown_toolbox"
+				}
+			]
+			rewards: [{
+				id: "4651D632044E4403"
+				type: "item"
+				item: "create:andesite_alloy"
+				count: 6
+			}]
+		}
+		{
+			x: 2.5d
+			y: -3.5d
+			description: [
+	"エンケースドチェーンドライブは、メカニカルベルトのように回転を伝達できるブロックです。"
+]
+			dependencies: ["0000000000000458"]
+			id: "0000000000000465"
+			tasks: [{
+				id: "0000000000000466"
+				type: "item"
+				item: "create:encased_chain_drive"
+			}]
+			rewards: [{
+				id: "6844DA50D035EEF5"
+				type: "item"
+				item: "create:encased_chain_drive"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -6.5d
+			description: [
+	"トンネルはメカニカルベルト上にのみ設置できる機械です。通過するアイテムを仕分けすることができます。"
+]
+			min_width: 250
+			id: "0000000000000467"
+			tasks: [{
+				id: "0000000000000468"
+				type: "item"
+				item: "create:andesite_tunnel"
+			}]
+			rewards: [{
+				id: "0BC57D87D4B394AE"
+				type: "item"
+				item: "create:brass_tunnel"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -6.5d
+			description: [
+	"ファネルは、材料を抽出したり、在庫に挿入したりするために使用されます。"
+]
+			id: "000000000000046A"
+			tasks: [{
+				id: "000000000000046B"
+				type: "item"
+				item: "create:andesite_funnel"
+			}]
+			rewards: [{
+				id: "0B9F040BF9D9E6BA"
+				type: "item"
+				item: "create:brass_funnel"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -7.5d
+			description: [
+				"液体タンクは、ブロックごとに最大8バケツの液体を貯蔵できる液体貯蔵機構です。"
+				"液体タンクは隣接するタンクと最大3x32x3まで統合され、最大2,304バケツの液体を貯蔵できます。"
+			]
+			dependencies: ["000000000000045A"]
+			id: "0000000000000473"
+			tasks: [{
+				id: "0000000000000474"
+				type: "item"
+				item: "create:fluid_tank"
+			}]
+			rewards: [{
+				id: "26BCDFD884D405D5"
+				type: "item"
+				item: "create:fluid_tank"
+			}]
+		}
+		{
+			x: 11.5d
+			y: -1.5d
+			description: [
+	"Deployer は、最大 2 ブロック離れたブロックまたはエンティティに対するプレイヤーのアクションをシミュレートします。"
+]
+			dependencies: ["0000000000000452"]
+			id: "0000000000000481"
+			tasks: [{
+				id: "0000000000000482"
+				type: "item"
+				item: "create:deployer"
+			}]
+			rewards: [{
+				id: "78E2AC9126B13B7A"
+				type: "item"
+				item: "create:brass_hand"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 0.0d
+			description: [
+	"ローズクォーツは、研磨されたローズクォーツを作成するために使用される材料です。"
+]
+			id: "0000000000000487"
+			tasks: [{
+				id: "0000000000000488"
+				type: "item"
+				item: "create:rose_quartz"
+			}]
+			rewards: [{
+				id: "5F63BEC425ED4931"
+				type: "item"
+				item: "create:rose_quartz"
+			}]
+		}
+		{
+			title: "ギアボックス"
+			x: 5.5d
+			y: -6.5d
+			description: [
+	"ギアボックスは回転力を水平4方向に伝達できます。垂直型ギアボックスは通常バージョンと同様に、垂直4方向に動力を伝達できます。"
+]
+			dependencies: ["0000000000000496"]
+			dependency_requirement: "all_started"
+			id: "0000000000000489"
+			tasks: [{
+				id: "000000000000048A"
+				type: "item"
+				item: "create:vertical_gearbox"
+			}]
+			rewards: [{
+				id: "165405136AEC8E17"
+				type: "item"
+				item: "create:gearbox"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -5.5d
+			description: [
+				"エンケースドファンは、気流を作り出して発電できる機械部品です。"
+				"その気流は、物体の移動、バルク洗浄、バルクブラスト、バルクスモークなどに使用されます。"
+			]
+			dependencies: ["0000000000000496"]
+			dependency_requirement: "one_started"
+			id: "000000000000048C"
+			tasks: [{
+				id: "000000000000048D"
+				type: "item"
+				item: "create:encased_fan"
+			}]
+			rewards: [{
+				id: "06958350DA351BDF"
+				type: "item"
+				item: "create:encased_fan"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -5.5d
+			description: [
+	"Blaze Burner は、特定のミキシング レシピに必要な加熱コンポーネントです。"
+]
+			dependencies: ["00000000000004A6"]
+			id: "000000000000048E"
+			tasks: [{
+				id: "000000000000048F"
+				type: "item"
+				item: "create:blaze_burner"
+			}]
+			rewards: [{
+				id: "763BED7972B01EC8"
+				type: "item"
+				item: "minecraft:coal"
+				count: 8
+			}]
+		}
+		{
+			title: "サンドペーパー"
+			x: 10.0d
+			y: -3.0d
+			description: [
+	"サンドペーパーは、研磨されたローズクォーツを作成するためだけに使用されるツールです。"
+]
+			id: "0000000000000490"
+			tasks: [{
+				id: "0000000000000491"
+				type: "item"
+				title: "任意の#create:sandpaper"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "create:sandpaper"
+					}
+				}
+			}]
+			rewards: [{
+				id: "2F1AD280F02F733C"
+				type: "item"
+				item: {
+					id: "createaddition:diamond_grit_sandpaper"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 8.5d
+			y: -1.5d
+			description: [
+	"Mechanical Crafter は、アイテムを自動的に作成できる機械です。"
+]
+			dependencies: [
+				"0000000000000452"
+				"000000000000048E"
+			]
+			id: "0000000000000492"
+			tasks: [{
+				id: "0000000000000493"
+				type: "item"
+				item: "create:mechanical_crafter"
+				count: 3L
+			}]
+			rewards: [{
+				id: "3C0B1F651C497FFD"
+				type: "item"
+				item: "create:mechanical_crafter"
+				count: 3
+			}]
+		}
+		{
+			title: "運動伝達装置"
+			x: 5.5d
+			y: -5.5d
+			description: [
+				"歯車は、回転を中継する Create の基本的な機械部品です。"
+				""
+				"大型歯車は歯車の大型版で、コーナーでの回転を中継したり、回転速度コントローラーに電力を供給したりできます。"
+			]
+			dependencies: ["0000000000000458"]
+			min_width: 250
+			id: "0000000000000496"
+			tasks: [
+				{
+					id: "0000000000000497"
+					type: "item"
+					item: "create:shaft"
+					count: 8L
+				}
+				{
+					id: "6BA8AD281E7317BA"
+					type: "item"
+					item: "create:cogwheel"
+				}
+				{
+					id: "45638D3AB9955220"
+					type: "item"
+					item: "create:large_cogwheel"
+				}
+			]
+			rewards: [
+				{
+					id: "42DCBC7170403F47"
+					type: "item"
+					item: "create:cogwheel"
+				}
+				{
+					id: "7FAE24B69BFF2BE3"
+					type: "item"
+					item: "create:large_cogwheel"
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: -7.5d
+			description: [
+				"水車は回転力の源です。水が水面を流れることで回転力が発生します。"
+				""
+				"水車を複数追加することで、全体の耐応力を高めることができます。"
+			]
+			dependencies: ["0000000000000496"]
+			dependency_requirement: "all_started"
+			id: "000000000000049E"
+			tasks: [{
+				id: "000000000000049F"
+				type: "item"
+				item: "create:water_wheel"
+			}]
+			rewards: [
+				{
+					id: "7A554D865411A751"
+					type: "item"
+					item: "create:water_wheel"
+				}
+				{
+					id: "6FD27E9C290A9652"
+					type: "item"
+					item: "minecraft:water_bucket"
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: -6.5d
+			description: [
+	"ミルストーンは、粉砕ホイールのより基本的な機能であり、上から挿入されたあらゆるアイテムに粉砕レシピを適用できます。"
+]
+			dependencies: ["0000000000000496"]
+			dependency_requirement: "all_started"
+			id: "00000000000004A0"
+			tasks: [{
+				id: "00000000000004A1"
+				type: "item"
+				item: "create:millstone"
+			}]
+			rewards: [{
+				id: "130408B9B16DFFD2"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 8.5d
+			y: 0.0d
+			description: [
+	"粉砕ホイールはミルストーンのより高度なバージョンです。回転方向とは反対方向から投入されたアイテムに粉砕レシピを適用します。"
+]
+			dependencies: ["0000000000000492"]
+			min_width: 250
+			id: "00000000000004A2"
+			tasks: [{
+				id: "00000000000004A3"
+				type: "item"
+				item: "create:crushing_wheel"
+				count: 2L
+			}]
+			rewards: [{
+				id: "70FFD7366F3FFB37"
+				type: "item"
+				item: "minecraft:obsidian"
+				count: 10
+			}]
+		}
+		{
+			x: 6.5d
+			y: -5.5d
+			description: [
+	"メカニカルミキサーは、盆地内のアイテムにミキシングレシピと形状のないクラフトレシピを適用する機械コンポーネントです。"
+]
+			dependencies: ["0000000000000496"]
+			dependency_requirement: "all_started"
+			id: "00000000000004A6"
+			tasks: [
+				{
+					id: "00000000000004A7"
+					type: "item"
+					item: "create:mechanical_mixer"
+				}
+				{
+					id: "7818D19A5F9413E0"
+					type: "item"
+					item: "create:basin"
+				}
+			]
+			rewards: [{
+				id: "10A0A894FC3ED7DC"
+				type: "item"
+				item: "create:basin"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.5d
+			description: [
+				"機械のこぎりは回転力によって動力を得ており、横向きに設置すると目の前の木材ブロックを自動的に切り倒します。木を切り倒す際は、一番下のブロックのみを破壊し、木全体を自動的に破壊します。"
+				""
+				"上向きに設置すると、のこぎりは鋸引きまたは石切りのレシピを適用します。"
+			]
+			dependencies: ["0000000000000458"]
+			min_width: 250
+			id: "00000000000004A8"
+			tasks: [{
+				id: "00000000000004A9"
+				type: "item"
+				item: "create:mechanical_saw"
+			}]
+			rewards: [{
+				id: "02E033781C0A7370"
+				type: "item"
+				item: "minecraft:oak_log"
+				count: 8
+			}]
+		}
+		{
+			x: 10.0d
+			y: -7.5d
+			description: [
+	"Spout は、ボトルやバケツなどの液体容器に液体を充填したり、液体を使ったクラフトに使用したりするために使用されるブロックです。"
+]
+			dependencies: ["0000000000000473"]
+			id: "00000000000004AA"
+			tasks: [{
+				id: "00000000000004AB"
+				type: "item"
+				item: "create:spout"
+			}]
+			rewards: [{
+				id: "529A5EB5322FEB59"
+				type: "item"
+				item: "create:item_drain"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -1.5d
+			description: [
+	"圧延機はワイヤーや棒の製造に使用されます。"
+]
+			dependencies: ["0000000000000458"]
+			id: "1E30A845FFC27D1B"
+			tasks: [{
+				id: "59B76EE74E0A9667"
+				type: "item"
+				item: "createaddition:rolling_mill"
+			}]
+			rewards: [{
+				id: "5B1ACE1734923406"
+				type: "item"
+				item: "createaddition:brass_rod"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -2.0d
+			description: [
+	"オルタネーターは運動エネルギーからフォージエネルギーを生成します。"
+]
+			dependencies: [
+				"1E30A845FFC27D1B"
+				"0000000000000492"
+			]
+			id: "1ECB6F8C5E30138E"
+			tasks: [{
+				id: "3A46B885682F75C1"
+				type: "item"
+				item: "createaddition:alternator"
+			}]
+			rewards: [{
+				id: "5F1EF2300811D851"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 7.0d
+			y: -1.0d
+			description: [
+	"電気モーターは、鍛造エネルギーから運動エネルギーを生成します。"
+]
+			dependencies: [
+				"1E30A845FFC27D1B"
+				"0000000000000492"
+			]
+			id: "4DDD903860D17022"
+			tasks: [{
+				id: "1DB568C7E86CD2FA"
+				type: "item"
+				item: "createaddition:electric_motor"
+			}]
+			rewards: [{
+				id: "044FB6A2877369F8"
+				type: "item"
+				item: "createaddition:electric_motor"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -5.5d
+			description: [
+	"スーパーグルーは、スライムボールのような装置内の構造物を固定します。"
+]
+			id: "1649CACDA9411210"
+			tasks: [{
+				id: "4CF58B688D370BDB"
+				type: "item"
+				item: {
+					id: "create:super_glue"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "5027552496AB62A4"
+				type: "item"
+				item: {
+					id: "create:super_glue"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 10.0d
+			y: -5.5d
+			subtitle: "&b過熱"
+			description: [
+	"Blaze Burner を右クリックすると、Superheated に切り替わります。"
+]
+			dependencies: [
+				"000000000000048E"
+				"00000000000004AA"
+			]
+			id: "37ABC7CDECC9E714"
+			tasks: [{
+				id: "76C627D51D1633E8"
+				type: "item"
+				item: "create:blaze_cake"
+			}]
+			rewards: [{
+				id: "14F5026419FF8A60"
+				type: "item"
+				item: "create:blaze_cake"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,0 +1,17 @@
+{
+  "_comment": "\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d",
+  "block.thermal.rose_gold_block": "ローズゴールドのブロック",
+  "block.thermal.steel_block": "鋼鉄のブロック",
+  "item.thermal.rose_gold_coin": "ローズゴールドコイン",
+  "item.thermal.rose_gold_dust": "ローズゴールドブレンド",
+  "item.thermal.rose_gold_gear": "ローズゴールドギア",
+  "item.thermal.rose_gold_ingot": "ローズゴールドインゴット",
+  "item.thermal.rose_gold_nugget": "ローズゴールドナゲット",
+  "item.thermal.rose_gold_plate": "ローズゴールドプレート",
+  "item.thermal.steel_coin": "スチールコイン",
+  "item.thermal.steel_dust": "スチールブレンド",
+  "item.thermal.steel_gear": "スチールギア",
+  "item.thermal.steel_ingot": "鋼鉄インゴット",
+  "item.thermal.steel_nugget": "スチールナゲット",
+  "item.thermal.steel_plate": "鋼板"
+}

@@ -1,0 +1,20 @@
+{
+  "key.lightoverlay.category": "ライトオーバーレイ",
+  "key.lightoverlay.enable_overlay": "ライトオーバーレイの切り替え",
+  "description.lightoverlay.caching": "リーチが 16 を超える場合、またはポテトで実行している場合は、キャッシュをお勧めします。",
+  "config.lightoverlay.general": "一般的な",
+  "config.lightoverlay.reach": "到着：",
+  "config.lightoverlay.caching": "キャッシング：",
+  "config.lightoverlay.crossLevel": "光のレベル:",
+  "config.lightoverlay.secondaryLevel": "二次光レベル:",
+  "config.lightoverlay.showNumber": "代わりに番号を表示:",
+  "config.lightoverlay.smoothLines": "滑らかなライン:",
+  "config.lightoverlay.underwater": "水中表示:",
+  "config.lightoverlay.lineWidth": "線幅:",
+  "config.lightoverlay.yellowColor": "黄色:",
+  "config.lightoverlay.secondaryColor": "二次色:",
+  "config.lightoverlay.redColor": "赤色：",
+  "config.lightoverlay.invalidColor": "無効な色",
+  "config.lightoverlay.mushroom": "キノコバイオームでの表示:",
+  "config.lightoverlay.useListWhileCaching": "キャッシュ中に glList を使用します。"
+}

@@ -1,0 +1,349 @@
+{
+	id: "392E61BBD7235A99"
+	group: "7FBA77DF66334407"
+	order_index: 3
+	filename: "draconic_evolution"
+	title: "ドラコニック進化"
+	icon: "draconicevolution:chaotic_core"
+	subtitle: [
+	"あなたはそれに立ち向かう準備はできていますか？"
+]
+	default_quest_shape: "octagon"
+	default_hide_dependency_lines: false
+	images: [{
+		x: -4.5d
+		y: 1.0d
+		width: 2.0d
+		height: 2.0d
+		rotation: 0.0d
+		image: "draconicevolution:textures/item/components/chaotic_core.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			x: 0.5d
+			y: -2.5d
+			description: [
+	"マルチブロックフュージョンクラフトシステムの中心となる部分です。変換するアイテムを収納する役割を担います。"
+]
+			dependencies: ["1842326F3FFCFEE7"]
+			id: "23F6047AE1F0AF42"
+			tasks: [{
+				id: "615FEAD620D6218F"
+				type: "item"
+				item: "draconicevolution:crafting_core"
+			}]
+			rewards: [{
+				id: "5BCE55C76ED37747"
+				type: "xp_levels"
+				xp_levels: 50
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			description: [
+				"フュージョンクラフトインジェクターは、フュージョンクラフトマルチブロックの一部です。"
+				""
+				"ベーシック、ワイバーン、ドラコニック、カオスの4つのティアがあります。"
+			]
+			dependencies: ["1842326F3FFCFEE7"]
+			id: "06687F29A86E15F0"
+			tasks: [{
+				id: "7247F02E728D288D"
+				type: "item"
+				item: "draconicevolution:basic_crafting_injector"
+			}]
+			rewards: [{
+				id: "60079CF57A295DA8"
+				type: "item"
+				item: "draconicevolution:basic_crafting_injector"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.5d
+			dependencies: ["06687F29A86E15F0"]
+			id: "10BA9B0B5AD1D53A"
+			tasks: [{
+				id: "46212DAC75E06601"
+				type: "item"
+				item: "draconicevolution:wyvern_crafting_injector"
+			}]
+			rewards: [{
+				id: "03BACDD1473C9ACA"
+				type: "item"
+				item: "draconicevolution:wyvern_crafting_injector"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 1.5d
+			dependencies: ["10BA9B0B5AD1D53A"]
+			id: "4AE856E4603E43EB"
+			tasks: [{
+				id: "43E602FA6E2511A0"
+				type: "item"
+				item: "draconicevolution:awakened_crafting_injector"
+			}]
+			rewards: [{
+				id: "613433B774562E01"
+				type: "item"
+				item: "draconicevolution:awakened_crafting_injector"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 1.5d
+			dependencies: [
+				"4AE856E4603E43EB"
+				"27B1F10982E5FC0A"
+			]
+			id: "6D4B4F8A2ABF5212"
+			tasks: [{
+				id: "2491EF0CD1DAEEB7"
+				type: "item"
+				item: "draconicevolution:chaotic_crafting_injector"
+			}]
+			rewards: [{
+				id: "169BAC78E42B897A"
+				type: "item"
+				item: "draconicevolution:chaotic_crafting_injector"
+			}]
+		}
+		{
+			x: -3.125d
+			y: -1.875d
+			subtitle: "ドラクー"
+			description: [
+				"Draconic Evolutionでは、ツールやアーマーといった高レベルアイテムに加え、高レベルエネルギーストレージ、そして以下のようなランダムな機能が多数追加されます。"
+				""
+				"• 高レベルエネルギーストレージ"
+				"• 強力なツールとアーマー"
+				"• プレイヤー検知"
+				"• テレポート"
+			]
+			size: 1.25d
+			min_width: 300
+			id: "1842326F3FFCFEE7"
+			tasks: [{
+				id: "074BBFE3A4DF824D"
+				type: "item"
+				item: "draconicevolution:draconium_core"
+			}]
+			rewards: [
+				{
+					id: "0E105493072BE7A3"
+					type: "item"
+					item: "draconicevolution:info_tablet"
+				}
+				{
+					id: "024620BDFEA4FF1A"
+					type: "item"
+					item: "draconicevolution:crystal_binder"
+				}
+			]
+		}
+		{
+			title: "エネルギーボール"
+			x: -0.5d
+			y: -0.5d
+			subtitle: "9.223京！"
+			description: [
+	"エネルギーコアを右クリックすると、エネルギーコアの階層を選択して建築ガイドを有効にするインターフェースが開きます。エネルギーコアスタビライザーは、コアの周囲の各方位に、同一平面上にある限り、垂直方向または水平方向、コアから最大16ブロック離れた場所に設置する必要があります。"
+]
+			dependencies: ["02E284703299B685"]
+			id: "529828A0FCEDB482"
+			tasks: [
+				{
+					id: "78CE74481BDA4F25"
+					type: "item"
+					item: "draconicevolution:energy_core"
+				}
+				{
+					id: "46B2C0041EC23EB5"
+					type: "item"
+					item: "draconicevolution:draconium_block"
+					count: 786L
+				}
+				{
+					id: "6AC030D7959DB5B5"
+					type: "item"
+					item: "draconicevolution:awakened_draconium_block"
+					count: 378L
+				}
+				{
+					id: "5A2BE404F27CB1B2"
+					type: "item"
+					item: "draconicevolution:energy_core_stabilizer"
+					count: 36L
+				}
+			]
+			rewards: [
+				{
+					id: "6A6FEEA6C2B9E878"
+					type: "item"
+					item: "draconicevolution:draconium_block"
+					count: 64
+				}
+				{
+					id: "219EF3FF7044A384"
+					type: "item"
+					item: "draconicevolution:awakened_draconium_block"
+					count: 64
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: 0.5d
+			description: [
+				"ガラスブロックを上に置いたエネルギー貯蔵マルチブロック構造の近くに設置すると、エネルギーを構造内に注入したり、構造から排出したりできます。"
+				""
+				"右クリックすると、入力モードと出力モードを切り替えることができます。"
+			]
+			dependencies: ["529828A0FCEDB482"]
+			dependency_requirement: "one_started"
+			id: "561232597B839ABA"
+			tasks: [{
+				id: "57C152A4FE1CEF58"
+				type: "item"
+				item: "draconicevolution:energy_pylon"
+			}]
+			rewards: [{
+				id: "7898C8F3E6FA4286"
+				type: "item"
+				item: "draconicevolution:energy_pylon"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.0d
+			dependencies: [
+				"06687F29A86E15F0"
+				"23F6047AE1F0AF42"
+			]
+			id: "02E284703299B685"
+			tasks: [{
+				id: "5A89A528A609F1D1"
+				type: "item"
+				item: "draconicevolution:wyvern_core"
+			}]
+			rewards: [{
+				id: "2060F5F7B277C669"
+				type: "item"
+				item: "draconicevolution:wyvern_core"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -0.5d
+			dependencies: [
+				"10BA9B0B5AD1D53A"
+				"23F6047AE1F0AF42"
+			]
+			id: "0F40EED9BE2E7877"
+			tasks: [{
+				id: "08EBDF3238A70491"
+				type: "item"
+				item: "draconicevolution:awakened_core"
+			}]
+			rewards: [{
+				id: "68C44BD94A249F73"
+				type: "item"
+				item: "draconicevolution:awakened_core"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -0.5d
+			dependencies: [
+				"4AE856E4603E43EB"
+				"23F6047AE1F0AF42"
+				"27B1F10982E5FC0A"
+			]
+			id: "5A4B3D2846F97CEE"
+			tasks: [{
+				id: "7D93A323533534B2"
+				type: "item"
+				item: "draconicevolution:chaotic_core"
+			}]
+			rewards: [{
+				id: "53CDF1456CF09455"
+				type: "item"
+				item: "draconicevolution:chaotic_core"
+			}]
+		}
+		{
+			title: "カオスシャード"
+			icon: "draconicevolution:medium_chaos_frag"
+			x: 4.5d
+			y: -0.5d
+			description: [
+				"カオス ガーディアン島の中央の地下にカオス クリスタルがあります。カオスガーディアンが生きている限り、それを取り戻すことはできません。"
+				""
+				"安全に、安全に、安全に、安全に、カオス ガーディアンを安全に回復してください。"
+			]
+			dependencies: ["29CA399C4AD906A1"]
+			id: "27B1F10982E5FC0A"
+			tasks: [{
+				id: "7D77F5ABDE9F785F"
+				type: "kill"
+				title: "カオスガーディアンを倒す"
+				icon: "draconicevolution:chaos_shard"
+				entity: "draconicevolution:draconic_guardian"
+				value: 1L
+			}]
+			rewards: [{
+				id: "080FA38943C3B135"
+				type: "item"
+				item: "draconicevolution:chaos_shard"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -2.0d
+			description: [
+				"カオスガーディアンは、Draconic Evolutionによって追加されたボスです。各カオスアイランド（島は1万ブロックごとに配置されています。例：0、10000）には、カオスクリスタルを守るカオスガーディアンが1体います。ガーディアンを倒すとドラゴンハート1個がドロップし、守っているカオスクリスタルにアクセスできるようになります。"
+				""
+				"エンダードラゴンと同様に、カオスアイランドにはカオスガーディアンを回復し、ダメージを受けないようにするクリスタルがいくつか散在しています。各クリスタルは50（ハート×25）の体力を持ち、攻撃を受けるとシールドを獲得します。このシールドは、ダメージを受けたクリスタルを5秒から10秒のランダムな時間、ダメージから守る効果があります。シールドが張られているクリスタルを攻撃すると、シールドの持続時間がリセットされます。"
+				""
+			]
+			optional: true
+			min_width: 300
+			id: "29CA399C4AD906A1"
+			tasks: [{
+				id: "19A732AF79650394"
+				type: "kill"
+				icon: "minecraft:dragon_head"
+				entity: "draconicevolution:draconic_guardian"
+				value: 1L
+			}]
+			rewards: [{
+				id: "3B0F6CE20E8B5B8D"
+				type: "item"
+				item: "draconicevolution:dragon_heart"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -4.0d
+			dependencies: ["23F6047AE1F0AF42"]
+			id: "70AD733221032C06"
+			tasks: [{
+				id: "0A1D870A0B8A8561"
+				type: "item"
+				item: "packageddraconic:fusion_crafter"
+			}]
+			rewards: [{
+				id: "55069E35119DC56A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+	]
+	quest_links: [ ]
+}

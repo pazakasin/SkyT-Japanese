@@ -1,0 +1,21 @@
+{
+  "block.ore_tree.coal_tree_log": "石炭の木の丸太",
+  "block.ore_tree.copper_tree_log": "銅の木の丸太",
+  "block.ore_tree.diamond_tree_log": "ダイヤモンドツリーログ",
+  "block.ore_tree.emerald_tree_log": "エメラルドツリーの丸太",
+  "block.ore_tree.gold_tree_log": "ゴールドツリーログ",
+  "block.ore_tree.iron_tree_log": "鉄の木の丸太",
+  "block.ore_tree.lapis_tree_log": "ラピスラズリの丸太",
+  "block.ore_tree.quartz_tree_log": "クォーツツリーログ",
+  "block.ore_tree.redstone_tree_log": "レッドストーンの木の丸太",
+  "block.ore_tree.coal_tree_sapling": "石炭の木の苗木",
+  "block.ore_tree.copper_tree_sapling": "銅の木の苗木",
+  "block.ore_tree.diamond_tree_sapling": "ダイヤモンドツリーの苗木",
+  "block.ore_tree.emerald_tree_sapling": "エメラルドツリーの苗木",
+  "block.ore_tree.gold_tree_sapling": "金の木の苗木",
+  "block.ore_tree.iron_tree_sapling": "鉄の木の苗木",
+  "block.ore_tree.lapis_tree_sapling": "ラピスラズリの苗木",
+  "block.ore_tree.quartz_tree_sapling": "クォーツツリーの苗木",
+  "block.ore_tree.redstone_tree_sapling": "レッドストーンの木の苗木",
+  "itemGroup.ore_tree.main": "鉱石の木"
+}

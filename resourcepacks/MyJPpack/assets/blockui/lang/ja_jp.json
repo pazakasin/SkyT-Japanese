@@ -1,0 +1,4 @@
+{
+  "blockui.container_gui.client_side_only": "コンテナの内容は、統合サーバー (シングルプレイヤー、LAN なし) でプレイしている場合にのみ表示されます。",
+  "blockui.container_gui.empty": "このコンテナは空です。"
+}

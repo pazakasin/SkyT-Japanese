@@ -1,0 +1,11 @@
+{
+  "itemGroup.geckolib_examples": "Geckolibの例",
+  "item.geckolib3.geckoarmor_head": "ゲッコーアーマーヘルメット",
+  "item.geckolib3.geckoarmor_chest": "ゲッコーアーマーチェストプレート",
+  "item.geckolib3.geckoarmor_leggings": "ゲッコーアーマーレギンス",
+  "item.geckolib3.geckoarmor_boots": "ゲッコーアーマーブーツ",
+  "item.geckolib3.jackintheboxitem": "ジャック・イン・ザ・ボックス",
+  "item.geckolib3.pistol": "ピストル",
+  "block.geckolib3.habitatblock": "ヤモリの生息地",
+  "block.geckolib3.fertilizerblock": "肥料"
+}

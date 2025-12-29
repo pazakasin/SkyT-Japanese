@@ -1,0 +1,22 @@
+{
+  "_comment": "ワイラ",
+  "telepastries.config.title": "TelePastries の設定",
+  "itemGroup.tele_tab": "テレペイストリーズ",
+  "block.telepastries.nether_cake": "ネザーケーキ",
+  "block.telepastries.end_cake": "エンドケーキ",
+  "block.telepastries.overworld_cake": "オーバーワールドケーキ",
+  "block.telepastries.twilight_cake": "トワイライトケーキ",
+  "block.telepastries.lost_city_cake": "ロストシティケーキ",
+  "block.telepastries.hunting_dimension_cake": "狩猟次元ケーキ",
+  "block.telepastries.custom_cake": "%s ケーキ",
+  "block.telepastries.custom_cake2": "%s ケーキ",
+  "block.telepastries.custom_cake3": "%s ケーキ",
+  "telepastries.pastry.reset.complete": "ディメンション %s の保存された位置がリセットされました。",
+  "telepastries.pastry.reset.failed": "ディメンション %s には保存された位置がありません。",
+  "telepastries.pastry.support.disabled": "%s がインストールされていないため、Cake は無効になっています",
+  "telepastries.pastry.custom.unbound": "カスタムケーキには設定でディメンションの境界がありません",
+  "telepastries.pastry.custom.invalid": "ケーキの宛先が無効です %s",
+  "telepastries.same_dimension": "同じ次元にテレポートできない",
+  "telepastries.teleport_restricted": "オーバーワールド以外の次元にテレポートできない",
+  "telepastries.bites": "ケーキバイト"
+}

@@ -1,0 +1,22 @@
+{
+  "item.angelring.itemring": "エンジェルリング",
+  "item.angelring.itemdiamondring": "ダイヤモンドリング",
+  "item.angelring.itemring.not_enough_xp": "飛行するにはXPが必要です。再び飛行するにはXPを増やしてください。",
+  "item.angelring.itemring.tooltip": "詳細については§eShift§7を参照してください。",
+  "item.angelring.itemring.desc0": "エンジェルリングは飛行中に時間の経過とともにプレイヤーの XP を消費します。",
+  "item.angelring.itemring.desc1": "プレイヤーのXPが1レベル未満になった場合、",
+  "item.angelring.itemring.desc2": "魔法は消え、飛行は不可能になります。",
+  "item.angelring.itemring.classic.desc0": "エンジェルリングがクラシックモードに切り替わります。キュリオススロットに装着されている間、クリエイティブな飛行が可能になります。",
+  "item.angelring.itemring.classic.desc1": "再バランスモードに切り替えるには、設定で XP ドレインを 0 ポイント以上に切り替えます。",
+  "item.angelring.energetic_angel_ring": "エネルギッシュな天使の指輪",
+  "item.angelring.energetic_angel_ring.not_enough_fe": "飛ぶにはもっとFEが必要です。エンジェルリングをチャージして、再び飛んでください。",
+  "item.angelring.energetic_angel_ring.tooltip": "詳細については§eShift§7を参照してください。",
+  "item.angelring.energetic_angel_ring.desc0": "エンジェルリングは飛行中に時間の経過とともに蓄積されたFEを消費します。",
+  "item.angelring.energetic_angel_ring.desc1": "Angel Ringには現在 %s FE / %s FE が含まれています。",
+  "item.angelring.leadstone_angel_ring": "リードストーンエンジェルリング",
+  "item.angelring.hardened_angel_ring": "強化天使の指輪",
+  "item.angelring.reinforced_angel_ring": "強化エンジェルリング",
+  "item.angelring.resonant_angel_ring": "共鳴天使の指輪",
+  "curios.identifier.angelring": "エンジェルリング",
+  "itemGroup.angelring2": "エンジェルリング2"
+}

@@ -1,0 +1,558 @@
+{
+	id: "2400679F6A3A5E0F"
+	group: "38719A56DDE0EE6C"
+	order_index: 1
+	filename: "stuff"
+	title: "その他"
+	icon: "morphtool:tool"
+	subtitle: [
+	"トートバッグ"
+]
+	default_quest_shape: "hexagon"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.5d
+			y: 2.0d
+			description: [
+	"エネルギー伝達率の測定に使用できるシンプルなブロックを追加します。最新のレートを常に表示する画面も備えています。"
+]
+			id: "0EF0AD3DCA649527"
+			tasks: [{
+				id: "763382E3D9EB04AE"
+				type: "item"
+				item: "energymeter:meter"
+			}]
+			rewards: [{
+				id: "159A60F4E94717DD"
+				type: "item"
+				item: "energymeter:meter"
+			}]
+		}
+		{
+			title: "&4レッドハートキャニスター"
+			x: -1.0d
+			y: 0.5d
+			subtitle: "一般"
+			description: [
+	"一般的な敵対的なモブを倒して赤いハートを集めます。"
+]
+			dependencies: ["0A0AC8F645AADA23"]
+			id: "3064EA8C95919A91"
+			tasks: [{
+				id: "5126E692670A3323"
+				type: "item"
+				item: "bhc:red_heart_canister"
+			}]
+			rewards: [{
+				id: "012E18C3C82B554C"
+				type: "item"
+				item: "bhc:red_heart_canister"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.5d
+			subtitle: "もっとハート"
+			description: [
+	"ハートの容器を直接アミュレットの中に入れ、その後アミュレットを Curios の中に入れます。"
+]
+			id: "0A0AC8F645AADA23"
+			tasks: [{
+				id: "60C56CE4DCB714B9"
+				type: "item"
+				item: "bhc:heart_amulet"
+			}]
+			rewards: [{
+				id: "70053B46A56CB159"
+				type: "item"
+				item: "bhc:red_heart"
+			}]
+		}
+		{
+			title: "&6イエローハートキャニスター"
+			x: 0.0d
+			y: 0.5d
+			subtitle: "レア"
+			description: [
+	"ウィザーボスを倒して黄色いハートを手に入れましょう。"
+]
+			dependencies: ["3064EA8C95919A91"]
+			id: "45D1B7C01A638EAC"
+			tasks: [{
+				id: "0C61C036716E5196"
+				type: "item"
+				item: "bhc:yellow_heart_canister"
+			}]
+			rewards: [{
+				id: "2BE784F56A7DA156"
+				type: "item"
+				item: "bhc:yellow_heart_canister"
+			}]
+		}
+		{
+			title: "&2グリーンハートキャニスター"
+			x: 1.0d
+			y: 0.5d
+			subtitle: "超レア"
+			description: [
+	"エンダードラゴンを倒して緑のハートを集めましょう。"
+]
+			dependencies: ["45D1B7C01A638EAC"]
+			id: "4E58D67FF2911C63"
+			tasks: [{
+				id: "1E37D604027B8E79"
+				type: "item"
+				item: "bhc:green_heart_canister"
+			}]
+			rewards: [{
+				id: "3A7ADB693FAC3133"
+				type: "item"
+				item: "bhc:green_heart_canister"
+			}]
+		}
+		{
+			title: "&9ブルーハートキャニスター"
+			x: 2.0d
+			y: 0.5d
+			subtitle: "超レア"
+			description: [
+	"エヴォーカーを倒してブルーハートを回復します。"
+]
+			dependencies: ["4E58D67FF2911C63"]
+			id: "54A520EDB13B8CA1"
+			tasks: [{
+				id: "66752A9B4181E57F"
+				type: "item"
+				item: "bhc:blue_heart_canister"
+			}]
+			rewards: [{
+				id: "7E824183630C32BD"
+				type: "item"
+				item: "bhc:blue_heart_canister"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			description: [
+				"&6 プレイヤーがいない間もチャンクをアクティブ状態に保ちます。"
+				"サーバー側では、エリアが無期限にロードされた状態になります。"
+			]
+			id: "0F025358E0696609"
+			tasks: [{
+				id: "74E994A2B36988A2"
+				type: "item"
+				item: "chickenchunks:chunk_loader"
+			}]
+			rewards: [{
+				id: "1CBECDE08ECFC52B"
+				type: "item"
+				item: "advancedperipherals:chunk_controller"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.0d
+			subtitle: "オールインワンツール"
+			description: [
+	"モーフィング ツールは、あらゆるレンチ、ドライバー、ハンマーを模倣できます。"
+]
+			id: "538137DF9393DE59"
+			tasks: [{
+				id: "4F8027EAD25A4AFA"
+				type: "item"
+				item: "morphtool:tool"
+			}]
+			rewards: [{
+				id: "0AA66447B4FB0B9D"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: -2.0d
+			y: 4.0d
+			subtitle: "バイオーム"
+			description: [
+	"希望するバイオームを見つけます。"
+]
+			id: "62EC1C747E96DD32"
+			tasks: [{
+				id: "51D688E77DA6A021"
+				type: "item"
+				item: {
+					id: "naturescompass:naturescompass"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "74DA59E192E62784"
+				type: "item"
+				item: "chipped:bookshelf_15"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 3.0d
+			subtitle: "時間のマスター!!!"
+			description: [
+	"これを使用して時間を蓄積し、マシンを加速します。"
+]
+			id: "70C2A2251D39D576"
+			tasks: [{
+				id: "004615AE033CA172"
+				type: "item"
+				item: {
+					id: "tiab:time_in_a_bottle"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "619104BB8F6B679D"
+				type: "item"
+				item: "rsgauges:glass_day_timer"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 4.0d
+			description: [
+	"半径 32 ブロック内にスポーンするブロックをブロックする、より大きな松明。"
+]
+			id: "0840E0C04FFDFF7C"
+			tasks: [{
+				id: "137F5ED8FE9A4637"
+				type: "item"
+				item: "torchmaster:megatorch"
+			}]
+			rewards: [{
+				id: "1D98902C16D76C5B"
+				type: "item"
+				item: "torchmaster:megatorch"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 3.0d
+			subtitle: "カチカチカチ！"
+			description: [
+				"9段階の速度設定が可能です。"
+				"アイテムをホールド、スニーク、左クリックのオプションもあります。"
+				"ブロックとエンティティの両方をクリックできます。"
+				""
+				"&o既に占領されているチャンクでは動作しない場合があります。"
+			]
+			id: "3D625E93B93A41CF"
+			tasks: [{
+				id: "28787FA64F50EED5"
+				type: "item"
+				item: "clickmachine:auto_clicker"
+			}]
+			rewards: [{
+				id: "38B7D255A5981F86"
+				type: "item"
+				item: "clickmachine:auto_clicker"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 3.0d
+			description: [
+	"探検家のコンパスは、世界中のどこにでも建造物を見つけることができるアイテムです。"
+]
+			id: "3B6F8368B4D32EA5"
+			tasks: [{
+				id: "76E2A2EFECA296F1"
+				type: "item"
+				item: {
+					id: "explorerscompass:explorerscompass"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "00BAE779A9B374F2"
+				type: "item"
+				item: "chipped:bookshelf_7"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.0d
+			subtitle: "虚空の中で"
+			description: [
+	"このブロックを空間に配置できます。"
+]
+			id: "60609C6698CA8065"
+			tasks: [{
+				id: "27B3B2E08A12FF5B"
+				type: "item"
+				item: "angelblockrenewed:angel_block"
+			}]
+			rewards: [{
+				id: "0E0551E5FAE13786"
+				type: "item"
+				item: "angelblockrenewed:angel_block"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 5.0d
+			subtitle: "ヴィオン..！.."
+			id: "7EDC0A74ED37BAEA"
+			tasks: [{
+				id: "4F9E4F52FB5B9643"
+				type: "item"
+				item: {
+					id: "simpleplanes:large_plane"
+					Count: 1b
+					tag: {
+						EntityTag: {
+							material: "minecraft:oak_planks"
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "12C80A747C51E046"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "寝袋とハンモック"
+			x: 0.5d
+			y: 6.0d
+			subtitle: "お昼寝したいですか？"
+			id: "7FBF524B228FB777"
+			tasks: [
+				{
+					id: "3B3E693E924E05E3"
+					type: "item"
+					item: "comforts:sleeping_bag_white"
+				}
+				{
+					id: "2C9BAF0E9FB79F85"
+					type: "item"
+					item: "comforts:hammock_white"
+				}
+				{
+					id: "0B03F25C5A4DCFEB"
+					type: "item"
+					item: "comforts:rope_and_nail"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "534FA716730EA106"
+				type: "item"
+				item: "minecraft:white_bed"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 2.0d
+			description: [
+				"フィルターシステムを備えたシンプルなマグネットです。"
+				"右クリックで有効/無効を切り替えることができます。"
+				""
+				"Curios に保存できます。"
+			]
+			id: "122F54A72931F1D9"
+			tasks: [{
+				id: "4507C6624FC34183"
+				type: "item"
+				item: {
+					id: "simplemagnets:advancedmagnet"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "009EA2EA2E786FFA"
+				type: "item"
+				item: "engineersdecor:sign_magneticfield"
+			}]
+		}
+		{
+			title: "ビールを作る"
+			x: 0.0d
+			y: 5.0d
+			subtitle: "ビールって言ったの？"
+			id: "1F89EE0500D98AA5"
+			tasks: [
+				{
+					id: "66EA56FCD168C169"
+					type: "item"
+					item: "alcocraft:spruce_keg"
+				}
+				{
+					id: "18FC7B7584089E19"
+					type: "item"
+					item: "alcocraft:spruce_mug_empty"
+				}
+				{
+					id: "01985B11470D2D0A"
+					type: "item"
+					item: "alcocraft:hop"
+				}
+			]
+			rewards: [{
+				id: "56D38E3060DF0611"
+				type: "item"
+				item: "alcocraft:hop"
+				count: 5
+			}]
+		}
+		{
+			x: 0.5d
+			y: 4.0d
+			subtitle: "シンプルな圧縮機"
+			description: [
+	"入力アイテムを 2x2 または 3x3 パターンで作成しようとします。"
+]
+			id: "055B7557EA41DE58"
+			tasks: [{
+				id: "71CC4F2E4F4E59CB"
+				type: "item"
+				item: "compacter:compacter"
+			}]
+			rewards: [{
+				id: "153ACA81A88C4C83"
+				type: "item"
+				item: "compacter:compacter"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 4.0d
+			description: [
+	"これは、さまざまな方法でアイテムを世界中に移動するための非常に柔軟性の高いブロックです。"
+]
+			id: "0D697391EC43C196"
+			tasks: [{
+				id: "5D3A2F80C82D49D3"
+				type: "item"
+				item: "modularrouters:modular_router"
+			}]
+			rewards: [{
+				id: "1CCB59A6A1593CCB"
+				type: "item"
+				item: "modularrouters:blank_module"
+				count: 6
+			}]
+		}
+		{
+			x: -1.0d
+			y: 3.0d
+			subtitle: "待って？"
+			description: [
+	"サトウキビ、サボテン、その他の栽培可能な作物の成長率を高めます。"
+]
+			id: "6165633EE50E99C2"
+			tasks: [{
+				id: "04BFBF6F3BECC59E"
+				type: "item"
+				item: "snad:snad"
+			}]
+			rewards: [{
+				id: "62F6C39F14BE820A"
+				type: "item"
+				item: "snad:snad"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 5.0d
+			description: [
+	"&aEmeralds&f で購入できる種子と苗木がすべて見つかります。"
+]
+			id: "1B64200F83A81FA9"
+			tasks: [{
+				id: "2FBCF49B044C980A"
+				type: "item"
+				item: "farmingforblockheads:market"
+			}]
+			rewards: [{
+				id: "684E9DE64DED6B65"
+				type: "item"
+				item: "minecraft:emerald"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 6.0d
+			subtitle: "シンプルなボイドディメンション"
+			description: [
+	"リソースを大量に消費するシステムや機密性の高いインストールに最適です。"
+]
+			id: "30D54BF4E210527D"
+			tasks: [{
+				id: "3E38DEC20BC01C38"
+				type: "item"
+				item: "javd:portal_block"
+			}]
+			rewards: [{
+				id: "4EA3B5D80B82B07F"
+				type: "item"
+				item: "minecraft:obsidian"
+				count: 4
+			}]
+		}
+		{
+			x: -1.0d
+			y: -0.5d
+			description: [
+				"3x3で自動的にクラフトできるようになります。"
+				"エネルギーが必要です。"
+			]
+			id: "297628F097911787"
+			tasks: [{
+				id: "3CD522885BBDD0C3"
+				type: "item"
+				item: "rftoolsutility:crafter1"
+			}]
+			rewards: [{
+				id: "7F676043C9D47C4E"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			x: 0.0d
+			y: -0.5d
+			dependencies: ["297628F097911787"]
+			id: "30F0D99D63092667"
+			tasks: [{
+				id: "5ED5D04949C81DDC"
+				type: "item"
+				item: "rftoolsutility:crafter2"
+			}]
+			rewards: [{
+				id: "5350C5B1FC51FF8A"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			x: 1.0d
+			y: -0.5d
+			dependencies: ["30F0D99D63092667"]
+			id: "446AE65823A2A5E0"
+			tasks: [{
+				id: "01D657174DE87F41"
+				type: "item"
+				item: "rftoolsutility:crafter3"
+			}]
+			rewards: [{
+				id: "022749C0FDC0B345"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+	]
+	quest_links: [ ]
+}

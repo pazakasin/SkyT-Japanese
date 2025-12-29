@@ -1,0 +1,1468 @@
+{
+	id: "0000000000000859"
+	group: "343D6547966CD25B"
+	order_index: 4
+	filename: "mekanism"
+	title: "メカニズム"
+	icon: "mekanism:metallurgic_infuser"
+	subtitle: [
+	"ガスは扱えますか？"
+]
+	default_quest_shape: "octagon"
+	default_hide_dependency_lines: false
+	images: [{
+		x: -3.5d
+		y: -5.0d
+		width: 2.0d
+		height: 2.0d
+		rotation: 0.0d
+		image: "mekanism:textures/item/basic_tier_installer.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			x: -2.0d
+			y: 2.0d
+			description: [
+	"ティアインストーラーは、さまざまなマシンを工場出荷時の同等のマシンにアップグレードするために使用されます。"
+]
+			dependencies: ["00000000000008EC"]
+			id: "000000000000085E"
+			tasks: [{
+				id: "000000000000085F"
+				type: "item"
+				item: "mekanism:basic_tier_installer"
+			}]
+			rewards: [{
+				id: "631DADBF6E49735D"
+				type: "item"
+				item: "mekanism:basic_tier_installer"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.0d
+			subtitle: "&2基本&fから&c上級"
+			dependencies: ["000000000000085E"]
+			id: "0000000000000860"
+			tasks: [{
+				id: "0000000000000861"
+				type: "item"
+				item: "mekanism:advanced_tier_installer"
+			}]
+			rewards: [{
+				id: "041F03BF196BE7A8"
+				type: "item"
+				item: "mekanism:advanced_tier_installer"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 2.0d
+			subtitle: "&c上級&fから&9エリート"
+			dependencies: ["0000000000000860"]
+			id: "0000000000000862"
+			tasks: [{
+				id: "0000000000000863"
+				type: "item"
+				item: "mekanism:elite_tier_installer"
+			}]
+			rewards: [{
+				id: "4902ABC7752D52CC"
+				type: "item"
+				item: "mekanism:elite_tier_installer"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 2.0d
+			subtitle: "&9エリート&fから&5アルティメット"
+			dependencies: ["0000000000000862"]
+			id: "0000000000000864"
+			tasks: [{
+				id: "0000000000000865"
+				type: "item"
+				item: "mekanism:ultimate_tier_installer"
+			}]
+			rewards: [{
+				id: "42E77A7DF7F10E76"
+				type: "item"
+				item: "mekanism:ultimate_tier_installer"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.5d
+			subtitle: "160万"
+			description: [
+	"エネルギーキューブはエネルギーを蓄えます。"
+]
+			dependencies: ["7D0BC26B33BBB358"]
+			id: "0000000000000866"
+			tasks: [{
+				id: "0000000000000867"
+				type: "item"
+				item: "mekanism:basic_energy_cube"
+			}]
+			rewards: [{
+				id: "62296CE8FB06DA72"
+				type: "item"
+				item: "mekanism:steel_casing"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.5d
+			subtitle: "6.40M"
+			description: [
+	"エネルギーキューブはエネルギーを蓄えます。"
+]
+			dependencies: ["0000000000000866"]
+			id: "0000000000000868"
+			tasks: [{
+				id: "0000000000000869"
+				type: "item"
+				item: "mekanism:advanced_energy_cube"
+			}]
+			rewards: [{
+				id: "6A630879A6D6238F"
+				type: "item"
+				item: "mekanism:alloy_infused"
+				count: 4
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.5d
+			subtitle: "2560万"
+			description: [
+	"エネルギーキューブはエネルギーを蓄えます。"
+]
+			dependencies: ["0000000000000868"]
+			id: "000000000000086A"
+			tasks: [{
+				id: "000000000000086B"
+				type: "item"
+				item: "mekanism:elite_energy_cube"
+			}]
+			rewards: [{
+				id: "710DA5AA306B94D6"
+				type: "item"
+				item: "mekanism:alloy_reinforced"
+				count: 4
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.5d
+			subtitle: "102.40M"
+			description: [
+	"エネルギーキューブはエネルギーを蓄えます。"
+]
+			dependencies: ["000000000000086A"]
+			id: "000000000000086C"
+			tasks: [{
+				id: "000000000000086D"
+				type: "item"
+				item: "mekanism:ultimate_energy_cube"
+			}]
+			rewards: [{
+				id: "769ED2EB9C2C09E3"
+				type: "item"
+				item: "mekanism:alloy_atomic"
+				count: 4
+			}]
+		}
+		{
+			title: "防護服"
+			x: 3.0d
+			y: -1.5d
+			description: [
+	"防護服はプレイヤーを放射線から守ります。"
+]
+			dependencies: ["000000000000093F"]
+			id: "0000000000000892"
+			tasks: [
+				{
+					id: "0000000000000893"
+					type: "item"
+					item: {
+						id: "mekanism:hazmat_mask"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+				{
+					id: "0000000000000894"
+					type: "item"
+					item: {
+						id: "mekanism:hazmat_gown"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+				{
+					id: "0000000000000895"
+					type: "item"
+					item: {
+						id: "mekanism:hazmat_pants"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+				{
+					id: "0000000000000896"
+					type: "item"
+					item: {
+						id: "mekanism:hazmat_boots"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "0F37B90430ED0CEA"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "メカニズムスタッフ"
+			x: 2.0d
+			y: -1.0d
+			description: [
+				"線量計は、あなたが受けている放射線量を表示します。"
+				""
+				"ガイガーカウンターは、あなたが受けている放射線被曝量を表示します。"
+			]
+			dependencies: ["000000000000093F"]
+			id: "00000000000008B5"
+			tasks: [
+				{
+					id: "00000000000008B6"
+					type: "item"
+					item: "mekanism:dosimeter"
+				}
+				{
+					id: "5CE2FDA91AE62C6A"
+					type: "item"
+					item: "mekanism:geiger_counter"
+				}
+			]
+			rewards: [{
+				id: "681272F5EE6D7DBC"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "HDPEシート"
+			x: 1.0d
+			y: -5.0d
+			dependencies: ["000000000000090C"]
+			id: "00000000000008CC"
+			tasks: [{
+				id: "00000000000008CD"
+				type: "item"
+				item: "mekanism:hdpe_sheet"
+				count: 8L
+			}]
+			rewards: [{
+				id: "05CE6F3735E06D9F"
+				type: "item"
+				item: "mekanism:hdpe_sheet"
+				count: 4
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.5d
+			description: [
+				"放射性廃棄物バレルは放射性物質を保管するために使用されます。"
+				""
+				"バレルの内容物は1分あたり1MBの速度で消去されます。"
+			]
+			dependencies: ["000000000000093F"]
+			id: "00000000000008CE"
+			tasks: [{
+				id: "00000000000008CF"
+				type: "item"
+				item: "mekanism:radioactive_waste_barrel"
+			}]
+			rewards: [{
+				id: "02848393E3DE4F83"
+				type: "item"
+				item: "mekanism:radioactive_waste_barrel"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -2.5d
+			description: [
+				"&6スピードアップグレード&fは、アイテムの処理速度を速めます。"
+				""
+				"&6フィルターアップグレード&fは、重水から水を分離します。電動ポンプでのみ使用できます。"
+				""
+				"&6ガスアップグレード&fは、ガスベースのMekanismマシンの効率を向上させます。"
+				""
+				"&6エネルギーアップグレード&fは、Mekanismマシンの電力容量を増加させ、ティックあたりの電力消費量を削減します。"
+				""
+				"&6消音アップグレード&fは、Mekanismマシンの騒音を低減します。"
+			]
+			min_width: 300
+			id: "00000000000008DA"
+			tasks: [
+				{
+					id: "00000000000008DB"
+					type: "item"
+					item: "mekanism:upgrade_speed"
+				}
+				{
+					id: "31BA000021171CE8"
+					type: "item"
+					item: "mekanism:upgrade_energy"
+				}
+				{
+					id: "4641C869EB874FD3"
+					type: "item"
+					item: "mekanism:upgrade_filter"
+				}
+				{
+					id: "2D1C8C1A3DFF5697"
+					type: "item"
+					item: "mekanism:upgrade_muffling"
+				}
+				{
+					id: "578AB692CA818E7E"
+					type: "item"
+					item: "mekanism:upgrade_gas"
+				}
+			]
+			rewards: [
+				{
+					id: "0EBC5D4702984A23"
+					type: "item"
+					item: "mekanism:upgrade_speed"
+					count: 2
+				}
+				{
+					id: "5437F8058F0F9E63"
+					type: "item"
+					item: "mekanism:upgrade_energy"
+					count: 2
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: -6.5d
+			description: [
+	"反陽子核合成装置は、反物質を使用してアイテムを別のアイテムに変換するために使用されます。"
+]
+			dependencies: ["0000000000000946"]
+			id: "00000000000008E2"
+			tasks: [{
+				id: "00000000000008E3"
+				type: "item"
+				item: "mekanism:antiprotonic_nucleosynthesizer"
+			}]
+			rewards: [{
+				id: "175D8040CD12EC13"
+				type: "item"
+				item: "mekanism:pellet_antimatter"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			description: [
+	"通電式製錬所は、燃料の代わりにエネルギーを使用してアイテムを製錬する基本的な電気炉です。"
+]
+			dependencies: ["7D0BC26B33BBB358"]
+			id: "00000000000008E8"
+			tasks: [{
+				id: "00000000000008E9"
+				type: "item"
+				item: "mekanism:energized_smelter"
+			}]
+			rewards: [{
+				id: "0491648A6EF4724E"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			description: [
+				"精製室は酸素を使用して鉱石や破片を塊に精製します。"
+				""
+				"酸素はガスとして外部から供給することも、酸素を充填したガスタンクまたはフリントで内部から供給することもできます。"
+			]
+			dependencies: ["7D0BC26B33BBB358"]
+			id: "00000000000008EA"
+			tasks: [{
+				id: "00000000000008EB"
+				type: "item"
+				item: "mekanism:purification_chamber"
+			}]
+			rewards: [{
+				id: "279BA9092F4A0E3E"
+				type: "item"
+				item: "mekanism:alloy_infused"
+				count: 6
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			description: [
+				"冶金インフューザーは、メカニズム技術ツリーの最初のステップです。"
+				""
+				"冶金インフューザーは、スチールインゴット、ブロンズインゴット、強化合金、黒曜石インゴットの製造に使用される機械です。"
+			]
+			id: "00000000000008EC"
+			tasks: [{
+				id: "00000000000008ED"
+				type: "item"
+				item: "mekanism:metallurgic_infuser"
+			}]
+			rewards: [{
+				id: "35A26015B9620796"
+				type: "item"
+				item: "mekanism:metallurgic_infuser"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.0d
+			description: [
+	"この機械はエネルギーを使用して特定のブロックや鉱石から粉塵を抽出するため、さまざまな種類のツールを製造するために不可欠です。"
+]
+			dependencies: ["7D0BC26B33BBB358"]
+			id: "00000000000008EE"
+			tasks: [{
+				id: "00000000000008EF"
+				type: "item"
+				item: "mekanism:enrichment_chamber"
+			}]
+			rewards: [{
+				id: "58EA9F5529A50CDB"
+				type: "item"
+				item: "mekanism:basic_control_circuit"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			description: [
+	"オスミウム コンプレッサーは、精製された黒曜石の粉から精製された黒曜石インゴットを作成し、グロウストーンの粉からグロウストーン インゴットを作成するために使用されます。"
+]
+			dependencies: ["7D0BC26B33BBB358"]
+			id: "00000000000008F0"
+			tasks: [{
+				id: "00000000000008F1"
+				type: "item"
+				item: "mekanism:osmium_compressor"
+			}]
+			rewards: [{
+				id: "43299892046F9A7B"
+				type: "item"
+				item: "mekanism:steel_casing"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			description: [
+				"コンバイナーを使用すると、鉱石ブロックを作成できます。"
+				"この機械を使用すると、スチールケーシングの製造を自動化できます。"
+			]
+			dependencies: ["7D0BC26B33BBB358"]
+			id: "00000000000008F2"
+			tasks: [{
+				id: "00000000000008F3"
+				type: "item"
+				item: "mekanism:combiner"
+			}]
+			rewards: [{
+				id: "1C76E91FD855017A"
+				type: "item"
+				item: "mekanism:alloy_reinforced"
+				count: 4
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			description: [
+	"クラッシャーは、塊を汚い塵に、インゴットを塵に、バイオ物質をバイオ燃料に粉砕します。"
+]
+			dependencies: ["7D0BC26B33BBB358"]
+			id: "00000000000008F4"
+			tasks: [{
+				id: "00000000000008F5"
+				type: "item"
+				item: "mekanism:crusher"
+			}]
+			rewards: [{
+				id: "4460870B8578253E"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -0.5d
+			y: -5.5d
+			description: [
+	"太陽中性子活性装置は、太陽の中性子放射を内部の貯蔵庫に導き、さまざまな同位体をゆっくりと生成します。"
+]
+			dependencies: ["00000000000008CC"]
+			id: "00000000000008F6"
+			tasks: [{
+				id: "00000000000008F7"
+				type: "item"
+				item: "mekanism:solar_neutron_activator"
+			}]
+			rewards: [{
+				id: "1D4BED43CDA3619E"
+				type: "item"
+				item: "mekanism:hdpe_sheet"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.0d
+			description: [
+				"デジタルマイナーは、特定のエリア内でのみ鉱石を採掘するように設定できます。"
+				""
+				"シルクタッチ鉱石に設定することもできますが、その場合消費電力が増加します。"
+			]
+			dependencies: ["7D0BC26B33BBB358"]
+			id: "00000000000008FA"
+			tasks: [{
+				id: "00000000000008FB"
+				type: "item"
+				item: "mekanism:digital_miner"
+			}]
+			rewards: [{
+				id: "076DB8B6398A4A9A"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.0d
+			description: [
+				"電解分離器は、制御された量の直流電流を流体に流し、流体中の原子の結合を切断します。"
+				"例えば、水から酸素と水素を得ることができます。"
+			]
+			dependencies: ["7D0BC26B33BBB358"]
+			min_width: 250
+			id: "00000000000008FE"
+			tasks: [{
+				id: "00000000000008FF"
+				type: "item"
+				item: "mekanism:electrolytic_separator"
+			}]
+			rewards: [{
+				id: "4F88FD43DDAC4014"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: 7.0d
+			y: 0.0d
+			description: [
+	"精密製材所は、木製のアイテムから木材を再生し、50% 高い収率 (4 ではなく 6) で丸太を板材に変換するために使用されます。"
+]
+			dependencies: ["7D0BC26B33BBB358"]
+			id: "0000000000000900"
+			tasks: [{
+				id: "0000000000000901"
+				type: "item"
+				item: "mekanism:precision_sawmill"
+			}]
+			rewards: [{
+				id: "39FA78C64271C985"
+				type: "item"
+				item: "minecraft:oak_log"
+				count: 32
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.5d
+			description: [
+	"化学溶解室では、硫酸を使用して原鉱石をスラリーまたは蛍石とフッ化水素酸に変えます。"
+]
+			dependencies: ["7D0BC26B33BBB358"]
+			id: "0000000000000902"
+			tasks: [{
+				id: "0000000000000903"
+				type: "item"
+				item: "mekanism:chemical_dissolution_chamber"
+			}]
+			rewards: [{
+				id: "392ABA5AE25FDF2D"
+				type: "item"
+				item: "mekanism:alloy_atomic"
+				count: 2
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.5d
+			description: [
+	"ケミカルウォッシャーは水を使用してスラリーをきれいなスラリーに変えます。"
+]
+			dependencies: ["7D0BC26B33BBB358"]
+			id: "0000000000000904"
+			tasks: [{
+				id: "0000000000000905"
+				type: "item"
+				item: "mekanism:chemical_washer"
+			}]
+			rewards: [{
+				id: "6AFDFA96CA712E06"
+				type: "item"
+				item: "mekanism:alloy_atomic"
+				count: 2
+			}]
+		}
+		{
+			x: -0.5d
+			y: -6.5d
+			description: [
+				"化学結晶化装置は、清浄なスラリーを結晶に、リチウムをリチウムダストに変換します。"
+				""
+				"反物質を反物質ペレットに変換することもできます。"
+			]
+			dependencies: ["7D0BC26B33BBB358"]
+			id: "0000000000000906"
+			tasks: [{
+				id: "0000000000000907"
+				type: "item"
+				item: "mekanism:chemical_crystallizer"
+			}]
+			rewards: [{
+				id: "7726939D84951C73"
+				type: "item"
+				item: "mekanism:ultimate_control_circuit"
+				count: 2
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.0d
+			description: [
+	"同位体遠心分離機は核分裂炉で使用され、六フッ化ウランを核分裂性燃料に加工するか、核廃棄物をプルトニウムに加工します。"
+]
+			dependencies: ["000000000000093F"]
+			id: "000000000000090A"
+			tasks: [{
+				id: "000000000000090B"
+				type: "item"
+				item: "mekanism:isotopic_centrifuge"
+			}]
+			rewards: [{
+				id: "454F4F35DD4EBE3D"
+				type: "item"
+				item: "mekanism:basic_chemical_tank"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -4.5d
+			description: [
+	"加圧反応チャンバーは主に基板、HDPE ペレット、エチレンの製造に使用されます。"
+]
+			dependencies: ["7D0BC26B33BBB358"]
+			id: "000000000000090C"
+			tasks: [{
+				id: "000000000000090D"
+				type: "item"
+				item: "mekanism:pressurized_reaction_chamber"
+			}]
+			rewards: [{
+				id: "4AD00C1EE00A45E0"
+				type: "item"
+				item: "mekanism:basic_control_circuit"
+				count: 2
+			}]
+		}
+		{
+			x: 8.0d
+			y: 0.0d
+			description: [
+	"化学薬品注入室は塩化水素ガスを使用して鉱石を 4 つの破片に変えます。"
+]
+			dependencies: ["7D0BC26B33BBB358"]
+			id: "000000000000090E"
+			tasks: [{
+				id: "000000000000090F"
+				type: "item"
+				item: "mekanism:chemical_injection_chamber"
+			}]
+			rewards: [{
+				id: "10CE253817D941C5"
+				type: "item"
+				item: "mekanism:alloy_reinforced"
+				count: 4
+			}]
+		}
+		{
+			x: -0.5d
+			y: -3.5d
+			description: [
+	"ケミカルインフューザーは、2 つのガスを結合または反応させて別のガスを生成します。"
+]
+			dependencies: ["7D0BC26B33BBB358"]
+			id: "0000000000000910"
+			tasks: [{
+				id: "0000000000000911"
+				type: "item"
+				item: "mekanism:chemical_infuser"
+			}]
+			rewards: [{
+				id: "71DE5BEA63D83753"
+				type: "item"
+				item: "mekanism:alloy_infused"
+				count: 4
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.0d
+			description: [
+	"ロータリーコンデンサーは、物質を液体と気体の間で 1:1 の比率で変換するために使用されます。"
+]
+			dependencies: ["7D0BC26B33BBB358"]
+			id: "0000000000000914"
+			tasks: [{
+				id: "0000000000000915"
+				type: "item"
+				item: "mekanism:rotary_condensentrator"
+			}]
+			rewards: [{
+				id: "7496E984712683F2"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.0d
+			description: [
+	"化学酸化装置は材料からガスを作るために使用されます。"
+]
+			dependencies: ["7D0BC26B33BBB358"]
+			id: "0000000000000916"
+			tasks: [{
+				id: "0000000000000917"
+				type: "item"
+				item: "mekanism:chemical_oxidizer"
+			}]
+			rewards: [{
+				id: "5A22CC5B8F428A20"
+				type: "item"
+				item: "mekanism:yellow_cake_uranium"
+				count: 8
+			}]
+		}
+		{
+			x: 6.5d
+			y: -2.0d
+			description: [
+				"ベーシック誘導セルの容量は3.20GRFです。"
+				""
+				"ベーシック誘導プロバイダーは102.40kRF/tを輸送できます。"
+			]
+			dependencies: [
+				"0000000000000933"
+				"0000000000000930"
+			]
+			id: "0000000000000918"
+			tasks: [
+				{
+					id: "0000000000000919"
+					type: "item"
+					item: "mekanism:basic_induction_cell"
+				}
+				{
+					id: "000000000000091A"
+					type: "item"
+					item: "mekanism:basic_induction_provider"
+				}
+			]
+			rewards: [{
+				id: "06BF4723F5E1AD85"
+				type: "item"
+				item: "mekanism:basic_induction_provider"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -3.0d
+			description: [
+				"高度誘導セルの容量は25.6GRFです。"
+				""
+				"高度誘導プロバイダーは819.20kRF/tを移送できます。"
+			]
+			dependencies: ["0000000000000918"]
+			id: "000000000000091B"
+			tasks: [
+				{
+					id: "000000000000091C"
+					type: "item"
+					item: "mekanism:advanced_induction_cell"
+				}
+				{
+					id: "000000000000091D"
+					type: "item"
+					item: "mekanism:advanced_induction_provider"
+				}
+			]
+			rewards: [{
+				id: "33F9EAB0C620B61F"
+				type: "item"
+				item: "mekanism:advanced_induction_cell"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -4.0d
+			description: [
+				"エリート誘導セルの容量は204.80GRFです。"
+				""
+				"エリート誘導プロバイダーは6.55MRF/tを輸送できます。"
+			]
+			dependencies: ["000000000000091B"]
+			id: "000000000000091E"
+			tasks: [
+				{
+					id: "000000000000091F"
+					type: "item"
+					item: "mekanism:elite_induction_cell"
+				}
+				{
+					id: "0000000000000922"
+					type: "item"
+					item: "mekanism:elite_induction_provider"
+				}
+			]
+			rewards: [{
+				id: "65D47726944C8642"
+				type: "item"
+				item: "mekanism:elite_induction_provider"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -5.0d
+			description: [
+				"究極の誘導セルの容量は1.60TRFです。"
+				""
+				"究極の誘導プロバイダーは52.42MRF/tを輸送できます。"
+			]
+			dependencies: ["000000000000091E"]
+			id: "0000000000000920"
+			tasks: [
+				{
+					id: "0000000000000921"
+					type: "item"
+					item: "mekanism:ultimate_induction_cell"
+				}
+				{
+					id: "0000000000000923"
+					type: "item"
+					item: "mekanism:ultimate_induction_provider"
+				}
+			]
+			rewards: [{
+				id: "6522FBABADEEFD0E"
+				type: "item"
+				item: "mekanism:ultimate_induction_cell"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 0.5d
+			description: [
+	"アドバンスドソーラージェネレーターは、基本ソーラージェネレーターの高度にアップグレードされたバージョンです。アドバンスドソーラージェネレーターの構築には4つのソーラージェネレーターが必要ですが、小型版の6倍の電力を供給します。"
+]
+			dependencies: ["00000000000008EC"]
+			id: "0000000000000926"
+			tasks: [{
+				id: "0000000000000927"
+				type: "item"
+				item: "mekanismgenerators:advanced_solar_generator"
+			}]
+			rewards: [{
+				id: "7A5070A3F7C86266"
+				type: "item"
+				item: "mekanismgenerators:advanced_solar_generator"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -0.5d
+			description: [
+				"風力タービンの巨大な羽根は風の力を利用して発電します。風力タービン1基あたり、1x1x5のかなり広い面積が必要です。"
+				""
+				"高く設置すればするほど、より多くのエネルギーを得ることができます。"
+			]
+			dependencies: ["00000000000008EC"]
+			id: "0000000000000928"
+			tasks: [{
+				id: "0000000000000929"
+				type: "item"
+				item: "mekanismgenerators:wind_generator"
+			}]
+			rewards: [{
+				id: "2F2D539A87B2C409"
+				type: "item"
+				item: "mekanismgenerators:wind_generator"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 0.0d
+			description: [
+	"バイオジェネレーターはバイオ燃料から電気を生成します。"
+]
+			dependencies: ["00000000000008EC"]
+			id: "000000000000092A"
+			tasks: [{
+				id: "000000000000092B"
+				type: "item"
+				item: "mekanismgenerators:bio_generator"
+			}]
+			rewards: [{
+				id: "487962B711CF3B52"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -3.5d
+			y: -1.0d
+			description: [
+	"ガス燃焼発電機は、電解分離器によって生成された水素やエチレンなどの燃焼可能なガスを消費して電力を生成します。"
+]
+			dependencies: ["00000000000008EC"]
+			id: "000000000000092C"
+			tasks: [{
+				id: "000000000000092D"
+				type: "item"
+				item: "mekanismgenerators:gas_burning_generator"
+			}]
+			rewards: [{
+				id: "05AE5D0CDC5FA7D3"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -3.5d
+			y: 1.0d
+			description: [
+	"熱発生器は熱エネルギーを電力に変換します。"
+]
+			dependencies: ["00000000000008EC"]
+			id: "000000000000092E"
+			tasks: [{
+				id: "000000000000092F"
+				type: "item"
+				item: "mekanismgenerators:heat_generator"
+			}]
+			rewards: [{
+				id: "24DD23645546A65B"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "誘導マトリックス"
+			x: 5.5d
+			y: -2.5d
+			description: [
+				"インダクションマトリックスは、高度に構成可能なマルチブロックエネルギー貯蔵構造です。"
+				""
+				"インダクションマトリックスは、セル構造が16x16x16以下の直方体で、ケース構造が18x18x18以下の直方体である場合にのみ形成されます。"
+				""
+				"キューブの内部は、インダクションプロバイダー、インダクションセル、またはエアブロックで埋めることができます。"
+				"{image:ftbquests:textures/3d-induction_matrix.png width:90 height:105 align:1}"
+			]
+			min_width: 300
+			id: "0000000000000930"
+			tasks: [
+				{
+					id: "0000000000000931"
+					type: "item"
+					item: "mekanism:induction_casing"
+					count: 34L
+				}
+				{
+					id: "0000000000000932"
+					type: "item"
+					item: "mekanism:induction_port"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "6EC2A2BE0645AD4F"
+				type: "item"
+				item: "mekanism:induction_casing"
+				count: 4
+			}]
+		}
+		{
+			title: "熱蒸発プラント"
+			x: 5.5d
+			y: -1.5d
+			description: [
+				"熱蒸発プラントは、水を塩水に変換することを目的とした複数ブロックの構造物です。塩水はさらに、2つ目の熱蒸発プラントを使用することでリチウムに変換できます。"
+				""
+				"この構造物は4×4ブロックのベースを持ち、高さは3ブロック、最大高さは18ブロックです。"
+				"{image:ftbquests:textures/3d-evaporation.png width:100 height:100 align:1}"
+			]
+			id: "0000000000000933"
+			tasks: [
+				{
+					id: "0000000000000935"
+					type: "item"
+					item: "mekanism:thermal_evaporation_block"
+					count: 40L
+				}
+				{
+					id: "0000000000000936"
+					type: "item"
+					item: "mekanism:thermal_evaporation_controller"
+				}
+				{
+					id: "0000000000000937"
+					type: "item"
+					item: "mekanism:thermal_evaporation_valve"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "300E2ED52F36BBE3"
+				type: "item"
+				item: "mekanism:thermal_evaporation_block"
+				count: 12
+			}]
+		}
+		{
+			title: "核融合炉"
+			x: 3.5d
+			y: -3.5d
+			subtitle: "たくさんのエネルギーを生み出します!"
+			description: [
+				"核融合炉は、重水素、三重水素、重水素-三重水素燃料の3種類の燃料を可変速度で投入できるマルチブロック構造です。"
+				""
+				"核融合炉は単独では始動しません。"
+				"核融合プロセスを開始するには、充電されたレーザー増幅器からの外部エネルギーバーストと少量の重水素-三重水素燃料が必要です。"
+				"反応が始動すると、供給された重水素と三重水素を消費し、プラズマを生成して電力を生成します。"
+				"{image:ftbquests:textures/3d-fusion.png width:100 height:100 align:1}"
+			]
+			dependencies: ["0000000000000948"]
+			min_width: 350
+			id: "0000000000000938"
+			tasks: [
+				{
+					id: "0000000000000939"
+					type: "item"
+					item: "mekanismgenerators:fusion_reactor_controller"
+				}
+				{
+					id: "000000000000093A"
+					type: "item"
+					item: "mekanismgenerators:laser_focus_matrix"
+				}
+				{
+					id: "000000000000093B"
+					type: "item"
+					item: "mekanismgenerators:reactor_glass"
+					count: 15L
+				}
+				{
+					id: "000000000000093C"
+					type: "item"
+					item: "mekanismgenerators:fusion_reactor_logic_adapter"
+				}
+				{
+					id: "000000000000093D"
+					type: "item"
+					item: "mekanismgenerators:fusion_reactor_port"
+					count: 4L
+				}
+				{
+					id: "000000000000093E"
+					type: "item"
+					item: "mekanismgenerators:fusion_reactor_frame"
+					count: 45L
+				}
+				{
+					id: "000000000000094A"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:hohlraum"
+						Count: 1b
+						tag: {
+							mekData: {
+								GasTanks: [{
+									Tank: 0b
+									stored: {
+										gasName: "mekanismgenerators:fusion_fuel"
+										amount: 10L
+									}
+								}]
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "461D13D3E6C9A417"
+				type: "item"
+				item: "mekanismgenerators:reactor_glass"
+				count: 15
+			}]
+		}
+		{
+			title: "核分裂炉"
+			x: 2.0d
+			y: -2.0d
+			description: [
+				"核分裂炉は、大量の熱を発生するものの、それ自体では電力を生成しない複数ブロックの構造物です。"
+				""
+				"構造物は、最小外寸3x4x3、最大外寸18x18x18の直方体でなければなりません。"
+				"{image:ftbquests:textures/3d-fission.png width:100 height:120 align:1}"
+			]
+			dependencies: ["7D0BC26B33BBB358"]
+			min_width: 300
+			id: "000000000000093F"
+			tasks: [
+				{
+					id: "0000000000000940"
+					type: "item"
+					item: "mekanismgenerators:fission_reactor_casing"
+					count: 62L
+				}
+				{
+					id: "0000000000000941"
+					type: "item"
+					item: "mekanismgenerators:control_rod_assembly"
+					count: 5L
+				}
+				{
+					id: "0000000000000942"
+					type: "item"
+					item: "mekanismgenerators:fission_fuel_assembly"
+					count: 10L
+				}
+				{
+					id: "0000000000000943"
+					type: "item"
+					item: "mekanismgenerators:reactor_glass"
+					count: 31L
+				}
+				{
+					id: "0000000000000944"
+					type: "item"
+					item: "mekanismgenerators:fission_reactor_logic_adapter"
+				}
+				{
+					id: "0000000000000945"
+					type: "item"
+					item: "mekanismgenerators:fission_reactor_port"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "3785F2192CA2549F"
+				type: "item"
+				item: "mekanismgenerators:fission_reactor_casing"
+				count: 18
+			}]
+		}
+		{
+			x: 3.5d
+			y: -6.5d
+			description: [
+	"反物質ペレットを入手します。"
+]
+			dependencies: [
+				"0000000000000906"
+				"000000000000094B"
+			]
+			id: "0000000000000946"
+			tasks: [{
+				id: "0000000000000947"
+				type: "item"
+				item: "mekanism:pellet_antimatter"
+			}]
+			rewards: [{
+				id: "6713DD9A093484A2"
+				type: "item"
+				item: "mekanism:pellet_antimatter"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -4.0d
+			description: [
+				"水、ポロニウム、蛍石の粉末を加圧反応室で処理し、ポロニウムペレットを入手します。"
+				""
+				"このプロセスでは使用済み核廃棄物が発生することにご注意ください。"
+			]
+			dependencies: [
+				"000000000000090C"
+				"000000000000090A"
+			]
+			id: "0000000000000948"
+			tasks: [{
+				id: "0000000000000949"
+				type: "item"
+				item: "mekanism:pellet_polonium"
+			}]
+			rewards: [{
+				id: "4C2FF56FCDD5592F"
+				type: "item"
+				item: "mekanism:pellet_polonium"
+			}]
+		}
+		{
+			title: "超臨界位相シフター"
+			x: 3.5d
+			y: -4.5d
+			description: [
+				"「超臨界位相シフター」は、大量のエネルギーとポロニウムガスを消費して反物質ガスを生成するマルチブロック構造で、このガスは反物質ペレットに結晶化できます。"
+				""
+				"反物質ペレットは、エンドゲームの多くのレシピで使用されます。"
+				"{image:ftbquests:textures/3d-sps.png width:100 height:100 align:1}"
+			]
+			dependencies: ["0000000000000948"]
+			min_width: 300
+			id: "000000000000094B"
+			tasks: [
+				{
+					id: "000000000000094C"
+					type: "item"
+					item: "mekanism:sps_casing"
+					count: 60L
+				}
+				{
+					id: "000000000000094D"
+					type: "item"
+					item: "mekanism:structural_glass"
+					count: 123L
+				}
+				{
+					id: "000000000000094E"
+					type: "item"
+					item: "mekanism:supercharged_coil"
+				}
+				{
+					id: "000000000000094F"
+					type: "item"
+					item: "mekanism:sps_port"
+					count: 3L
+				}
+			]
+			rewards: [{
+				id: "2B1D9CD31A275554"
+				type: "xp_levels"
+				xp_levels: 20
+			}]
+		}
+		{
+			x: 2.0d
+			y: -5.0d
+			description: [
+	"改造ステーションは、エネルギーと引き換えにメカスーツにモジュールアップグレードを適用するために使用されます。"
+]
+			dependencies: [
+				"00000000000008CC"
+				"0000000000000948"
+			]
+			id: "36D86F3E65554DF4"
+			tasks: [{
+				id: "456D3AAF058435EE"
+				type: "item"
+				item: "mekanism:modification_station"
+			}]
+			rewards: [{
+				id: "320C25A3E430E58C"
+				type: "item"
+				item: "mekanism:pellet_polonium"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -2.5d
+			description: [
+				"ロビットはMekanismの機械仕掛けの相棒です。"
+				"クラフト台、かまど、金床、宝箱、あるいはただの可愛い相棒として活躍します。"
+			]
+			id: "74BCE9E73DCDF3E0"
+			tasks: [{
+				id: "22A87938CC3C9A37"
+				type: "item"
+				item: "mekanism:robit"
+			}]
+			rewards: [{
+				id: "3166D195C4C95871"
+				type: "item"
+				item: "mekanism:robit"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.0d
+			description: [
+	"Steel Casing は、ほとんどの Mekanism マシンのクラフト レシピで使用されるブロックです。"
+]
+			dependencies: ["00000000000008EC"]
+			id: "7D0BC26B33BBB358"
+			tasks: [{
+				id: "4C08EEB74DFC980F"
+				type: "item"
+				item: "mekanism:steel_casing"
+			}]
+			rewards: [{
+				id: "1C293BFC2EA63398"
+				type: "item"
+				item: "mekanism:steel_casing"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -2.5d
+			subtitle: "メカニズムレンチ"
+			description: [
+				"複数のモードが用意されており、しゃがんでアイテムのモード変更キー（デフォルト：M）を押すことで切り替えることができます。"
+				""
+				"ゲージドロッパーは、ケミカルインフューザーなどの液体やガスを扱う機械を操作する際に使用する重要なツールです。"
+			]
+			min_width: 300
+			id: "3F1CF6DAF16B79BC"
+			tasks: [{
+				id: "7DA4AF786AC67864"
+				type: "item"
+				item: "mekanism:configurator"
+			}]
+			rewards: [{
+				id: "026D9AFF27CDB1B2"
+				type: "item"
+				item: "mekanism:gauge_dropper"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.5d
+			description: [
+				"熱を発生させます。"
+				"熱伝導体で輸送できます。"
+			]
+			dependencies: ["0000000000000933"]
+			id: "53702D467705D8B8"
+			tasks: [{
+				id: "361964757A7679B3"
+				type: "item"
+				item: "mekanism:resistive_heater"
+			}]
+			rewards: [{
+				id: "7376E20865E1F023"
+				type: "item"
+				item: "mekanism:basic_thermodynamic_conductor"
+				count: 4
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.0d
+			description: [
+				"化学タンクはガスを貯蔵するために使用されます。"
+				""
+				"ブロックとして設置でき、加圧チューブと相互作用することができます。"
+			]
+			dependencies: ["00000000000008EC"]
+			id: "0884A6760AD05850"
+			tasks: [{
+				id: "20AEC02F1A09B1A5"
+				type: "item"
+				item: "mekanism:basic_chemical_tank"
+			}]
+			rewards: [{
+				id: "02560790B68CAF98"
+				type: "item"
+				item: "mekanism:basic_chemical_tank"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.0d
+			dependencies: ["0884A6760AD05850"]
+			id: "626970966CF2A40D"
+			tasks: [{
+				id: "4C4B949721570E60"
+				type: "item"
+				item: "mekanism:advanced_chemical_tank"
+			}]
+			rewards: [{
+				id: "3C1D26D5DE30FD56"
+				type: "item"
+				item: "mekanism:advanced_chemical_tank"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 3.0d
+			dependencies: ["626970966CF2A40D"]
+			id: "3925D619BAA1008C"
+			tasks: [{
+				id: "2AA1D8021111EC39"
+				type: "item"
+				item: "mekanism:elite_chemical_tank"
+			}]
+			rewards: [{
+				id: "0F126835FEDECAB4"
+				type: "item"
+				item: "mekanism:elite_chemical_tank"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 3.0d
+			dependencies: ["3925D619BAA1008C"]
+			id: "2DEB50441A22DCC0"
+			tasks: [{
+				id: "6E9F85F1C35B740A"
+				type: "item"
+				item: "mekanism:ultimate_chemical_tank"
+			}]
+			rewards: [{
+				id: "7D75D6CC7E274682"
+				type: "item"
+				item: "mekanism:ultimate_chemical_tank"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,0 +1,19 @@
+{
+  "lambdynlights.menu.light_sources": "ダイナミック光源",
+  "lambdynlights.menu.title": "LambDynamicLights 設定",
+  "lambdynlights.menu.canvas.1": "Canvas ではエンティティの動的ライティングを無効にすることをお勧めします。",
+  "lambdynlights.menu.canvas.2": "Canvas を使用した動的ライティングは現在、パフォーマンスが重くなっています。",
+  "lambdynlights.menu.tabs.general": "一般的な",
+  "lambdynlights.option.light_sources.block_entities": "ブロックエンティティ",
+  "lambdynlights.option.light_sources.entities": "エンティティ",
+  "lambdynlights.option.light_sources.water_sensitive_check": "水に対する敏感性チェック",
+  "lambdynlights.option.mode": "ダイナミックライト",
+  "lambdynlights.tooltip.block_entities": "ブロック エンティティの動的照明を有効にします。",
+  "lambdynlights.tooltip.creeper_lighting": "Creeper のダイナミックライティングモードを設定します。\n- %s は Creeper のダイナミックライティングを無効にします。\n- %s は一定の輝度を設定します。\n- %s は動的な輝度を設定します。",
+  "lambdynlights.tooltip.entities": "エンティティのダイナミックライティングを有効にします。注: プレイヤーは常にアクティブです。",
+  "lambdynlights.tooltip.mode.1": "ダイナミックライトを有効にします。有効にすると、例えば松明を持ったプレイヤーがエリアを照らすようになります。",
+  "lambdynlights.tooltip.mode.2": "%s と %s は少し遅れますが、軽い更新は最小限に抑えられます。",
+  "lambdynlights.tooltip.mode.3": "%s はスムーズなダイナミック照明です。",
+  "lambdynlights.tooltip.tnt_lighting": "TNT ダイナミックライティングモードを設定します。\n- %s は TNT ダイナミックライティングを無効にします。\n- %s は一定の輝度を設定します。\n- %s は動的な輝度を設定します。",
+  "lambdynlights.tooltip.water_sensitive": "水に反応する光源のチェックを有効にします。これにより、一部のアイテムは水中に沈んでいる間は発光しなくなります。"
+}

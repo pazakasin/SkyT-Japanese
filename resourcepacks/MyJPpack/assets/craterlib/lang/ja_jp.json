@@ -1,0 +1,11 @@
+{
+  "t.clc.opensubconfig": "設定を開く",
+  "t.clc.save": "保存",
+  "t.clc.cancel_discard": "破棄",
+  "t.clc.quit_config": "保存されていない変更",
+  "t.clc.quit_config_sure": "保存されていない設定変更があります。破棄してもよろしいですか?",
+  "t.clc.quit_discard": "終了して破棄",
+  "cl.buttons.edit": "編集",
+  "cl.buttons.add_entry": "+ エントリーを追加",
+  "cl.buttons.entry": "エントリー %s"
+}

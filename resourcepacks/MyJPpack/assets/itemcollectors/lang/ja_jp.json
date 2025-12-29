@@ -1,0 +1,17 @@
+{
+  "gui.itemcollectors.advanced_collector.show_area.on": "表示範囲",
+  "itemcollectors.basic_collector.info": "周囲のエリアにあるアイテムを拾うことができる",
+  "gui.itemcollectors.advanced_collector.whitelist.off": "ブラックリスト",
+  "gui.itemcollectors.advanced_collector.filter": "フィルター",
+  "itemcollectors.basic_collector.info.range": "範囲: %s ブロック",
+  "gui.itemcollectors.basic_collector.range.increase": "範囲を拡大",
+  "gui.itemcollectors.basic_collector.range": "範囲 (%1$dx%2$dx%3$d)",
+  "gui.itemcollectors.advanced_collector.durability.on": "マッチNBT",
+  "gui.itemcollectors.advanced_collector.show_area.off": "範囲非表示",
+  "itemcollectors.advanced_collector.info": "周囲のエリア内のアイテムを拾うことができ、アイテムはフィルタリングできる",
+  "gui.itemcollectors.advanced_collector.durability.off": "NBTを無視する",
+  "gui.itemcollectors.basic_collector.range.decrease": "範囲を縮小",
+  "itemcollectors.block.basic_collector": "基本アイテムコレクター",
+  "gui.itemcollectors.advanced_collector.whitelist.on": "ホワイトリスト",
+  "itemcollectors.block.advanced_collector": "上級アイテムコレクター"
+}

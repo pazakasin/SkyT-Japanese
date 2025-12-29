@@ -1,0 +1,5 @@
+{
+  "gui.libnonymous.label.button.redstone.tooltip.ignore": "近くのレッドストーン信号を無視する",
+  "gui.libnonymous.label.button.redstone.tooltip.rejected": "近くのレッドストーン信号で走行を阻止する",
+  "gui.libnonymous.label.button.redstone.tooltip.required": "近くのレッドストーン信号でのみ実行"
+}

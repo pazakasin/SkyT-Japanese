@@ -1,0 +1,20 @@
+{
+  "itemGroup.phosphophyllite": "フォスフォフィライト",
+  "multiblock.error.phosphophyllite.invalid_block.frame": "%s のフレームのブロック (%s) が無効です",
+  "multiblock.error.phosphophyllite.invalid_block.exterior": "%s の外部に無効なブロック (%s) があります",
+  "multiblock.error.phosphophyllite.invalid_block.interior": "%s の内部に無効なブロック (%s) があります",
+  "multiblock.error.phosphophyllite.invalid_block.corner": "%s のコーナーのブロック (%s) が無効です",
+  "multiblock.error.phosphophyllite.invalid_block.generic": "%s の無効なブロック (%s)",
+  "multiblock.error.phosphophyllite.unknown": "不明なマルチブロックエラーが発生しました。mod作者に報告してください。",
+  "multiblock.error.phosphophyllite.null_controller": "マルチブロックシステムに未知の内部エラーが発生しました。フォスフォフィライトに報告してください。",
+  "multiblock.error.phosphophyllite.dimensions": "寸法は許可されていません\n実際: %d, %d, %d,\n最小値: %d, %d, %d,\n最大値: %d, %d, %d,",
+  "block.phosphophyllite.item_black_hole": "アイテムブラックホール",
+  "block.phosphophyllite.item_white_hole": "アイテムホワイトホール",
+  "block.phosphophyllite.fluid_black_hole": "流体ブラックホール",
+  "block.phosphophyllite.fluid_white_hole": "流動的なホワイトホール",
+  "block.phosphophyllite.power_black_hole": "パワーブラックホール",
+  "block.phosphophyllite.power_white_hole": "パワーホワイトホール",
+  "block.phosphophyllite.phosphophyllite_ore": "フォスフォフィライト鉱石",
+  "item.phosphophyllite.debug_tool": "デビーファー",
+  "random.bullshit.that.doesnt.actually.get.used.anywhere": "末尾にコンマを付けられるようにするためです"
+}

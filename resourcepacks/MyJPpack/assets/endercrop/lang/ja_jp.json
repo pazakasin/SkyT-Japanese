@@ -1,0 +1,15 @@
+{
+  "item.endercrop.ender_seeds": "エンダーシード",
+  "block.ender_crop.ender_crop": "エンダークロップ",
+  "block.endercrop.tilled_end_stone": "耕作端石",
+  "endercrop.alert.hoe": "このブロックは、耐破壊力I+のエンチャントが付与された鍬でのみ耕すことができる。",
+  "endercrop.alert.hoetool": "このブロックは採掘レベル %s のツールでのみ耕作できます",
+  "endercrop.tip.seed": "農地または耕起された端石の上に植える",
+  "endercrop.wailatop.nogrowth": "成長できない",
+  "endercrop.wailatop.moist": "しっとり",
+  "endercrop.wailatop.dry": "ドライ",
+  "endercrop.wailatop.light": "ライト",
+  "endercrop.waila.hoeable": "耕すことができる",
+  "endercrop.waila.nothoeable": "耕せない",
+  "endercrop.top.hoe": "鍬"
+}

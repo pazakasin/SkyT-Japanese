@@ -1,0 +1,8 @@
+{
+  "block.portal.noLink": "ポータルがリンクされていない 右クリック",
+  "block.portal.linked": "%s にリンクされたポータル",
+  "block.javd.portal_block": "ヴォイドポータル",
+  "block.javd.void_portal_block": "ヴォイドポータル",
+  "biome.javd.void": "虚空",
+  "block.javd.void_portal_block.name": "ヴォイドポータル"
+}

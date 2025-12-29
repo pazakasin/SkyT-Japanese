@@ -1,0 +1,16 @@
+{
+  "custommachinerymekanism.requirements.chemical.error.input": "%s が足りません、%smB 必要です!",
+  "custommachinerymekanism.requirements.chemical.error.output": "%s の %mb を保存するのに十分なスペースがありません。",
+  "custommachinerymekanism.requirements.heat.error.input": "蓄熱量が足りません。%s 必要ですが、%s が見つかりました。",
+  "custommachinerymekanism.requirements.temp.error": "必要な温度: %s",
+  "custommachinerymekanism.requirements.radiation.error": "放射線が足りません: %s、%s 必要です!",
+  "custommachinerymekanism.requirements.radiation.info.input": "半径 %s ブロック内の %s を削除します",
+  "custommachinerymekanism.requirements.radiation.info.output": "%s を放出",
+  "custommachinerymekanism.requirements.radiation.info.tick.input": "半径 %s ブロック内の %s/t を削除します",
+  "custommachinerymekanism.requirements.radiation.info.tick.output": "%s/t を放出",
+  "custommachinerymekanism.jei.ingredient.heat": "熱: %s",
+  "custommachinerymekanism.jei.ingredient.heat.input": "%s熱を消費する",
+  "custommachinerymekanism.jei.ingredient.heat.output": "%s熱を生産する",
+  "custommachinerymekanism.jei.ingredient.heat.pertick.input": "消費熱量%s/t",
+  "custommachinerymekanism.jei.ingredient.heat.pertick.output": "%s熱/tを生産"
+}

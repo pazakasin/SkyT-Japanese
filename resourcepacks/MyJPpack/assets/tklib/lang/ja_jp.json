@@ -1,0 +1,19 @@
+{
+  "tooltip.tklib.color.white": "白",
+  "tooltip.tklib.color.orange": "オレンジ",
+  "tooltip.tklib.color.magenta": "マゼンタ",
+  "tooltip.tklib.color.light_blue": "水色",
+  "tooltip.tklib.color.yellow": "黄色",
+  "tooltip.tklib.color.lime": "ライム",
+  "tooltip.tklib.color.pink": "ピンク",
+  "tooltip.tklib.color.gray": "グレー",
+  "tooltip.tklib.color.light_gray": "ライトグレー",
+  "tooltip.tklib.color.cyan": "シアン",
+  "tooltip.tklib.color.purple": "紫",
+  "tooltip.tklib.color.blue": "青",
+  "tooltip.tklib.color.brown": "茶色",
+  "tooltip.tklib.color.green": "緑",
+  "tooltip.tklib.color.red": "赤",
+  "tooltip.tklib.color.black": "黒",
+  "subtitles.tklib.wrench": "ねじれ音"
+}

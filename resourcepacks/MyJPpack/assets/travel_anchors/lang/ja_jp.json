@@ -1,0 +1,15 @@
+{
+  "itemGroup.travel_anchors": "トラベルアンカー",
+  "item.travel_anchors.travel_staff": "旅行スタッフ",
+  "enchantment.travel_anchors.range": "範囲",
+  "enchantment.travel_anchors.teleportation": "テレポート",
+  "block.travel_anchors.travel_anchor": "トラベルアンカー",
+  "screen.travel_anchors.travel_anchor": "トラベルアンカー",
+  "screen.travel_anchors.search": "検索",
+  "screen.travel_anchors.nameless": "使用するには名前を入力してください",
+  "tooltip.travel_anchors.travel_anchor_block": "これをトラベル スタッフ、またはテレポート エンチャントでテレポートして見てみましょう。",
+  "tooltip.travel_anchors.travel_staff": "スニーク+右クリックで短距離テレポート。トラベルアンカーを見つめるとワープします。",
+  "travel_anchors.tp.success": "%s にテレポートしました。",
+  "travel_anchors.tp.fail": "旅行アンカーが見つかりません。",
+  "travel_anchors.hop.fail": "目的地が妨害されています。"
+}

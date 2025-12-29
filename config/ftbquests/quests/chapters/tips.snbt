@@ -1,0 +1,262 @@
+{
+	id: "13DFD061EA83A4AB"
+	group: ""
+	order_index: 1
+	filename: "tips"
+	title: "ヒント"
+	icon: "supplementaries:key"
+	subtitle: [
+	"初心者向け&orそうでないかも&r"
+]
+	default_quest_shape: "octagon"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: {
+				id: "mekanismtools:lapis_lazuli_pickaxe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -1.5d
+			y: -3.0d
+			description: [
+				"このMODを使うと、複数のブロックを一度に採掘できます。"
+				"ブロックを壊す際にキー（デフォルトでは²）を押すと、同じブロックの鉱脈が最大64ブロックまで破壊されます。"
+				""
+				"² + Shift + ホイールで採掘モードを変更できます。"
+			]
+			dependencies: ["64AE256143066EDC"]
+			min_width: 250
+			id: "5156DAF8230FE88F"
+			tasks: [{
+				id: "343885552A9F7130"
+				type: "checkmark"
+				title: "究極"
+			}]
+			rewards: [{
+				id: "7D2AC6FC151EA6AB"
+				type: "item"
+				item: {
+					id: "minecraft:wooden_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			icon: {
+				id: "simplemagnets:basicmagnet"
+				Count: 1b
+				tag: { }
+			}
+			x: 1.0d
+			y: -2.0d
+			description: [
+				"キュリオスは、バックパック、マグネット、ジェットパックなどを装着できる「装備スロット」です。"
+				""
+				"アクセスするには、キーボードショートカット（デフォルトでは G）を使用するか、キャラクターの左上にあるアイコンをクリック（クリック）してください。"
+			]
+			dependencies: ["64AE256143066EDC"]
+			min_width: 250
+			id: "23DDDBCA26194A09"
+			tasks: [{
+				id: "5FCE070D6F2371D5"
+				type: "checkmark"
+				title: "骨董品"
+			}]
+			rewards: [{
+				id: "0E40C5209A43881D"
+				type: "item"
+				item: {
+					id: "simplemagnets:basicmagnet"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			icon: "minecraft:torch"
+			x: -1.5d
+			y: 0.5d
+			description: [
+				"&lF7&r を押すと、ライトオーバーレイが切り替わります。"
+				""
+				"&6黄色の十字は、Mob が夜間にスポーンできることを意味し、&cred&f の十字は、Mob がいつでもスポーンできることを意味します。"
+				"&9青色の十字は、スポナーがあれば Mob がスポーンできることを意味します。"
+			]
+			dependencies: ["64AE256143066EDC"]
+			id: "3FC762688EAF8449"
+			tasks: [{
+				id: "40EBB9831A7A4B72"
+				type: "checkmark"
+				title: "ライトオーバーレイ"
+			}]
+			rewards: [{
+				id: "22938D0D90437554"
+				type: "item"
+				item: "minecraft:torch"
+			}]
+		}
+		{
+			icon: "chickenchunks:chunk_loader"
+			x: -2.5d
+			y: -0.5d
+			description: [
+				"チャンク管理はModパックにおいて重要です。"
+				""
+				"ベース全体と、他のディメンションに設置されている少数の施設を常にロードしておくのが最善です。"
+				"これを行うにはいくつかの方法があります。"
+				"- インベントリの左上にある「FTBチャンク」を使用します。「左クリック」でチャンクを取得し、「Shift+左クリック」で強制ロードします。"
+				"- ブロック「チャンクローダー」を使用することもできます。ブロックを設置して動作範囲を選択するだけです（ベースの中央に設置します）。"
+				"- 「フラックスプラグ」や「チャンクコントローラー」など、他にも多くの方法がありますが、状況に応じて使い分ける必要があります。"
+			]
+			dependencies: ["64AE256143066EDC"]
+			min_width: 300
+			id: "5AFA4F7F10013C97"
+			tasks: [{
+				id: "777CFE7B1256649E"
+				type: "checkmark"
+				title: "チャンク"
+			}]
+			rewards: [{
+				id: "4FF3DB4DA23B9383"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			icon: "rsgauges:glass_linear_entity_detector"
+			x: 0.0d
+			y: -3.0d
+			subtitle: "JEI"
+			description: [
+				"JEIは欠かせないツールです。ショートカットをいくつかご紹介します。"
+				""
+				"- 要素を&6U&fまたは&6右クリック&fすると、その要素で何ができるかが表示されます。"
+				"- 要素を&6R&fまたは&6左クリック&fすると、その要素の取得方法が表示されます。"
+				"- &6Q&fで、ブックマークに要素を追加または削除できます。"
+				"- 検索例: &o@modname itemname&r"
+				"- 検索バーを&6右クリック&fすると、その内容がクリアされます。"
+			]
+			dependencies: ["64AE256143066EDC"]
+			min_width: 300
+			id: "6C27220A1099F34C"
+			tasks: [{
+				id: "523E36130715474A"
+				type: "checkmark"
+				title: "ちょうどいいアイテム"
+			}]
+			rewards: [{
+				id: "6776FC9ECD34385D"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			icon: "ftbquests:book"
+			x: -0.625d
+			y: -1.25d
+			description: [
+				"クエストには「クエストブック」からアクセスできますが、インベントリを開いた状態で左上にも表示されています。"
+				""
+				"クエストブックは、MOD内やMOD間の移動をガイドします。"
+				"各章は進行順に並んでいるわけではないので、自由に「探索」してみてください。"
+				"クエストの説明が豊富なので、初心者でも迷うことはありません。"
+				""
+				"クエストブックの右上をクリックすると、すべてのクエストを入手できます。"
+			]
+			size: 1.25d
+			min_width: 300
+			id: "64AE256143066EDC"
+			tasks: [{
+				id: "6663C1E6D911818B"
+				type: "checkmark"
+				title: "クエスト"
+			}]
+			rewards: [{
+				id: "6E3EF660DEE567AC"
+				type: "item"
+				item: "minecraft:golden_apple"
+			}]
+		}
+		{
+			icon: "minecraft:cartography_table"
+			x: -2.5d
+			y: -2.0d
+			description: [
+				"Jキー（デフォルト）を押すとマップにアクセスできます。"
+				""
+				"マップでは、自分のワールド内での道順を確認したり、基地の概観を確認したりできます。"
+				"ウェイポイントを追加することで、次元内をよりスムーズに移動できます。"
+			]
+			dependencies: ["64AE256143066EDC"]
+			min_width: 250
+			id: "543FCEBEE3D9D453"
+			tasks: [{
+				id: "72C27274AE09712B"
+				type: "checkmark"
+				title: "地図"
+			}]
+			rewards: [{
+				id: "7CCD4048C4619BDC"
+				type: "item"
+				item: "minecraft:map"
+			}]
+		}
+		{
+			icon: "auxiliaryblocks:gingerbread_house"
+			x: 0.0d
+			y: 0.5d
+			description: [
+				"&6/sethome&f でテレポートポイントの位置を定義します。"
+				""
+				"&6/home&f でその場所にテレポートできます。"
+				""
+				"ホームは1つしか持てないことにご注意ください。このテレポート方法は、次元を越えても機能します。"
+			]
+			dependencies: ["64AE256143066EDC"]
+			id: "0E026E1C5A6AAC27"
+			tasks: [{
+				id: "0EFFF6680F6B1FBA"
+				type: "checkmark"
+				title: "家"
+			}]
+			rewards: [{
+				id: "381E450DF4770374"
+				type: "item"
+				item: "auxiliaryblocks:gingerbread_house"
+			}]
+		}
+		{
+			icon: "createdeco:magenta_decal"
+			x: 1.0d
+			y: -0.5d
+			description: [
+				"このModパックは、設定が小規模な場合、リソースを過剰に消費する可能性があります。"
+				""
+				"まず、&6Prism&fや&6MultiMC&fといった、より最適化されたランチャーからModパックを起動してください。"
+				""
+				"また、ビデオ設定でミニマップレベルを無効にしてください。探索要素がほとんどないため、距離を短く設定しても問題ありません。"
+				""
+				"さらにアドバイスが必要な場合は、ModパックのDiscordでお気軽にお問い合わせください。"
+			]
+			dependencies: ["64AE256143066EDC"]
+			id: "7D90E92433F93797"
+			tasks: [{
+				id: "38EA0152E1CF7572"
+				type: "checkmark"
+				title: "ゲームの最適化"
+			}]
+			rewards: [{
+				id: "6BD1E46023E59F7B"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+	]
+	quest_links: [ ]
+}

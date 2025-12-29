@@ -1,0 +1,8 @@
+{
+	chapter_groups: [
+		{ id: "38719A56DDE0EE6C", title: "&fオープンエア" }
+		{ id: "3D109918D62355FC", title: "&6ファーストスター" }
+		{ id: "343D6547966CD25B", title: "&6セカンドスター" }
+		{ id: "7FBA77DF66334407", title: "&6第三の星" }
+	]
+}

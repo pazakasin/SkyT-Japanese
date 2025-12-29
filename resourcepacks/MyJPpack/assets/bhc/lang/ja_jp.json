@@ -1,0 +1,18 @@
+{
+  "itemGroup.bhcTab": "ボーブリーハートキャニスター",
+  "item.bhc.red_heart": "ミニチュアレッドハート",
+  "item.bhc.yellow_heart": "ミニチュアイエローハート",
+  "item.bhc.green_heart": "ミニチュアグリーンハート",
+  "item.bhc.blue_heart": "ミニチュアブルーハート",
+  "item.bhc.canister": "キャニスター",
+  "item.bhc.red_heart_canister": "レッドハートキャニスター",
+  "item.bhc.yellow_heart_canister": "イエローハートキャニスター",
+  "item.bhc.green_heart_canister": "グリーンハートキャニスター",
+  "item.bhc.blue_heart_canister": "ブルーハートキャニスター",
+  "item.bhc.wither_bone": "ウィザーボーン",
+  "item.bhc.relic_apple": "レリックアップル",
+  "item.bhc.heart_amulet": "ハートのお守り",
+  "container.bhc.heart_amulet": "ハートのお守り",
+  "tooltip.bhc.heartamulet": "右クリックして開きます!",
+  "curios.identifier.heartamulet": "ハートのお守り"
+}

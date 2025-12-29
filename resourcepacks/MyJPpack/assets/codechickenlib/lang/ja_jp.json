@@ -1,0 +1,11 @@
+{
+  "ccl.commands.count.fail": "エンティティが見つかりません。",
+  "ccl.commands.count.total": "%s 個のエンティティが見つかりました。",
+  "ccl.commands.gc.after": "後：",
+  "ccl.commands.gc.before": "前に：",
+  "ccl.commands.gc.performing": "GC を実行しています。",
+  "ccl.commands.killall.fail": "エンティティが見つかりません。",
+  "ccl.commands.killall.fail.player": "このコマンドでプレイヤーを殺すことはできません。",
+  "ccl.commands.killall.success": "%s 個のエンティティを強制終了しました。",
+  "ccl.commands.killall.success.line": "%s を殺した"
+}

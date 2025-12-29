@@ -1,0 +1,21 @@
+{
+  "block.animalcrops.crops": "動物作物",
+  "item.animalcrops.seeds": "%s シード",
+  "item.animalcrops.seeds.default": "動物の種子",
+  "item.animalcrops.seeds.tooltip": "草やポドゾルに植物を植えて動物を育てる",
+  "block.animalcrops.anemonemal": "アネモネマル",
+  "item.animalcrops.anemonemal": "%s シード",
+  "item.animalcrops.anemonemal.default": "アネモネマルの種",
+  "item.animalcrops.anemonemal.tooltip": "水中に植物を植えて動物を育てる",
+  "block.animalcrops.shrooms": "動物キノコ",
+  "item.animalcrops.spores": "%s 胞子",
+  "item.animalcrops.spores.default": "動物の胞子",
+  "item.animalcrops.spores.tooltip": "動物を育てるために地下の土に植える",
+  "block.animalcrops.magnemone": "マグネモネス",
+  "item.animalcrops.magnemone": "%s 胞子",
+  "item.animalcrops.magnemone.default": "マグネモネス胞子",
+  "item.animalcrops.magnemone.tooltip": "溶岩の下に植物を植えて動物を育てる",
+  "item.animalcrops.pollen": "動物の花粉",
+  "item.animalcrops.pollen.tooltip": "動物に使用して動物の種子を作成する",
+  "item.animalcrops.pollen.invalid": "%s に利用できるシードはありません"
+}

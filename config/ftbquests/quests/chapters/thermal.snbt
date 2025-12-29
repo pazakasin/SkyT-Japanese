@@ -1,0 +1,550 @@
+{
+	id: "47907C6165FD1AD9"
+	group: "3D109918D62355FC"
+	order_index: 4
+	filename: "thermal"
+	title: "サーマルシリーズ"
+	icon: "thermal:device_soil_infuser"
+	subtitle: [
+	"むしろこれ"
+]
+	default_quest_shape: "hexagon"
+	default_hide_dependency_lines: false
+	images: [{
+		x: -3.0d
+		y: -3.0d
+		width: 2.0d
+		height: 2.0d
+		rotation: 0.0d
+		image: "thermal:textures/item/rose_gold_gear.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			x: -2.0d
+			y: -1.0d
+			description: [
+	"マシン フレームは、サーマル シリーズのすべてのマシンの中心的なコンポーネントです。"
+]
+			size: 1.25d
+			id: "7E851E293981B13D"
+			tasks: [{
+				id: "3C7083BAA2CBC30D"
+				type: "item"
+				item: "thermal:machine_frame"
+			}]
+			rewards: [{
+				id: "56CEA78A2040D325"
+				type: "item"
+				item: "thermal:machine_frame"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.5d
+			description: [
+	"アイテム/ブロックに液体を注入します。"
+]
+			dependencies: ["5E02020429211FB9"]
+			min_width: 250
+			id: "7F81BC6C61FC5A75"
+			tasks: [{
+				id: "5EDC0AA127002F44"
+				type: "item"
+				item: "thermal:machine_bottler"
+			}]
+			rewards: [{
+				id: "399F2612BD71324A"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			description: [
+	"Thermal Machines 環境の基本コンポーネント。"
+]
+			dependencies: ["7F81BC6C61FC5A75"]
+			id: "09A5FE0A3496BD71"
+			tasks: [{
+				id: "1CD042B5102C4611"
+				type: "item"
+				item: "thermal:redstone_servo"
+			}]
+			rewards: [{
+				id: "48577DDF4D2389D8"
+				type: "item"
+				item: "thermal:redstone_servo"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.5d
+			description: [
+	"簡易ポンプとして使用するには、水たまりに設置してください。電源は必要ありません。"
+]
+			dependencies: ["09A5FE0A3496BD71"]
+			id: "4A3C4703D2800C69"
+			tasks: [{
+				id: "7261C126848F6570"
+				type: "item"
+				item: "thermal:device_water_gen"
+			}]
+			rewards: [
+				{
+					id: "4DFD19D9A36363B4"
+					type: "item"
+					item: "minecraft:water_bucket"
+				}
+				{
+					id: "5CDB682C0D4F6A6A"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: 2.5d
+			description: [
+	"木から様々な液体を抽出する"
+]
+			dependencies: ["09A5FE0A3496BD71"]
+			id: "598910228694F0CA"
+			tasks: [{
+				id: "27566956ADDC2CBF"
+				type: "item"
+				item: "thermal:device_tree_extractor"
+			}]
+			rewards: [{
+				id: "6E3002638B4BA6C3"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.5d
+			subtitle: "エネルギーを蓄える"
+			description: [
+				"エネルギーを蓄えることができます。"
+				"コンポーネントを使用することで容量を増やすことができます。"
+			]
+			dependencies: ["598910228694F0CA"]
+			id: "6E84E2737C29557A"
+			tasks: [{
+				id: "4FCDCBF38B46B41D"
+				type: "item"
+				item: {
+					id: "thermal:energy_cell"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							EnergyMax: 1000000
+							EnergySend: 1000
+							Energy: 0
+							EnergyRecv: 1000
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "748A71C3D8E17DDD"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.0d
+			subtitle: "HIC"
+			description: [
+				"コンポーネントはマシンの容量と速度を向上させます。"
+				""
+				"マシン1台につき、各ティアから1つずつ、最大3つのコンポーネントを配置できます。"
+			]
+			id: "2F5AA00A71E35491"
+			tasks: [{
+				id: "099369028117A2F1"
+				type: "item"
+				item: "thermal:upgrade_augment_1"
+			}]
+			rewards: [{
+				id: "48D26B3EC70EB769"
+				type: "item"
+				item: "thermal:upgrade_augment_1"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.0d
+			subtitle: "&6RIC"
+			description: [
+				"コンポーネントはマシンの容量と速度を向上させます。"
+				""
+				"マシン1台につき、各ティアから1つずつ、最大3つのコンポーネントを配置できます。"
+			]
+			dependencies: ["2F5AA00A71E35491"]
+			id: "5FFFF7323C197AE2"
+			tasks: [{
+				id: "3FF2503308ADC63B"
+				type: "item"
+				item: "thermal:upgrade_augment_2"
+			}]
+			rewards: [{
+				id: "7009DC9753297D31"
+				type: "item"
+				item: "thermal:upgrade_augment_2"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -2.0d
+			subtitle: "&1RSIC"
+			description: [
+				"コンポーネントはマシンの容量と速度を向上させます。"
+				""
+				"マシン1台につき、各ティアから1つずつ、最大3つのコンポーネントを配置できます。"
+			]
+			dependencies: ["5FFFF7323C197AE2"]
+			id: "41DF64C498BE6F36"
+			tasks: [{
+				id: "16A44B128B87722B"
+				type: "item"
+				item: "thermal:upgrade_augment_3"
+			}]
+			rewards: [{
+				id: "2C93B6AD6C4EAC36"
+				type: "item"
+				item: "thermal:upgrade_augment_3"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -3.5d
+			subtitle: "炉だがRFを使用"
+			description: [
+	"レッドストーンフラックス（RF）をエネルギーとして利用する炉です。"
+]
+			hide_dependency_lines: true
+			dependencies: ["5E02020429211FB9"]
+			id: "62AF6D1F3B8DA94C"
+			tasks: [{
+				id: "3649CCA21AAF87A3"
+				type: "item"
+				item: "thermal:machine_furnace"
+			}]
+			rewards: [{
+				id: "12A7144EDC85CDB9"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.5d
+			description: [
+				"誘導製錬所は金属インゴットを作成するために使用されます。"
+				""
+				"この機械には2つの投入口があります。片方の投入口に鉱石を入れ、もう片方の投入口に砂を入れます。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["5E02020429211FB9"]
+			id: "5816467ABC70C943"
+			tasks: [{
+				id: "20F58BE8AA1D6133"
+				type: "item"
+				item: "thermal:machine_smelter"
+			}]
+			rewards: [{
+				id: "35FC5EC849567C57"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: -0.5d
+			y: -4.5d
+			description: [
+				"ブロックやアイテムを粉砕し、鉱石を2倍の量の粉末に粉砕します。"
+				""
+				"粉砕された鉱石は、誘導製錬炉、電気炉、またはその他の炉で加熱してインゴットを生産できます。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["5E02020429211FB9"]
+			id: "702E9B271793CF0F"
+			tasks: [{
+				id: "469ECD69505017AD"
+				type: "item"
+				item: "thermal:machine_pulverizer"
+			}]
+			rewards: [{
+				id: "34260850E873C9D9"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			icon: "thermal:machine_press"
+			x: 0.0d
+			y: -1.0d
+			subtitle: "ギア、プレートなど"
+			description: [
+	"プレス機は物体に圧力を加えて形状を変える機械です。"
+]
+			dependencies: ["7E851E293981B13D"]
+			id: "5E02020429211FB9"
+			tasks: [
+				{
+					id: "3B64E42AD0FCFECE"
+					type: "item"
+					item: "thermal:machine_press"
+				}
+				{
+					id: "1AAEA4E32B3C7CCA"
+					type: "item"
+					item: "thermal:press_gear_die"
+				}
+			]
+			rewards: [{
+				id: "7D8C7D2098FF4ECB"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: 0.5d
+			y: -4.5d
+			description: [
+	"アイテムを溶かして液体にします。"
+]
+			hide_dependency_lines: true
+			dependencies: ["5E02020429211FB9"]
+			id: "5799AABD2449DF2E"
+			tasks: [{
+				id: "4ABEBE520C2B0460"
+				type: "item"
+				item: "thermal:machine_crucible"
+			}]
+			rewards: [{
+				id: "747FE8E07C3CC1C5"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: -1.0d
+			y: -3.5d
+			subtitle: "木を切る"
+			description: [
+				"製材所は丸太1本につき、板材6枚とおがくず1枚を生成します。"
+				""
+				"また、鉱石の丸太を複製することもできます。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["5E02020429211FB9"]
+			id: "0B44DC2532044160"
+			tasks: [{
+				id: "0DC4F83118EC886E"
+				type: "item"
+				item: "thermal:machine_sawmill"
+			}]
+			rewards: [{
+				id: "26B74A8E263E9663"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.5d
+			description: [
+	"液体を凍らせて物にする機械です。"
+]
+			hide_dependency_lines: true
+			dependencies: ["5E02020429211FB9"]
+			id: "2892F9AB48A04BF8"
+			tasks: [{
+				id: "6772D5488ECEC784"
+				type: "item"
+				item: "thermal:machine_chiller"
+			}]
+			rewards: [{
+				id: "209264AE9CD93CE6"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			description: [
+	"火成岩押し出し機は、溶岩と水を使用して玉石、滑らかな石、または黒曜石を作成する機械です。"
+]
+			dependencies: ["09A5FE0A3496BD71"]
+			id: "15836F3370677AC4"
+			tasks: [{
+				id: "5BD68C2CCC724EA7"
+				type: "item"
+				item: "thermal:device_rock_gen"
+			}]
+			rewards: [
+				{
+					id: "3945799DB8FD2309"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "6DD2EE78BB20FB8E"
+					type: "item"
+					item: "minecraft:blackstone"
+					count: 16
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: 1.0d
+			description: [
+	"処理速度を2倍にします。"
+]
+			id: "56EB83FC95E70A4C"
+			tasks: [{
+				id: "457FC0E72A1D5DA3"
+				type: "item"
+				item: "thermal:machine_speed_augment"
+			}]
+			rewards: [{
+				id: "0EEC77584DB0F8DC"
+				type: "item"
+				item: "thermal:machine_speed_augment"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.0d
+			subtitle: "機器を充電しましょう!"
+			id: "70AFA97C6BA3A366"
+			tasks: [{
+				id: "1707020A3B055FAB"
+				type: "item"
+				item: "thermal:tinker_bench"
+			}]
+			rewards: [{
+				id: "5AE08BF8DC8E0E8E"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.5d
+			description: [
+	"シーケンシャルファブリケーターはアイテムを製作する機械です。"
+]
+			hide_dependency_lines: true
+			dependencies: ["5E02020429211FB9"]
+			id: "5842F91360E64F5B"
+			tasks: [{
+				id: "1B85CA894E680EAF"
+				type: "item"
+				item: "thermal:machine_crafter"
+			}]
+			rewards: [{
+				id: "10C2F3AA8082B244"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			title: "ダイナモス"
+			x: 2.0d
+			y: -0.5d
+			description: [
+				"ダイナモはアイテムや液体からエネルギーを生成します。"
+				"お好みのエネルギー源をご利用ください。"
+			]
+			id: "5A0524D5E4D6C94A"
+			tasks: [
+				{
+					id: "7F3CD97E4472BB8E"
+					type: "item"
+					item: "thermal:dynamo_stirling"
+				}
+				{
+					id: "5030AFEF0D102C05"
+					type: "item"
+					item: "thermal:dynamo_gourmand"
+				}
+				{
+					id: "2015B027B31EE284"
+					type: "item"
+					item: "thermal:dynamo_compression"
+				}
+				{
+					id: "3B5AD00CDEC4945C"
+					type: "item"
+					item: "thermal:dynamo_magmatic"
+				}
+				{
+					id: "062F5B636B55E145"
+					type: "item"
+					item: "thermal:dynamo_numismatic"
+				}
+			]
+			rewards: [
+				{
+					id: "34390347CBB99ACE"
+					type: "item"
+					item: "thermal:dynamo_lapidary"
+				}
+				{
+					id: "4849D349FABA9AE4"
+					type: "item"
+					item: "thermal:dynamo_disenchantment"
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -1.5d
+			description: [
+	"ダイナモの生成率を向上します。"
+]
+			dependencies: ["5A0524D5E4D6C94A"]
+			id: "7A50F9C18A032763"
+			tasks: [{
+				id: "57D12273EF1CD88B"
+				type: "item"
+				item: "thermal:dynamo_output_augment"
+			}]
+			rewards: [{
+				id: "31F20B5FA26BEE7A"
+				type: "item"
+				item: "thermal:dynamo_output_augment"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.5d
+			subtitle: "サーマルレンチ"
+			dependencies: ["7E851E293981B13D"]
+			id: "37D5171542EE8203"
+			tasks: [{
+				id: "15968E0B3D22A688"
+				type: "item"
+				item: "thermal:wrench"
+			}]
+			rewards: [{
+				id: "106B4387A94EC003"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+	]
+	quest_links: [ ]
+}

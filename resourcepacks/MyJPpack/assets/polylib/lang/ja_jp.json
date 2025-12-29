@@ -1,0 +1,11 @@
+{
+  "energy_bar.polylib.energy_storage": "エネルギー貯蔵",
+  "energy_bar.polylib.capacity": "容量：",
+  "energy_bar.polylib.stored": "保存:",
+  "energy_bar.polylib.rf": "無線周波数",
+  "fluid_tank.polylib.fluid_storage": "液体貯蔵",
+  "fluid_tank.polylib.capacity": "容量：",
+  "fluid_tank.polylib.stored": "保存:",
+  "fluid_tank.polylib.mb": "メートル",
+  "fluid_tank.polylib.contains": "内容:"
+}

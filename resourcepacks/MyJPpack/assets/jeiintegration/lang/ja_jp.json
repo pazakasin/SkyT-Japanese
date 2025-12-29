@@ -1,0 +1,23 @@
+{
+  "_comment": "ツールチップ",
+  "config.jeiintegration.tooltips.burnTimeTooltipMode": "燃焼時間ツールチップ",
+  "config.jeiintegration.tooltips.durabilityTooltipMode": "耐久性ツールチップ",
+  "config.jeiintegration.tooltips.enchantabilityTooltipMode": "エンチャント可能性ツールチップ",
+  "config.jeiintegration.tooltips.foodTooltipMode": "空腹度/満腹度ツールチップ",
+  "config.jeiintegration.tooltips.maxStackSizeTooltipMode": "最大スタックサイズのツールチップ",
+  "config.jeiintegration.tooltips.nbtTooltipMode": "NBTデータツールチップ",
+  "config.jeiintegration.tooltips.registryNameTooltipMode": "レジストリ名のツールチップ",
+  "config.jeiintegration.tooltips.tagsTooltipMode": "タグツールチップ",
+  "config.jeiintegration.tooltips.translationKeyTooltipMode": "翻訳キーツールチップ",
+  "tooltip.jeiintegration.burnTime": "燃焼時間:",
+  "tooltip.jeiintegration.burnTime.suffix": "ダニ",
+  "tooltip.jeiintegration.durability": "耐久性:",
+  "tooltip.jeiintegration.enchantability": "エンチャント可能性:",
+  "tooltip.jeiintegration.hunger": "飢え：",
+  "tooltip.jeiintegration.saturation": "飽和：",
+  "tooltip.jeiintegration.maxStackSize": "最大スタックサイズ:",
+  "tooltip.jeiintegration.nbtTagData": "注意:",
+  "tooltip.jeiintegration.registryName": "ID:",
+  "tooltip.jeiintegration.tags": "タグ:",
+  "tooltip.jeiintegration.translationKey": "翻訳キー:"
+}

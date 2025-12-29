@@ -1,0 +1,18 @@
+{
+  "key.ftbultimine": "FTBアルティマイン",
+  "key.categories.ftbultimine": "FTBアルティマイン",
+  "ftbultimine.info.base": "FTB Ultimine は %s です",
+  "ftbultimine.info.active": "アクティブ",
+  "ftbultimine.info.not_active": "アクティブではない",
+  "ftbultimine.info.blocks": "%d ブロックを採掘中",
+  "ftbultimine.info.partial_render": "%d レンダリングされました",
+  "ftbultimine.change_shape": "Shiftキーを押しながら（マウスのスクロールまたは矢印キーを上下に）押すと、形状が変わります。",
+  "ftbultimine.shape.shapeless": "形のない",
+  "ftbultimine.shape.small_tunnel": "小さなトンネル",
+  "ftbultimine.shape.small_square": "小さな広場",
+  "ftbultimine.shape.mining_tunnel": "採掘トンネル",
+  "ftbultimine.shape.escape_tunnel": "脱出トンネル",
+  "ftbultimine.config": "FTB Ultimine構成",
+  "item.ftbultimine.ultiminer": "アルティミナー",
+  "item.ftbultimine.ultiminer.tooltip": "アクティブなときに%sの使用を有効にします"
+}

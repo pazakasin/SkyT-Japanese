@@ -1,0 +1,17 @@
+{
+  "tooltip.cucumber.hold_shift_for_info": "§e§oSHIFT §r§7を押して情報を表示",
+  "tooltip.cucumber.uses_left": "残り使用回数 %s",
+  "tooltip.cucumber.one_use_left": "1 左使用",
+  "tooltip.cucumber.unlimited_uses": "無制限の使用",
+  "tooltip.cucumber.hold_ctrl_for_tags": "Ctrlキーを押したままタグを表示",
+  "tooltip.cucumber.hold_alt_for_nbt": "ALTキーを押すとNBTが表示されます",
+  "tooltip.cucumber.failed_to_load_nbt": "NBTの読み込みに失敗しました",
+  "tooltip.cucumber.block_tags": "ブロックタグ:",
+  "tooltip.cucumber.item_tags": "アイテムタグ:",
+  "tooltip.cucumber.not_yet_implemented": "まだ実装されていない",
+  "tooltip.cucumber.close": "近い",
+  "tooltip.cucumber.back": "戻る",
+  "tooltip.cucumber.forward": "フォワード",
+  "message.cucumber.filled_energy": "この %s はあなたのエネルギーを奪いました!",
+  "message.cucumber.filled_energy_error": "この %s はあなたのエネルギーを受け取ることができません。"
+}

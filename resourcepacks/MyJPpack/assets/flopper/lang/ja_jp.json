@@ -1,0 +1,7 @@
+{
+  "_comment": "ブロック",
+  "itemGroup.flopper": "フロッパー",
+  "general.flopper.description": "液体を移送するためのホッパー",
+  "block.flopper.flopper": "フロッパー",
+  "block.flopper.flopper.info": "液体を移送するためのホッパー"
+}
