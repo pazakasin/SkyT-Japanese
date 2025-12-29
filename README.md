@@ -36,8 +36,8 @@ SkyTの日本語翻訳ファイルを提供するプロジェクトです。
 ## 📂 ファイル構成
 
 ```
-config/ftbquests/quests/lang/en_us.snbt  # クエスト用言語ファイル（英語用のファイル名だが中身は日本語）
-resourcepacks/MyJPpack/                  # リソースパック形式翻訳
+config/ftbquests/quests/*.snbt    # クエスト翻訳ファイル
+resourcepacks/MyJPpack/           # リソースパック形式翻訳ファイル
 ```
 
 ## 🐛 問題報告
